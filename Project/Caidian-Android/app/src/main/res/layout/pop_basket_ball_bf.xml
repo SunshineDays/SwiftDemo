@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edge_bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pop_bf_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/grayThree"
+            android:text="[8]赫塔菲" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="VS" />
+
+        <TextView
+            android:id="@+id/pop_bf_away"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/grayThree"
+            android:text="[8]赫塔菲" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/LetSfBg"
+                        android:gravity="center"
+                        android:text="客       胜"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/homeWin"
+                        android:gravity="center"
+                        android:text="主    胜"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/pop_basket_sfc_fixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:background="@drawable/edge_top_right_bottom"
+                    android:textColor="@color/blueHigh"
+                    android:text="未开"/>
+
+
+                <LinearLayout
+                    android:id="@+id/pop_basket_sfc_fixed_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+
+                        android:id="@+id/pop_bf_3_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/pop_basket_away_win_1_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_top_right_bottom"
+                                android:gravity="center"
+                                android:text="1:0"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_away_win_6_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_top_right_bottom"
+                                android:gravity="center"
+                                android:text="1:06:0"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_away_win_11_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_top_right_bottom"
+                                android:gravity="center"
+                                android:text="1:0 6:0"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/pop_basket_away_win_16_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="1:06:0"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_away_win_21_25"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="1:06:0"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_away_win_26"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="1:0 6:0"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pop_bf_0_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/pop_basket_home_win_1_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="0:1"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_home_win_6_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="0:2"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_home_win_11_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="1:2"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/pop_basket_home_win_16_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="2:3"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_home_win_21_25"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="0:4"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/pop_basket_home_win_26"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge_right_bottom"
+                                android:gravity="center"
+                                android:text="1:4"
+                                android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/pop_bf_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/angle_round_cancle"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#FF5EA2BE"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/pop_bf_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge_round_sure"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

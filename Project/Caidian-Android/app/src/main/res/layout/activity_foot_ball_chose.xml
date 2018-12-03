@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/foot_ball_chose_tab"
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:layout_below="@+id/hot_relative"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="@color/graySix" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray" />
+
+    <GridView
+        android:id="@+id/foot_ball_chose_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="36dp">
+
+        <TextView
+            android:id="@+id/foot_ball_chose_clear"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/foot_ball_chose_cancel"
+
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="清空"
+            android:background="@drawable/angle_all_gray_6"
+            android:textColor="@color/graySix"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/foot_ball_chose_cancel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="取消"
+            android:background="@drawable/angle_round_cancle"
+            android:textColor="@color/FF5EA2BE"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/foot_ball_chose_sure"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/foot_ball_chose_cancel"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="确定"
+            android:background="@drawable/angle_round_logo_6"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

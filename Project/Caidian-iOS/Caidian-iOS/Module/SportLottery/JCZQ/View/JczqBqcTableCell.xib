@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JczqBqcTableCell" rowHeight="283" id="KGk-i7-Jjw" customClass="JczqBqcTableCell" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="283"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="282.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UU-HH-Etx" customClass="SLLeagueInfoView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="34" width="80" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="4h7-6N-YXX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2H-MI-uqD">
+                        <rect key="frame" x="80" y="34" width="254" height="73"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpL-w3-dag">
+                                <rect key="frame" x="1" y="1" width="49.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bPa-5P-b8H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">胜胜
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp33BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ucS-p6-n8l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRO-Gt-mWI">
+                                <rect key="frame" x="51.5" y="1" width="49.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">胜平
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp31BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rRD-Zg-ppL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56x-qO-rKz">
+                                <rect key="frame" x="102" y="1" width="50" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">胜负
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp30BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JVA-0z-mBd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUO-lh-K42">
+                                <rect key="frame" x="153" y="1" width="49.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">平胜
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp13BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3LE-jv-DSZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBX-og-fgw">
+                                <rect key="frame" x="1" y="37" width="49.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">平负
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp10BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mbR-n6-ZoI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCr-BA-cgq">
+                                <rect key="frame" x="51" y="37" width="50" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">负胜
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp03BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Uxw-1V-PDv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-Ne-I7I">
+                                <rect key="frame" x="102" y="37" width="50" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">负平
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp01BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qVl-jg-OLO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASy-NI-SOQ">
+                                <rect key="frame" x="153" y="37" width="49.5" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">负负
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp00BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="O14-bR-Qdt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-Kx-0OJ">
+                                <rect key="frame" x="203" y="1" width="49.5" height="71"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal">
+                                    <string key="title">平平
+1.00</string>
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                        <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bqc_sp11BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GOh-VJ-Qhe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bet/single-open" translatesAutoresizingMaskIntoConstraints="NO" id="BrO-N5-vb4">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BrO-N5-vb4" secondAttribute="height" id="BjF-LP-R8T"/>
+                                    <constraint firstAttribute="width" constant="20" id="ejq-3K-2dX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bMd-Ne-I7I" firstAttribute="top" secondItem="YCr-BA-cgq" secondAttribute="top" id="0ws-iW-xvV"/>
+                            <constraint firstItem="kpL-w3-dag" firstAttribute="top" secondItem="E2H-MI-uqD" secondAttribute="top" constant="1" id="2ZR-AL-ydn">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="ASy-NI-SOQ" firstAttribute="bottom" secondItem="bMd-Ne-I7I" secondAttribute="bottom" id="6Hw-B3-V1f"/>
+                            <constraint firstItem="UhQ-Kx-0OJ" firstAttribute="leading" secondItem="tUO-lh-K42" secondAttribute="trailing" constant="1" id="6Yj-NK-9kc">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="ASy-NI-SOQ" firstAttribute="leading" secondItem="tUO-lh-K42" secondAttribute="leading" id="6aY-Bh-ObG"/>
+                            <constraint firstItem="UhQ-Kx-0OJ" firstAttribute="top" secondItem="tUO-lh-K42" secondAttribute="top" id="71t-jh-h1O"/>
+                            <constraint firstItem="56x-qO-rKz" firstAttribute="top" secondItem="kpL-w3-dag" secondAttribute="top" id="CjB-OG-Bs3"/>
+                            <constraint firstItem="56x-qO-rKz" firstAttribute="width" secondItem="kpL-w3-dag" secondAttribute="width" id="F7g-Bp-det"/>
+                            <constraint firstItem="YCr-BA-cgq" firstAttribute="trailing" secondItem="nRO-Gt-mWI" secondAttribute="trailing" id="GRa-oM-T7z"/>
+                            <constraint firstItem="UhQ-Kx-0OJ" firstAttribute="bottom" secondItem="ASy-NI-SOQ" secondAttribute="bottom" id="HRh-Pw-ekd"/>
+                            <constraint firstItem="nRO-Gt-mWI" firstAttribute="bottom" secondItem="kpL-w3-dag" secondAttribute="bottom" id="HTg-GS-3fJ"/>
+                            <constraint firstItem="mBX-og-fgw" firstAttribute="trailing" secondItem="kpL-w3-dag" secondAttribute="trailing" id="IGw-h7-3Z7"/>
+                            <constraint firstItem="BrO-N5-vb4" firstAttribute="top" secondItem="E2H-MI-uqD" secondAttribute="top" id="K8t-5v-vSl"/>
+                            <constraint firstItem="tUO-lh-K42" firstAttribute="bottom" secondItem="kpL-w3-dag" secondAttribute="bottom" id="KvC-hQ-17T"/>
+                            <constraint firstItem="BrO-N5-vb4" firstAttribute="leading" secondItem="E2H-MI-uqD" secondAttribute="leading" id="M7D-8Z-nXD"/>
+                            <constraint firstItem="bMd-Ne-I7I" firstAttribute="trailing" secondItem="56x-qO-rKz" secondAttribute="trailing" id="QvO-6F-TDf"/>
+                            <constraint firstItem="tUO-lh-K42" firstAttribute="leading" secondItem="56x-qO-rKz" secondAttribute="trailing" constant="1" id="RlJ-rv-Nd7">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="mBX-og-fgw" firstAttribute="leading" secondItem="kpL-w3-dag" secondAttribute="leading" id="Rpl-74-acD"/>
+                            <constraint firstItem="mBX-og-fgw" firstAttribute="height" secondItem="kpL-w3-dag" secondAttribute="height" id="RrF-Lb-fPO"/>
+                            <constraint firstItem="YCr-BA-cgq" firstAttribute="bottom" secondItem="mBX-og-fgw" secondAttribute="bottom" id="Srb-Z6-g1U"/>
+                            <constraint firstAttribute="trailing" secondItem="UhQ-Kx-0OJ" secondAttribute="trailing" constant="1" id="Xik-i2-Jpp">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="nRO-Gt-mWI" firstAttribute="leading" secondItem="kpL-w3-dag" secondAttribute="trailing" constant="1" id="Zyp-K7-Xe4">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="kpL-w3-dag" firstAttribute="leading" secondItem="E2H-MI-uqD" secondAttribute="leading" constant="1" id="a7y-ov-ro1">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="UhQ-Kx-0OJ" firstAttribute="width" secondItem="kpL-w3-dag" secondAttribute="width" id="aOn-v4-JfV"/>
+                            <constraint firstItem="YCr-BA-cgq" firstAttribute="top" secondItem="mBX-og-fgw" secondAttribute="top" id="bbo-9d-Z50"/>
+                            <constraint firstItem="nRO-Gt-mWI" firstAttribute="top" secondItem="kpL-w3-dag" secondAttribute="top" id="gQu-jc-Yo8"/>
+                            <constraint firstItem="56x-qO-rKz" firstAttribute="bottom" secondItem="kpL-w3-dag" secondAttribute="bottom" id="ghC-9t-2rz"/>
+                            <constraint firstItem="ASy-NI-SOQ" firstAttribute="top" secondItem="bMd-Ne-I7I" secondAttribute="top" id="j6q-zx-vFh"/>
+                            <constraint firstItem="bMd-Ne-I7I" firstAttribute="bottom" secondItem="YCr-BA-cgq" secondAttribute="bottom" id="mTP-w3-Tty"/>
+                            <constraint firstItem="ASy-NI-SOQ" firstAttribute="trailing" secondItem="tUO-lh-K42" secondAttribute="trailing" id="oYg-tI-UDV"/>
+                            <constraint firstItem="bMd-Ne-I7I" firstAttribute="leading" secondItem="56x-qO-rKz" secondAttribute="leading" id="phV-6h-Huj"/>
+                            <constraint firstAttribute="bottom" secondItem="mBX-og-fgw" secondAttribute="bottom" constant="1" id="qy0-Pu-HM6">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="56x-qO-rKz" firstAttribute="leading" secondItem="nRO-Gt-mWI" secondAttribute="trailing" constant="1" id="sAR-aF-II5">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="YCr-BA-cgq" firstAttribute="leading" secondItem="nRO-Gt-mWI" secondAttribute="leading" id="uVk-xI-phE"/>
+                            <constraint firstItem="nRO-Gt-mWI" firstAttribute="width" secondItem="kpL-w3-dag" secondAttribute="width" id="uzQ-sS-9t9"/>
+                            <constraint firstItem="mBX-og-fgw" firstAttribute="top" secondItem="kpL-w3-dag" secondAttribute="bottom" constant="1" id="vo8-5C-Gft">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="tUO-lh-K42" firstAttribute="width" secondItem="kpL-w3-dag" secondAttribute="width" id="xoE-Qs-c8b"/>
+                            <constraint firstItem="tUO-lh-K42" firstAttribute="top" secondItem="kpL-w3-dag" secondAttribute="top" id="yaV-EP-rQl"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97a-6b-5iu" customClass="SLTeamNameView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="102" y="0.0" width="210" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="hNV-I2-5A3"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-21-QSY" customClass="JczpHistoryInfoView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="122" width="342" height="153"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="153" id="alD-gv-SbG"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOF-wU-0D7">
+                        <rect key="frame" x="0.0" y="34" width="80" height="76"/>
+                        <state key="normal" image="Bet/serial-arrow-down"/>
+                        <connections>
+                            <action selector="showAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uWd-IM-lts"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hOF-wU-0D7" firstAttribute="top" secondItem="5UU-HH-Etx" secondAttribute="top" id="CCk-xQ-e0K"/>
+                    <constraint firstItem="97a-6b-5iu" firstAttribute="leading" secondItem="E2H-MI-uqD" secondAttribute="leading" constant="22" id="E7P-yc-JLJ"/>
+                    <constraint firstItem="5UU-HH-Etx" firstAttribute="height" secondItem="E2H-MI-uqD" secondAttribute="height" constant="-15" id="GxE-84-QVb"/>
+                    <constraint firstItem="E2H-MI-uqD" firstAttribute="leading" secondItem="5UU-HH-Etx" secondAttribute="trailing" id="Ifh-Tb-esM"/>
+                    <constraint firstItem="hOF-wU-0D7" firstAttribute="trailing" secondItem="5UU-HH-Etx" secondAttribute="trailing" id="LdK-Th-qkc"/>
+                    <constraint firstItem="E2H-MI-uqD" firstAttribute="top" secondItem="97a-6b-5iu" secondAttribute="bottom" id="RGP-BB-kn2"/>
+                    <constraint firstItem="5UU-HH-Etx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tv5-iq-krw"/>
+                    <constraint firstItem="97a-6b-5iu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="U85-tZ-Gma"/>
+                    <constraint firstAttribute="trailing" secondItem="E2H-MI-uqD" secondAttribute="trailing" constant="8" id="UFC-iU-UBE"/>
+                    <constraint firstItem="5UU-HH-Etx" firstAttribute="top" secondItem="E2H-MI-uqD" secondAttribute="top" id="WqN-vX-h1U"/>
+                    <constraint firstItem="97a-6b-5iu" firstAttribute="trailing" secondItem="E2H-MI-uqD" secondAttribute="trailing" constant="-22" id="ZD6-An-f8h"/>
+                    <constraint firstItem="v5v-21-QSY" firstAttribute="top" secondItem="E2H-MI-uqD" secondAttribute="bottom" constant="15" id="abo-hF-m89"/>
+                    <constraint firstItem="v5v-21-QSY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g9e-Wz-SXi"/>
+                    <constraint firstItem="hOF-wU-0D7" firstAttribute="bottom" secondItem="E2H-MI-uqD" secondAttribute="bottom" constant="3" id="jPb-bA-7Je"/>
+                    <constraint firstItem="hOF-wU-0D7" firstAttribute="leading" secondItem="5UU-HH-Etx" secondAttribute="leading" id="rHf-7m-9Zi"/>
+                    <constraint firstAttribute="trailing" secondItem="v5v-21-QSY" secondAttribute="trailing" id="uGg-45-REc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bqcOpenSingleImageView" destination="BrO-N5-vb4" id="y2t-sr-A0s"/>
+                <outlet property="bqc_sp00Btn" destination="ASy-NI-SOQ" id="FDy-aQ-DqJ"/>
+                <outlet property="bqc_sp01Btn" destination="bMd-Ne-I7I" id="NYl-Ch-XAU"/>
+                <outlet property="bqc_sp03Btn" destination="YCr-BA-cgq" id="3IL-ZB-1U3"/>
+                <outlet property="bqc_sp10Btn" destination="mBX-og-fgw" id="u5Q-1A-Gf2"/>
+                <outlet property="bqc_sp11Btn" destination="UhQ-Kx-0OJ" id="Xls-oU-TBt"/>
+                <outlet property="bqc_sp13Btn" destination="tUO-lh-K42" id="hiQ-Zy-bIU"/>
+                <outlet property="bqc_sp30Btn" destination="56x-qO-rKz" id="6GW-q1-0Ux"/>
+                <outlet property="bqc_sp31Btn" destination="nRO-Gt-mWI" id="fGL-7T-J1o"/>
+                <outlet property="bqc_sp33Btn" destination="kpL-w3-dag" id="9Vo-sO-FYX"/>
+                <outlet property="leagueView" destination="5UU-HH-Etx" id="KMa-qI-pJR"/>
+                <outlet property="showButton" destination="hOF-wU-0D7" id="u8n-47-b9y"/>
+                <outlet property="statisticsView" destination="v5v-21-QSY" id="q29-es-ma4"/>
+                <outlet property="teamView" destination="97a-6b-5iu" id="Rc9-Z3-qDs"/>
+                <outletCollection property="betKeyBtnList" destination="kpL-w3-dag" collectionClass="NSMutableArray" id="Tg4-qa-PC5"/>
+                <outletCollection property="betKeyBtnList" destination="nRO-Gt-mWI" collectionClass="NSMutableArray" id="96y-l0-nf7"/>
+                <outletCollection property="betKeyBtnList" destination="56x-qO-rKz" collectionClass="NSMutableArray" id="HhH-c2-alu"/>
+                <outletCollection property="betKeyBtnList" destination="tUO-lh-K42" collectionClass="NSMutableArray" id="7mR-dV-vNW"/>
+                <outletCollection property="betKeyBtnList" destination="UhQ-Kx-0OJ" collectionClass="NSMutableArray" id="tpq-hB-BkZ"/>
+                <outletCollection property="betKeyBtnList" destination="mBX-og-fgw" collectionClass="NSMutableArray" id="H16-FZ-3or"/>
+                <outletCollection property="betKeyBtnList" destination="YCr-BA-cgq" collectionClass="NSMutableArray" id="ZKO-ah-7iV"/>
+                <outletCollection property="betKeyBtnList" destination="bMd-Ne-I7I" collectionClass="NSMutableArray" id="32m-xa-Lw8"/>
+                <outletCollection property="betKeyBtnList" destination="ASy-NI-SOQ" collectionClass="NSMutableArray" id="ldo-gk-AWE"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="110.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bet/serial-arrow-down" width="12" height="12"/>
+        <image name="Bet/single-open" width="30" height="30"/>
+    </resources>
+</document>

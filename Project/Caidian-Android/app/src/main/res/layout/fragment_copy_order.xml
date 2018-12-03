@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.CopyOrderFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:text="复制跟单"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/fragment_copy_order_chose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:src="@mipmap/icon_choose"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.caidian310.view.custom.RefreshLayout
+        android:id="@+id/fragment_copy_order_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/fragment_copy_order_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.caidian310.view.custom.RefreshLayout>
+
+    <ImageView
+        android:id="@+id/fragment_copy_order_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:src="@mipmap/icon_no_data"
+        android:visibility="gone" />
+
+</LinearLayout>

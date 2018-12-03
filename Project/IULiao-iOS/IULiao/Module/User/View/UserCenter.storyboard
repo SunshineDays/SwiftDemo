@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的浏览-->
+        <scene sceneID="NHD-w5-Z5S">
+            <objects>
+                <viewController storyboardIdentifier="UserVisit" hidesBottomBarWhenPushed="YES" id="DZt-jn-Uj0" customClass="UserVisitListViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tOK-2o-EYP"/>
+                        <viewControllerLayoutGuide type="bottom" id="McT-1O-G1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vua-c9-g8t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的浏览" id="739-g0-RZp"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n16-UV-LIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="-129"/>
+        </scene>
+        <!--关注/收藏-->
+        <scene sceneID="RV3-pC-Er4">
+            <objects>
+                <viewController storyboardIdentifier="UserAttention" hidesBottomBarWhenPushed="YES" id="LoR-ok-c6Q" customClass="UserAttentionListViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qdT-zA-ZoI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mtf-VZ-L2w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gb1-co-I6V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ALS-sd-2Wk">
+                                <rect key="frame" x="66" y="77" width="243" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="R1b-6s-Xzf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="分析师"/>
+                                    <segment title="推荐"/>
+                                    <segment title="资讯"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentControlAction:" destination="LoR-ok-c6Q" eventType="valueChanged" id="he2-4S-lJA"/>
+                                </connections>
+                            </segmentedControl>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyw-Z8-Wa0" userLabel="lineView">
+                                <rect key="frame" x="0.0" y="120" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.29999999999999999" id="Uet-V8-ghc"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nx3-nt-BxP" customClass="PiazzaScrollView" customModule="IULiao" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LoR-ok-c6Q" id="zfQ-pF-Osn"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uyw-Z8-Wa0" firstAttribute="leading" secondItem="Gb1-co-I6V" secondAttribute="leading" id="3me-FY-VE9"/>
+                            <constraint firstItem="ALS-sd-2Wk" firstAttribute="leading" secondItem="Gb1-co-I6V" secondAttribute="leadingMargin" constant="50" id="AAH-8C-ZU9"/>
+                            <constraint firstAttribute="trailing" secondItem="Nx3-nt-BxP" secondAttribute="trailing" id="D4R-0h-hMd"/>
+                            <constraint firstItem="Mtf-VZ-L2w" firstAttribute="top" secondItem="Nx3-nt-BxP" secondAttribute="bottom" id="EWw-Vo-v5A"/>
+                            <constraint firstAttribute="trailing" secondItem="uyw-Z8-Wa0" secondAttribute="trailing" id="Nih-eC-qtH"/>
+                            <constraint firstItem="Nx3-nt-BxP" firstAttribute="top" secondItem="uyw-Z8-Wa0" secondAttribute="bottom" id="OJy-68-gTs"/>
+                            <constraint firstItem="ALS-sd-2Wk" firstAttribute="top" secondItem="qdT-zA-ZoI" secondAttribute="bottom" constant="13" id="c3l-9I-K9r"/>
+                            <constraint firstItem="Nx3-nt-BxP" firstAttribute="leading" secondItem="Gb1-co-I6V" secondAttribute="leading" id="y51-Zq-t9H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ALS-sd-2Wk" secondAttribute="trailing" constant="50" id="yH9-x3-teO"/>
+                            <constraint firstItem="Nx3-nt-BxP" firstAttribute="top" secondItem="ALS-sd-2Wk" secondAttribute="bottom" constant="18" id="zE0-Ui-TWh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="关注/收藏" id="96Y-ga-GD0"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Nx3-nt-BxP" id="DDT-0J-p3k"/>
+                        <outlet property="segmentControl" destination="ALS-sd-2Wk" id="mYk-X6-ShU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Tv-P9-VxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.60000000000002" y="-129.08545727136433"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="9be-ug-nw4">
+            <objects>
+                <viewController storyboardIdentifier="UserNotice" hidesBottomBarWhenPushed="YES" id="aNj-wy-nVY" customClass="UserNoticeListViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IzS-uT-JIk"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Yu-G1-4OK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ord-W3-uz8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="Zq4-bP-Qsb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IK1-Tx-7W9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="-129"/>
+        </scene>
+    </scenes>
+</document>

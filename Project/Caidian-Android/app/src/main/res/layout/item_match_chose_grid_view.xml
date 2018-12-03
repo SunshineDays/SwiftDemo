@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:textColor="@color/graySix"
+        android:text="英超"
+        android:id="@+id/item_foot_ball_chose_league_name"
+        android:background="@drawable/angle_all_gray"
+        android:gravity="center"/>
+
+</LinearLayout>

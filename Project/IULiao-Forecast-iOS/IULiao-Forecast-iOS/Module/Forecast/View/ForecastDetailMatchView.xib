@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ForecastDetailMatchView" id="iN0-l3-epB" customClass="ForecastDetailMatchView" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ush-BG-1D7">
+                    <rect key="frame" x="10" y="15" width="368" height="175"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周一000 --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VyR-Fg-Q0E">
+                            <rect key="frame" x="175.5" y="16" width="62" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00-00 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku6-3m-oap">
+                            <rect key="frame" x="169.5" y="39.5" width="74" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-Fl-vCN">
+                            <rect key="frame" x="188" y="71.5" width="37" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiL-9v-hY5">
+                            <rect key="frame" x="15" y="96.5" width="30" height="30"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="7wV-nS-R2D"/>
+                                <constraint firstAttribute="width" constant="30" id="t9V-2k-ODd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukB-mK-xCN" customClass="ForecastMatchButton" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+                            <rect key="frame" x="55" y="96.5" width="94.5" height="30"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="胜  0.00" backgroundImage="Forecast/bet_selected">
+                                <color key="titleColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGp-i3-iEh">
+                            <rect key="frame" x="15" y="131.5" width="30" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-8f-66Y" customClass="ForecastMatchButton" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+                            <rect key="frame" x="159.5" y="96.5" width="94" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="胜  0.00" backgroundImage="Forecast/bet_selected">
+                                <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxB-TK-7re" customClass="ForecastMatchButton" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+                            <rect key="frame" x="159.5" y="131.5" width="94" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="胜  0.00" backgroundImage="Forecast/bet_selected">
+                                <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFk-FZ-VaS" customClass="ForecastMatchButton" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+                            <rect key="frame" x="263.5" y="96.5" width="94.5" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="胜  0.00" backgroundImage="Forecast/bet_selected">
+                                <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCk-dl-bfK" customClass="ForecastMatchButton" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+                            <rect key="frame" x="263.5" y="131.5" width="94.5" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="胜  0.00" backgroundImage="Forecast/bet_selected">
+                                <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forecast/dan" translatesAutoresizingMaskIntoConstraints="NO" id="1sC-0x-cI9">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="C2I-NB-Ezf"/>
+                                <constraint firstAttribute="width" secondItem="1sC-0x-cI9" secondAttribute="height" multiplier="1:1" id="I9M-1j-KTS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04v-VI-NZu">
+                            <rect key="frame" x="83.5" y="71.5" width="37" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvX-So-gUM" customClass="ForecastMatchButton" customModule="IULiao_Forecast_iOS" customModuleProvider="target">
+                            <rect key="frame" x="55" y="131.5" width="94.5" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="胜  0.00" backgroundImage="Forecast/bet_selected">
+                                <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客队名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFg-TB-M0h">
+                            <rect key="frame" x="292.5" y="71.5" width="37" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Empty/teamLogo" translatesAutoresizingMaskIntoConstraints="NO" id="apE-kE-PDb">
+                            <rect key="frame" x="82" y="11" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="QmK-dr-ULK"/>
+                                <constraint firstAttribute="width" secondItem="apE-kE-PDb" secondAttribute="height" multiplier="1:1" id="UqM-Hd-Gho"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Empty/teamLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bY6-dr-6Wo">
+                            <rect key="frame" x="291" y="11" width="40" height="40"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPR-AN-uga">
+                            <rect key="frame" x="15" y="96.5" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuS-1j-u2r">
+                            <rect key="frame" x="15" y="131.5" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwl-sH-Vxw">
+                            <rect key="frame" x="0.0" y="11" width="82" height="40"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forecast/result_true" translatesAutoresizingMaskIntoConstraints="NO" id="pZo-nD-a9v">
+                                    <rect key="frame" x="21" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="pZo-nD-a9v" secondAttribute="height" multiplier="1:1" id="cU6-CG-M5l"/>
+                                        <constraint firstAttribute="width" constant="40" id="oM9-be-bMy"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="pZo-nD-a9v" firstAttribute="centerY" secondItem="Fwl-sH-Vxw" secondAttribute="centerY" id="KSI-v6-ewy"/>
+                                <constraint firstItem="pZo-nD-a9v" firstAttribute="centerX" secondItem="Fwl-sH-Vxw" secondAttribute="centerX" id="hLa-Gm-Kdx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="pvX-So-gUM" firstAttribute="trailing" secondItem="ukB-mK-xCN" secondAttribute="trailing" id="1w7-b8-BEZ"/>
+                        <constraint firstItem="xGp-i3-iEh" firstAttribute="width" secondItem="WiL-9v-hY5" secondAttribute="width" id="2z7-8H-QMm"/>
+                        <constraint firstItem="04v-VI-NZu" firstAttribute="centerX" secondItem="ukB-mK-xCN" secondAttribute="centerX" id="3BP-0a-tT6"/>
+                        <constraint firstItem="ku6-3m-oap" firstAttribute="centerX" secondItem="VyR-Fg-Q0E" secondAttribute="centerX" id="40g-fQ-8ni"/>
+                        <constraint firstItem="ukB-mK-xCN" firstAttribute="leading" secondItem="WiL-9v-hY5" secondAttribute="trailing" constant="10" id="43G-vd-mZy"/>
+                        <constraint firstItem="ku6-3m-oap" firstAttribute="top" secondItem="VyR-Fg-Q0E" secondAttribute="bottom" constant="9" id="5Pz-4I-sRo"/>
+                        <constraint firstItem="ukB-mK-xCN" firstAttribute="width" secondItem="JNP-8f-66Y" secondAttribute="width" id="5p1-I3-B1j"/>
+                        <constraint firstItem="bY6-dr-6Wo" firstAttribute="width" secondItem="apE-kE-PDb" secondAttribute="width" id="86Z-65-sLM"/>
+                        <constraint firstItem="pvX-So-gUM" firstAttribute="leading" secondItem="ukB-mK-xCN" secondAttribute="leading" id="9bm-W3-7MF"/>
+                        <constraint firstItem="JNP-8f-66Y" firstAttribute="bottom" secondItem="ukB-mK-xCN" secondAttribute="bottom" id="B2c-XF-MhG"/>
+                        <constraint firstItem="HCk-dl-bfK" firstAttribute="top" secondItem="kxB-TK-7re" secondAttribute="top" id="D9u-bz-9pM"/>
+                        <constraint firstItem="pvX-So-gUM" firstAttribute="top" secondItem="xGp-i3-iEh" secondAttribute="top" id="DZR-bq-ewU"/>
+                        <constraint firstItem="JNP-8f-66Y" firstAttribute="top" secondItem="ukB-mK-xCN" secondAttribute="top" id="DgG-W7-ghh"/>
+                        <constraint firstItem="kxB-TK-7re" firstAttribute="trailing" secondItem="JNP-8f-66Y" secondAttribute="trailing" id="EXK-2O-HdY"/>
+                        <constraint firstItem="kxB-TK-7re" firstAttribute="bottom" secondItem="pvX-So-gUM" secondAttribute="bottom" id="FPm-mF-bzW"/>
+                        <constraint firstItem="XuS-1j-u2r" firstAttribute="top" secondItem="xGp-i3-iEh" secondAttribute="top" id="Fov-WS-yII"/>
+                        <constraint firstItem="apE-kE-PDb" firstAttribute="top" secondItem="Ush-BG-1D7" secondAttribute="top" constant="11" id="Fqb-fp-qcH"/>
+                        <constraint firstItem="PFk-FZ-VaS" firstAttribute="leading" secondItem="JNP-8f-66Y" secondAttribute="trailing" constant="10" id="HK7-IQ-3qf"/>
+                        <constraint firstItem="xGp-i3-iEh" firstAttribute="top" secondItem="WiL-9v-hY5" secondAttribute="bottom" constant="5" id="IOU-EM-qgO"/>
+                        <constraint firstItem="ukB-mK-xCN" firstAttribute="bottom" secondItem="WiL-9v-hY5" secondAttribute="bottom" id="IRK-HR-zy3"/>
+                        <constraint firstItem="04v-VI-NZu" firstAttribute="centerY" secondItem="5KV-Fl-vCN" secondAttribute="centerY" id="MOV-aI-MzX"/>
+                        <constraint firstItem="kxB-TK-7re" firstAttribute="top" secondItem="pvX-So-gUM" secondAttribute="top" id="Mv7-Ah-zby"/>
+                        <constraint firstItem="zPR-AN-uga" firstAttribute="bottom" secondItem="WiL-9v-hY5" secondAttribute="bottom" id="NJO-bA-p1u"/>
+                        <constraint firstAttribute="trailing" secondItem="PFk-FZ-VaS" secondAttribute="trailing" constant="10" id="PLP-BS-MmY"/>
+                        <constraint firstItem="Fwl-sH-Vxw" firstAttribute="top" secondItem="apE-kE-PDb" secondAttribute="top" id="Pje-Je-Y3A"/>
+                        <constraint firstItem="bY6-dr-6Wo" firstAttribute="centerX" secondItem="KFg-TB-M0h" secondAttribute="centerX" id="Rrd-zj-oFu"/>
+                        <constraint firstItem="pvX-So-gUM" firstAttribute="bottom" secondItem="xGp-i3-iEh" secondAttribute="bottom" id="SGl-CT-c3b"/>
+                        <constraint firstItem="ukB-mK-xCN" firstAttribute="top" secondItem="WiL-9v-hY5" secondAttribute="top" id="SL1-4b-6UQ"/>
+                        <constraint firstItem="Fwl-sH-Vxw" firstAttribute="leading" secondItem="Ush-BG-1D7" secondAttribute="leading" id="SlP-gQ-DEr"/>
+                        <constraint firstItem="XuS-1j-u2r" firstAttribute="leading" secondItem="xGp-i3-iEh" secondAttribute="leading" id="T8e-jV-RNT"/>
+                        <constraint firstItem="XuS-1j-u2r" firstAttribute="bottom" secondItem="xGp-i3-iEh" secondAttribute="bottom" id="UTB-iU-Msx"/>
+                        <constraint firstItem="KFg-TB-M0h" firstAttribute="centerY" secondItem="5KV-Fl-vCN" secondAttribute="centerY" id="VtL-CY-ug3"/>
+                        <constraint firstItem="zPR-AN-uga" firstAttribute="top" secondItem="WiL-9v-hY5" secondAttribute="top" id="WAE-LY-vsg"/>
+                        <constraint firstItem="PFk-FZ-VaS" firstAttribute="bottom" secondItem="JNP-8f-66Y" secondAttribute="bottom" id="Wzw-uN-HE3"/>
+                        <constraint firstItem="bY6-dr-6Wo" firstAttribute="centerY" secondItem="apE-kE-PDb" secondAttribute="centerY" id="XUo-dH-Iny"/>
+                        <constraint firstItem="VyR-Fg-Q0E" firstAttribute="centerX" secondItem="JNP-8f-66Y" secondAttribute="centerX" id="YWc-dE-dsL"/>
+                        <constraint firstItem="apE-kE-PDb" firstAttribute="centerX" secondItem="04v-VI-NZu" secondAttribute="centerX" id="Zk9-jv-OvT"/>
+                        <constraint firstItem="apE-kE-PDb" firstAttribute="leading" secondItem="Fwl-sH-Vxw" secondAttribute="trailing" id="b2f-CC-D5K"/>
+                        <constraint firstItem="JNP-8f-66Y" firstAttribute="leading" secondItem="ukB-mK-xCN" secondAttribute="trailing" constant="10" id="dFP-1Z-XZT"/>
+                        <constraint firstItem="5KV-Fl-vCN" firstAttribute="centerX" secondItem="VyR-Fg-Q0E" secondAttribute="centerX" id="dwp-Oq-Ufr"/>
+                        <constraint firstItem="1sC-0x-cI9" firstAttribute="leading" secondItem="Ush-BG-1D7" secondAttribute="leading" id="etT-br-uHJ"/>
+                        <constraint firstItem="zPR-AN-uga" firstAttribute="leading" secondItem="WiL-9v-hY5" secondAttribute="leading" id="fIv-ZJ-pZz"/>
+                        <constraint firstItem="5KV-Fl-vCN" firstAttribute="top" secondItem="ku6-3m-oap" secondAttribute="bottom" constant="17" id="gYc-hf-jId"/>
+                        <constraint firstItem="Fwl-sH-Vxw" firstAttribute="bottom" secondItem="apE-kE-PDb" secondAttribute="bottom" id="hEW-qO-7T3"/>
+                        <constraint firstItem="bY6-dr-6Wo" firstAttribute="height" secondItem="apE-kE-PDb" secondAttribute="height" id="hXB-Yh-QBE"/>
+                        <constraint firstItem="JNP-8f-66Y" firstAttribute="top" secondItem="5KV-Fl-vCN" secondAttribute="bottom" constant="10" id="hmO-4n-aHc"/>
+                        <constraint firstItem="HCk-dl-bfK" firstAttribute="trailing" secondItem="PFk-FZ-VaS" secondAttribute="trailing" id="i6K-SR-l4I"/>
+                        <constraint firstItem="ukB-mK-xCN" firstAttribute="width" secondItem="PFk-FZ-VaS" secondAttribute="width" id="oWu-Mk-sN9"/>
+                        <constraint firstItem="VyR-Fg-Q0E" firstAttribute="top" secondItem="Ush-BG-1D7" secondAttribute="top" constant="16" id="osy-BC-KU1"/>
+                        <constraint firstItem="WiL-9v-hY5" firstAttribute="leading" secondItem="Ush-BG-1D7" secondAttribute="leading" constant="15" id="qu5-oD-Auj"/>
+                        <constraint firstItem="HCk-dl-bfK" firstAttribute="leading" secondItem="PFk-FZ-VaS" secondAttribute="leading" id="rTq-jY-EGt"/>
+                        <constraint firstItem="1sC-0x-cI9" firstAttribute="top" secondItem="Ush-BG-1D7" secondAttribute="top" id="rl0-zj-sUC"/>
+                        <constraint firstItem="xGp-i3-iEh" firstAttribute="centerX" secondItem="WiL-9v-hY5" secondAttribute="centerX" id="rtt-4s-zTN"/>
+                        <constraint firstItem="HCk-dl-bfK" firstAttribute="bottom" secondItem="kxB-TK-7re" secondAttribute="bottom" id="sL0-Ld-1BE"/>
+                        <constraint firstItem="zPR-AN-uga" firstAttribute="trailing" secondItem="PFk-FZ-VaS" secondAttribute="trailing" id="szh-9J-vom"/>
+                        <constraint firstItem="KFg-TB-M0h" firstAttribute="centerX" secondItem="PFk-FZ-VaS" secondAttribute="centerX" id="uxi-ew-0c7"/>
+                        <constraint firstItem="XuS-1j-u2r" firstAttribute="trailing" secondItem="HCk-dl-bfK" secondAttribute="trailing" id="wR3-bj-Bay"/>
+                        <constraint firstItem="xGp-i3-iEh" firstAttribute="height" secondItem="WiL-9v-hY5" secondAttribute="height" id="xB9-ta-5KJ"/>
+                        <constraint firstItem="kxB-TK-7re" firstAttribute="leading" secondItem="JNP-8f-66Y" secondAttribute="leading" id="yF5-PA-Xm1"/>
+                        <constraint firstItem="PFk-FZ-VaS" firstAttribute="top" secondItem="JNP-8f-66Y" secondAttribute="top" id="z6n-Bs-s2e"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ush-BG-1D7" secondAttribute="bottom" constant="5" id="9OK-0y-0i2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ush-BG-1D7" secondAttribute="trailing" constant="10" id="MKg-FD-FoE"/>
+                <constraint firstItem="Ush-BG-1D7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="Vhz-fr-Vcf"/>
+                <constraint firstItem="Ush-BG-1D7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="n0w-Ro-lYT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="awayLabel" destination="KFg-TB-M0h" id="eq1-Yi-G3G"/>
+                <outlet property="awayLogoImageView" destination="bY6-dr-6Wo" id="TY2-Fd-HMi"/>
+                <outlet property="danImageView" destination="1sC-0x-cI9" id="ogc-lK-kGN"/>
+                <outlet property="drawButton" destination="JNP-8f-66Y" id="cNg-c0-RC8"/>
+                <outlet property="homeLabel" destination="04v-VI-NZu" id="MYw-jF-IhP"/>
+                <outlet property="homeLogoImageView" destination="apE-kE-PDb" id="Ljw-Tg-8C6"/>
+                <outlet property="letballLabel" destination="WiL-9v-hY5" id="Aac-ch-syv"/>
+                <outlet property="lostButton" destination="PFk-FZ-VaS" id="UBt-vt-7Zy"/>
+                <outlet property="matchStateLabel" destination="5KV-Fl-vCN" id="1ZB-Wj-qx6"/>
+                <outlet property="openTimeLabel" destination="ku6-3m-oap" id="hBR-Gb-Hqe"/>
+                <outlet property="rDrawButton" destination="kxB-TK-7re" id="u1B-AN-Ls3"/>
+                <outlet property="rLetballLabel" destination="xGp-i3-iEh" id="mcq-vl-iTl"/>
+                <outlet property="rLostButton" destination="HCk-dl-bfK" id="jHO-ri-Rok"/>
+                <outlet property="rWinButton" destination="pvX-So-gUM" id="Bsn-2o-OMl"/>
+                <outlet property="resultImageView" destination="pZo-nD-a9v" id="VUg-fD-eGD"/>
+                <outlet property="rqspfNotOpenLabel" destination="XuS-1j-u2r" id="T0t-fb-Ke7"/>
+                <outlet property="serialAndLeagueLabel" destination="VyR-Fg-Q0E" id="cdc-QA-bx1"/>
+                <outlet property="spfNotOpenLabel" destination="zPR-AN-uga" id="4oX-ES-5Mu"/>
+                <outlet property="winButton" destination="ukB-mK-xCN" id="JTl-NY-Mla"/>
+            </connections>
+            <point key="canvasLocation" x="148.80000000000001" y="-58.920539730134934"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Empty/teamLogo" width="80" height="80"/>
+        <image name="Forecast/bet_selected" width="180" height="60"/>
+        <image name="Forecast/dan" width="72" height="72"/>
+        <image name="Forecast/result_true" width="80" height="80"/>
+    </resources>
+</document>

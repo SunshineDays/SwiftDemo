@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FBLiveMatchShowNotificationCell" rowHeight="133" id="KGk-i7-Jjw" customClass="FBLiveMatchShowNotificationCell" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNx-XZ-bPf">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jts-bj-AjO">
+                                <rect key="frame" x="119" y="14" width="29" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客队" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu1-3K-bhR">
+                                <rect key="frame" x="198" y="14" width="29" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBLive/scored" translatesAutoresizingMaskIntoConstraints="NO" id="xql-8w-lyL">
+                                <rect key="frame" x="237" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="0JF-Lb-ZoE"/>
+                                    <constraint firstAttribute="height" constant="20" id="I4Q-hL-lmh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-74-RJG">
+                                <rect key="frame" x="156" y="14" width="9" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-z6-orY">
+                                <rect key="frame" x="181" y="14" width="9" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBLive/scored" translatesAutoresizingMaskIntoConstraints="NO" id="uFt-lN-EVA">
+                                <rect key="frame" x="89" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aNe-0q-g9q"/>
+                                    <constraint firstAttribute="width" constant="20" id="fkS-YW-aP2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-Pf-Ene">
+                                <rect key="frame" x="169" y="12" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.84705882349999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Bjj-VJ-54c"/>
+                            <constraint firstItem="Arh-Pf-Ene" firstAttribute="centerX" secondItem="QNx-XZ-bPf" secondAttribute="centerX" id="Bn4-jD-6mS"/>
+                            <constraint firstItem="uFt-lN-EVA" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="NsA-Sy-Umg"/>
+                            <constraint firstItem="xql-8w-lyL" firstAttribute="leading" secondItem="Cu1-3K-bhR" secondAttribute="trailing" constant="10" id="Ofj-Jp-XC3"/>
+                            <constraint firstItem="Cu1-3K-bhR" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="ZDO-R4-ydp"/>
+                            <constraint firstItem="Arh-Pf-Ene" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="bP4-0D-tgj"/>
+                            <constraint firstItem="Ngh-z6-orY" firstAttribute="leading" secondItem="Arh-Pf-Ene" secondAttribute="trailing" constant="4" id="cT7-Ek-WCP"/>
+                            <constraint firstItem="xql-8w-lyL" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="etf-gF-6xT"/>
+                            <constraint firstItem="Ngh-z6-orY" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="f9k-ov-d9p"/>
+                            <constraint firstItem="pgd-74-RJG" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="hDO-vr-8Sy"/>
+                            <constraint firstItem="Jts-bj-AjO" firstAttribute="leading" secondItem="uFt-lN-EVA" secondAttribute="trailing" constant="10" id="lK2-65-Rrd"/>
+                            <constraint firstItem="Arh-Pf-Ene" firstAttribute="leading" secondItem="pgd-74-RJG" secondAttribute="trailing" constant="4" id="qmK-6u-IpE"/>
+                            <constraint firstItem="Cu1-3K-bhR" firstAttribute="leading" secondItem="Ngh-z6-orY" secondAttribute="trailing" constant="8" id="sf0-SK-MHS"/>
+                            <constraint firstItem="Jts-bj-AjO" firstAttribute="centerY" secondItem="QNx-XZ-bPf" secondAttribute="centerY" id="u1S-2e-p7l"/>
+                            <constraint firstItem="pgd-74-RJG" firstAttribute="leading" secondItem="Jts-bj-AjO" secondAttribute="trailing" constant="8" id="z05-QS-yHP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QNx-XZ-bPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Ub-TQ-fRO"/>
+                    <constraint firstItem="QNx-XZ-bPf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H92-1z-i48"/>
+                    <constraint firstAttribute="trailing" secondItem="QNx-XZ-bPf" secondAttribute="trailing" id="YXM-Bd-Ry3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="awayLogoImageView" destination="xql-8w-lyL" id="CGW-AZ-yJw"/>
+                <outlet property="awayNameLabel" destination="Cu1-3K-bhR" id="si3-Te-19C"/>
+                <outlet property="awayScoreLabel" destination="Ngh-z6-orY" id="RSZ-EE-rJf"/>
+                <outlet property="homeLogoImageView" destination="uFt-lN-EVA" id="d0a-qr-ftR"/>
+                <outlet property="homeNameLabel" destination="Jts-bj-AjO" id="84U-bM-Kbm"/>
+                <outlet property="homeScoreLabel" destination="pgd-74-RJG" id="CWw-Sa-gqb"/>
+            </connections>
+            <point key="canvasLocation" x="47" y="97.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FBLive/scored" width="20" height="20"/>
+    </resources>
+</document>

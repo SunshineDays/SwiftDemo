@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="PiazzaLiveMatchCell" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="拜仁慕尼黑个" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXu-nO-s5t" userLabel="homeLabel">
+                        <rect key="frame" x="8" y="13" width="86.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="拜仁慕尼黑" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gg-Z3-mM8" userLabel="awayLabel">
+                        <rect key="frame" x="194" y="13" width="101.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-Kv-1hc" userLabel="homeLogo">
+                        <rect key="frame" x="98.5" y="8" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="08x-el-0Og"/>
+                            <constraint firstAttribute="width" constant="24" id="0bj-VL-YK1"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-Fx-dHC" userLabel="awayLogo">
+                        <rect key="frame" x="166" y="8" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="KEt-tB-HoY"/>
+                            <constraint firstAttribute="height" constant="24" id="YAZ-0O-ifw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19-35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4j-oW-Sgp" userLabel="timeLabel">
+                        <rect key="frame" x="128.5" y="13.5" width="31.5" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="KS9-mJ-oUP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 爆料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dap-Ou-zVt" userLabel="liaoLabel">
+                        <rect key="frame" x="340" y="13" width="28" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130条 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXO-Kl-rM5" userLabel="briefLabel">
+                        <rect key="frame" x="299.5" y="13" width="36.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBLive/blink-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Q9-rY-9hj" userLabel="blinkImageV">
+                        <rect key="frame" x="362" y="8" width="4" height="4"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="Xah-Q0-Tfu"/>
+                            <constraint firstAttribute="width" secondItem="8Q9-rY-9hj" secondAttribute="height" multiplier="1:1" id="cmi-m0-yFz"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o4j-oW-Sgp" firstAttribute="leading" secondItem="jeV-Kv-1hc" secondAttribute="trailing" constant="6" id="1x6-hr-kKY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8Q9-rY-9hj" secondAttribute="trailing" constant="2" id="4co-UB-IPP"/>
+                    <constraint firstItem="Dap-Ou-zVt" firstAttribute="leading" secondItem="TXO-Kl-rM5" secondAttribute="trailing" constant="4" id="CHG-Yk-cP5"/>
+                    <constraint firstItem="CKr-Fx-dHC" firstAttribute="leading" secondItem="o4j-oW-Sgp" secondAttribute="trailing" constant="6" id="D43-So-hAe"/>
+                    <constraint firstItem="o4j-oW-Sgp" firstAttribute="centerY" secondItem="CKr-Fx-dHC" secondAttribute="centerY" id="G3R-RO-Fe9"/>
+                    <constraint firstItem="5Gg-Z3-mM8" firstAttribute="leading" secondItem="CKr-Fx-dHC" secondAttribute="trailing" constant="4" id="aUy-LL-1R2"/>
+                    <constraint firstItem="jeV-Kv-1hc" firstAttribute="centerY" secondItem="o4j-oW-Sgp" secondAttribute="centerY" id="ffu-3l-bAN"/>
+                    <constraint firstItem="cXu-nO-s5t" firstAttribute="centerY" secondItem="jeV-Kv-1hc" secondAttribute="centerY" id="pr5-oC-YHh"/>
+                    <constraint firstItem="TXO-Kl-rM5" firstAttribute="leading" secondItem="5Gg-Z3-mM8" secondAttribute="trailing" constant="4" id="qCy-kD-aST"/>
+                    <constraint firstItem="8Q9-rY-9hj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="t0M-Ap-USq"/>
+                    <constraint firstItem="jeV-Kv-1hc" firstAttribute="leading" secondItem="cXu-nO-s5t" secondAttribute="trailing" constant="4" id="xbe-jz-Swu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dap-Ou-zVt" secondAttribute="trailing" constant="8" id="QTW-WY-tat"/>
+                <constraint firstItem="5Gg-Z3-mM8" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="RGc-K3-NWS"/>
+                <constraint firstItem="Dap-Ou-zVt" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="YrL-hU-6CC"/>
+                <constraint firstItem="TXO-Kl-rM5" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="ZQV-5i-a1r"/>
+                <constraint firstItem="CKr-Fx-dHC" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" constant="-10" id="aOR-bD-hny"/>
+                <constraint firstItem="CKr-Fx-dHC" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="mGq-KS-7K3"/>
+                <constraint firstItem="cXu-nO-s5t" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="8" id="sln-dM-4HD"/>
+            </constraints>
+            <connections>
+                <outlet property="awayLabel" destination="5Gg-Z3-mM8" id="NXH-Iu-aLj"/>
+                <outlet property="awayLogo" destination="CKr-Fx-dHC" id="t3f-LQ-JfT"/>
+                <outlet property="bLinkImageV" destination="8Q9-rY-9hj" id="g7V-Gu-e6w"/>
+                <outlet property="birefLabel" destination="TXO-Kl-rM5" id="itV-MT-jRD"/>
+                <outlet property="homeLabel" destination="cXu-nO-s5t" id="nUH-tC-aOA"/>
+                <outlet property="homeLogo" destination="jeV-Kv-1hc" id="Mz6-5A-km4"/>
+                <outlet property="liaoLabel" destination="Dap-Ou-zVt" id="CCK-KS-EWX"/>
+                <outlet property="timeLabel" destination="o4j-oW-Sgp" id="YtE-cH-lfE"/>
+            </connections>
+            <point key="canvasLocation" x="-249" y="51"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FBLive/blink-1" width="4" height="4"/>
+    </resources>
+</document>

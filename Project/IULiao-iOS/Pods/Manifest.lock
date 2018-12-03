@@ -1,0 +1,148 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.5.1)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - CRToast (0.0.9)
+  - DACircularProgress (2.3.1)
+  - DZNEmptyDataSet (1.8.1)
+  - FCFileManager (1.0.20)
+  - GRMustache (7.3.2):
+    - JRSwizzle (~> 1.0)
+  - IQKeyboardManager (6.0.6)
+  - JCore (1.2.2)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
+  - JRSwizzle (1.0)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.15.7)
+  - MWPhotoBrowser (2.1.2-0.2.0):
+    - DACircularProgress (~> 2.3.1)
+    - MBProgressHUD (~> 1.0)
+    - SDWebImage
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - Reveal-SDK (18)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SnapKit (4.0.1)
+  - SwiftyJSON (4.0.0)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.4.8.2):
+    - UMengUShare/Core
+  - XCGLogger (6.0.4):
+    - XCGLogger/Core (= 6.0.4)
+  - XCGLogger/Core (6.0.4):
+    - ObjcExceptionBridging
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire (~> 4.5.1)
+  - Charts (~> 3.1.1)
+  - CRToast
+  - DZNEmptyDataSet
+  - FCFileManager
+  - GRMustache
+  - IQKeyboardManager (~> 6.0.1)
+  - JPush
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.14)
+  - MWPhotoBrowser (from `https://github.com/lvxiaohai/MWPhotoBrowser.git`, commit `5ca965aae4563789213f5596ad7607185da31edf`)
+  - R.swift (~> 4.0.0)
+  - Reveal-SDK
+  - SDWebImage (~> 4.1.2)
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON (~> 4.0.0-alpha.1)
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI
+  - XCGLogger (~> 6.0.1)
+  - YYText (~> 1.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - Charts
+    - CRToast
+    - DACircularProgress
+    - DZNEmptyDataSet
+    - FCFileManager
+    - GRMustache
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - JRSwizzle
+    - MBProgressHUD
+    - MJRefresh
+    - ObjcExceptionBridging
+    - R.swift
+    - R.swift.Library
+    - Reveal-SDK
+    - SDWebImage
+    - SnapKit
+    - SwiftyJSON
+    - UMengAnalytics-NO-IDFA
+    - UMengUShare
+    - XCGLogger
+    - YYText
+
+EXTERNAL SOURCES:
+  MWPhotoBrowser:
+    :commit: 5ca965aae4563789213f5596ad7607185da31edf
+    :git: https://github.com/lvxiaohai/MWPhotoBrowser.git
+
+CHECKOUT OPTIONS:
+  MWPhotoBrowser:
+    :commit: 5ca965aae4563789213f5596ad7607185da31edf
+    :git: https://github.com/lvxiaohai/MWPhotoBrowser.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
+  GRMustache: ebe6104fd30a6d22c1f36af131e19e2dbf7cd292
+  IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
+  JCore: f14c0549968a63c22e246a4875aa9d428446f373
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MWPhotoBrowser: 8adaf6c394c51e6ea80a87280299b4257ab255cc
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Reveal-SDK: cce79388da3fd0bbb6ae19d769b906cfc3a33a89
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  XCGLogger: 4fc1bc0bdd5828cb8dc8da7a843536cda1bea8f3
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: c95fde422702babecbb869bbf9e436b0a51c07e0
+
+COCOAPODS: 1.5.3

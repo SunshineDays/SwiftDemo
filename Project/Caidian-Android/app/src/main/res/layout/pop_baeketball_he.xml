@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/edge_bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pop_hun_away"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="[8]赫塔菲"
+            android:textColor="@color/grayThree"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="VS" />
+
+        <TextView
+            android:id="@+id/pop_hun_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="[8]赫塔菲"
+            android:textColor="@color/grayThree"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/noLetSfBg"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="非        让          分"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/LetSfBg"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:text="让        分"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/edge_left"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/pop_spf_fixed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge_top_right_bottom"
+                        android:gravity="center"
+                        android:text="未开"
+                        android:textColor="@color/blueHigh"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:id="@+id/pop_spf_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge_left"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/pop_home_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="主负"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/pop_home_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="平"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pop_rq_spf_fixed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge_right_bottom"
+                        android:gravity="center"
+
+                        android:text="未开"
+                        android:textColor="@color/blueHigh"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:id="@+id/pop_rq_spf_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <TextView
+                            android:id="@+id/pop_home_let_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="让胜"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/pop_home_let_3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="让平"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/dxfBg"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="大         小            分"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/pop_dxf_fixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge_top_right_bottom"
+                    android:gravity="center"
+                    android:text="未开"
+                    android:textColor="@color/blueHigh"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/pop_dxf_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/edge_left"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/pop_he_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge_top_right_bottom"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/pop_he_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edge_top_right_bottom"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="80dp"
+                        android:background="@color/blue62AFFE"
+                        android:gravity="center"
+
+                        android:text="客      胜"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/homeWin"
+                        android:gravity="center"
+                        android:text="主          胜"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pop_sfc_fixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:background="@drawable/edge_top_right_bottom"
+                    android:gravity="center"
+                    android:text="未开"
+                    android:visibility="gone"
+                    android:textColor="@color/blueHigh" />
+
+
+                <LinearLayout
+                    android:id="@+id/pop_sfc_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="4"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/pop_hun_away_1_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="1:0"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_away_6_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="1:06:0"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_away_11_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="1:0 6:0"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/pop_hun_away_16_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="1:06:0"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_away_21_25"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="1:06:0"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_away_26"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="1:0 6:0"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/pop_hun_home_1_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="0:1"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_home_6_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="0:2"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_home_11_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="1:2"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/pop_hun_home_16_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="2:3"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_home_21_25"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="0:4"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/pop_hun_home_26"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="1:4"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/pop_hun_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/angle_round_cancle"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#FF5EA2BE"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/pop_hun_sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge_round_sure"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

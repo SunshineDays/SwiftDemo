@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FBMatchRecommendSelectHeaderView" id="iN0-l3-epB" customClass="FBMatchRecommendSelectHeaderView" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkW-tc-RvD">
+                    <rect key="frame" x="230" y="10" width="80" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="竞彩推荐">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-LX-Qwl">
+                    <rect key="frame" x="185" y="12.5" width="5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="kln-og-PpX"/>
+                        <constraint firstAttribute="height" constant="20" id="x1o-ol-pQF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXD-fU-AyH">
+                    <rect key="frame" x="65" y="10" width="80" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="TXO-Bd-wcE"/>
+                        <constraint firstAttribute="height" constant="25" id="YAK-xO-Pr7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="单场推荐">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GkW-tc-RvD" firstAttribute="leading" secondItem="ogi-LX-Qwl" secondAttribute="trailing" constant="40" id="12g-d6-xzU"/>
+                <constraint firstItem="ogi-LX-Qwl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="40c-V2-B26"/>
+                <constraint firstItem="ogi-LX-Qwl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CgK-zA-k0w"/>
+                <constraint firstItem="CXD-fU-AyH" firstAttribute="height" secondItem="GkW-tc-RvD" secondAttribute="height" id="ENI-HF-AGD"/>
+                <constraint firstItem="ogi-LX-Qwl" firstAttribute="leading" secondItem="CXD-fU-AyH" secondAttribute="trailing" constant="40" id="IB9-do-5c2"/>
+                <constraint firstItem="CXD-fU-AyH" firstAttribute="width" secondItem="GkW-tc-RvD" secondAttribute="width" id="Mza-w9-dzq"/>
+                <constraint firstItem="CXD-fU-AyH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TQm-Ar-dub"/>
+                <constraint firstItem="GkW-tc-RvD" firstAttribute="top" secondItem="CXD-fU-AyH" secondAttribute="top" id="nDU-ky-wTm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="footballButton" destination="CXD-fU-AyH" id="Xrm-wV-BUg"/>
+                <outlet property="jingcaiButton" destination="GkW-tc-RvD" id="AK9-iN-aTV"/>
+            </connections>
+            <point key="canvasLocation" x="47.5" y="-174"/>
+        </view>
+    </objects>
+</document>

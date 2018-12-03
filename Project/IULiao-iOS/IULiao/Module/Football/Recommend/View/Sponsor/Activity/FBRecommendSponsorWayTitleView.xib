@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FBRecommendSponsorWayTitleView" id="iN0-l3-epB" customClass="FBRecommendSponsorWayTitleView" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCj-qG-iY6">
+                    <rect key="frame" x="10" y="10" width="2" height="12"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="4Iv-9i-er9"/>
+                        <constraint firstAttribute="width" constant="2" id="6FT-UZ-jEH"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-4L-6sH">
+                    <rect key="frame" x="20" y="8" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐QQ群：547988274" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLP-U2-Ek8">
+                    <rect key="frame" x="221" y="9" width="144" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.9882352941176471" green="0.60392156862745094" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBRecommend2/football" translatesAutoresizingMaskIntoConstraints="NO" id="Hp5-3e-dMy">
+                    <rect key="frame" x="10" y="40" width="170" height="197"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Hp5-3e-dMy" secondAttribute="height" multiplier="173:200" id="5nM-I7-Nao"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBRecommend2/lottery" translatesAutoresizingMaskIntoConstraints="NO" id="72U-we-dFA">
+                    <rect key="frame" x="195" y="40" width="170" height="197"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="足球推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrC-Z2-sCo">
+                    <rect key="frame" x="10" y="40" width="170" height="88.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HrC-Z2-sCo" secondAttribute="height" multiplier="173:90" id="i7f-LZ-acc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="竞彩推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aST-fo-vNa">
+                    <rect key="frame" x="195" y="40" width="170" height="88.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aST-fo-vNa" secondAttribute="height" multiplier="173:90" id="Opy-MI-BxC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欧赔、压盘、大小球标准盘与附加盘推荐。每周按盈利高低做出奖励，冲击连红更有万元大奖。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-wX-VI3">
+                    <rect key="frame" x="25" y="148.5" width="140" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模拟竞彩足球串关玩法进行投注推荐，玩法中含有非让球、让球赛事。串关组合赔率相当可观。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUM-gt-dTX">
+                    <rect key="frame" x="210" y="148.5" width="140" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoR-IX-KlO">
+                    <rect key="frame" x="0.0" y="252" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="bRD-Cw-gEQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ax-eZ-diS">
+                    <rect key="frame" x="10" y="267" width="2" height="12"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="6K2-dh-VMP"/>
+                        <constraint firstAttribute="height" constant="12" id="Zor-Jv-wvl"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精彩活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVS-DZ-UQP">
+                    <rect key="frame" x="20" y="265" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-7z-GiN">
+                    <rect key="frame" x="10" y="40" width="170" height="197"/>
+                    <connections>
+                        <action selector="footballAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gNt-dw-wCM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReR-cg-edh">
+                    <rect key="frame" x="195" y="40" width="170" height="197"/>
+                    <connections>
+                        <action selector="lotteryAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="5jq-C8-wva"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Ax-eZ-diS" firstAttribute="top" secondItem="ZoR-IX-KlO" secondAttribute="bottom" constant="10" id="0RA-EQ-iLQ"/>
+                <constraint firstItem="Hp5-3e-dMy" firstAttribute="top" secondItem="a2E-4L-6sH" secondAttribute="bottom" constant="15" id="1ky-uy-OPp"/>
+                <constraint firstItem="72U-we-dFA" firstAttribute="leading" secondItem="Hp5-3e-dMy" secondAttribute="trailing" constant="15" id="1sT-YA-2T8"/>
+                <constraint firstItem="IUM-gt-dTX" firstAttribute="trailing" secondItem="72U-we-dFA" secondAttribute="trailing" constant="-15" id="3Tk-B4-6Lu"/>
+                <constraint firstItem="ReR-cg-edh" firstAttribute="height" secondItem="72U-we-dFA" secondAttribute="height" id="5s0-zJ-cnP"/>
+                <constraint firstItem="6Ia-7z-GiN" firstAttribute="top" secondItem="Hp5-3e-dMy" secondAttribute="top" id="66o-lm-pXy"/>
+                <constraint firstItem="HrC-Z2-sCo" firstAttribute="trailing" secondItem="Hp5-3e-dMy" secondAttribute="trailing" id="7Fc-wS-eEW"/>
+                <constraint firstItem="Rf3-wX-VI3" firstAttribute="trailing" secondItem="Hp5-3e-dMy" secondAttribute="trailing" constant="-15" id="AeA-Mo-8aS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZoR-IX-KlO" secondAttribute="trailing" id="BZ1-4l-3k2"/>
+                <constraint firstItem="sLP-U2-Ek8" firstAttribute="centerY" secondItem="a2E-4L-6sH" secondAttribute="centerY" id="E8Z-3Q-VYb"/>
+                <constraint firstItem="HrC-Z2-sCo" firstAttribute="top" secondItem="Hp5-3e-dMy" secondAttribute="top" id="GIa-yo-m8a"/>
+                <constraint firstItem="Rf3-wX-VI3" firstAttribute="leading" secondItem="Hp5-3e-dMy" secondAttribute="leading" constant="15" id="I1J-O0-nFT"/>
+                <constraint firstItem="6Ia-7z-GiN" firstAttribute="height" secondItem="Hp5-3e-dMy" secondAttribute="height" id="N1Z-yz-tnC"/>
+                <constraint firstItem="lCj-qG-iY6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Q0n-bo-NFk"/>
+                <constraint firstItem="lCj-qG-iY6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="REt-mb-kVh"/>
+                <constraint firstItem="a2E-4L-6sH" firstAttribute="leading" secondItem="lCj-qG-iY6" secondAttribute="trailing" constant="8" id="Tx6-Wf-CrC"/>
+                <constraint firstItem="CVS-DZ-UQP" firstAttribute="leading" secondItem="7Ax-eZ-diS" secondAttribute="trailing" constant="8" id="V2L-u7-3PC"/>
+                <constraint firstItem="6Ia-7z-GiN" firstAttribute="width" secondItem="Hp5-3e-dMy" secondAttribute="width" id="V3i-TL-IMi"/>
+                <constraint firstItem="72U-we-dFA" firstAttribute="width" secondItem="Hp5-3e-dMy" secondAttribute="width" id="YrL-UM-RKi"/>
+                <constraint firstItem="aST-fo-vNa" firstAttribute="leading" secondItem="72U-we-dFA" secondAttribute="leading" id="aoy-yk-eaM"/>
+                <constraint firstItem="ZoR-IX-KlO" firstAttribute="top" secondItem="Hp5-3e-dMy" secondAttribute="bottom" constant="15" id="dFL-dH-1KX"/>
+                <constraint firstItem="aST-fo-vNa" firstAttribute="top" secondItem="72U-we-dFA" secondAttribute="top" id="dSo-9e-ABp"/>
+                <constraint firstItem="Hp5-3e-dMy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="deI-MC-ufp"/>
+                <constraint firstItem="IUM-gt-dTX" firstAttribute="leading" secondItem="72U-we-dFA" secondAttribute="leading" constant="15" id="eni-Ig-yzl"/>
+                <constraint firstItem="ReR-cg-edh" firstAttribute="top" secondItem="72U-we-dFA" secondAttribute="top" id="frw-xL-b3j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sLP-U2-Ek8" secondAttribute="trailing" constant="10" id="gnk-K9-TBh"/>
+                <constraint firstItem="6Ia-7z-GiN" firstAttribute="leading" secondItem="Hp5-3e-dMy" secondAttribute="leading" id="hrD-od-i64"/>
+                <constraint firstItem="72U-we-dFA" firstAttribute="centerY" secondItem="Hp5-3e-dMy" secondAttribute="centerY" id="i6g-oy-7bA"/>
+                <constraint firstItem="HrC-Z2-sCo" firstAttribute="leading" secondItem="Hp5-3e-dMy" secondAttribute="leading" id="lzk-CW-RwD"/>
+                <constraint firstItem="ReR-cg-edh" firstAttribute="width" secondItem="72U-we-dFA" secondAttribute="width" id="mEj-tn-uV8"/>
+                <constraint firstItem="ReR-cg-edh" firstAttribute="leading" secondItem="72U-we-dFA" secondAttribute="leading" id="n1X-kI-1dD"/>
+                <constraint firstItem="IUM-gt-dTX" firstAttribute="top" secondItem="aST-fo-vNa" secondAttribute="bottom" constant="20" id="nSg-8r-yfe"/>
+                <constraint firstItem="72U-we-dFA" firstAttribute="height" secondItem="Hp5-3e-dMy" secondAttribute="height" id="nec-1a-lwt"/>
+                <constraint firstItem="ZoR-IX-KlO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uUz-BY-uSo"/>
+                <constraint firstItem="aST-fo-vNa" firstAttribute="trailing" secondItem="72U-we-dFA" secondAttribute="trailing" id="ucG-3K-tb4"/>
+                <constraint firstItem="a2E-4L-6sH" firstAttribute="centerY" secondItem="lCj-qG-iY6" secondAttribute="centerY" id="vrB-SQ-k6u"/>
+                <constraint firstItem="Rf3-wX-VI3" firstAttribute="top" secondItem="HrC-Z2-sCo" secondAttribute="bottom" constant="20" id="xZ6-mR-Vbt"/>
+                <constraint firstItem="7Ax-eZ-diS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="yVy-yA-CIC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="72U-we-dFA" secondAttribute="trailing" constant="10" id="yZG-vw-Iqe"/>
+                <constraint firstItem="CVS-DZ-UQP" firstAttribute="centerY" secondItem="7Ax-eZ-diS" secondAttribute="centerY" id="yvd-wX-Uxr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="footballButton" destination="6Ia-7z-GiN" id="ce5-8a-M6q"/>
+                <outlet property="lotteryButton" destination="ReR-cg-edh" id="HQq-kV-WDL"/>
+                <outlet property="qqLabel" destination="sLP-U2-Ek8" id="Z49-no-xXm"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-133.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FBRecommend2/football" width="172" height="200"/>
+        <image name="FBRecommend2/lottery" width="172" height="200"/>
+    </resources>
+</document>

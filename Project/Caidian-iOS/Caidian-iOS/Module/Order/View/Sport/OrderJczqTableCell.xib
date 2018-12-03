@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderJczqTableCell" id="sJ0-cV-oa5" customClass="OrderJczqTableCell" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sJ0-cV-oa5" id="9eq-ts-bPT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq3-D0-M1c">
+                        <rect key="frame" x="1" y="0.0" width="40" height="42.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="hrp-o0-0Fx"/>
+                        </constraints>
+                        <string key="text">周一
+001</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开赛" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CJ-AK-gJj">
+                        <rect key="frame" x="137.5" y="0.0" width="50" height="42.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Rc9-r3-2Mg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客队" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1G-Kg-MYg">
+                        <rect key="frame" x="188.5" y="0.0" width="94.5" height="42.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投注" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-YD-aaT">
+                        <rect key="frame" x="284" y="0.0" width="90" height="42.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="t7D-vr-Mgr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFd-mR-T7d">
+                        <rect key="frame" x="42" y="0.0" width="94.5" height="42.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Order/must-bet" translatesAutoresizingMaskIntoConstraints="NO" id="uTB-hd-IQZ">
+                        <rect key="frame" x="1" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="uTB-hd-IQZ" secondAttribute="height" id="Apd-Oa-AyU"/>
+                            <constraint firstAttribute="width" constant="20" id="ubS-14-1th"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="sFd-mR-T7d" firstAttribute="leading" secondItem="dq3-D0-M1c" secondAttribute="trailing" constant="1" id="0uS-TM-fCP">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstItem="WTF-YD-aaT" firstAttribute="top" secondItem="dq3-D0-M1c" secondAttribute="top" id="5RS-WN-nwq"/>
+                    <constraint firstItem="9CJ-AK-gJj" firstAttribute="leading" secondItem="sFd-mR-T7d" secondAttribute="trailing" constant="1" id="67z-Uy-cWM">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstItem="p1G-Kg-MYg" firstAttribute="top" secondItem="dq3-D0-M1c" secondAttribute="top" id="80n-5i-rin"/>
+                    <constraint firstItem="WTF-YD-aaT" firstAttribute="leading" secondItem="p1G-Kg-MYg" secondAttribute="trailing" constant="1" id="Jc8-bM-abz">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="dq3-D0-M1c" secondAttribute="bottom" constant="1" id="KSD-2j-tZn">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstItem="uTB-hd-IQZ" firstAttribute="top" secondItem="dq3-D0-M1c" secondAttribute="top" id="LFZ-bp-8n6"/>
+                    <constraint firstItem="uTB-hd-IQZ" firstAttribute="leading" secondItem="dq3-D0-M1c" secondAttribute="leading" id="PwP-rX-Dv9"/>
+                    <constraint firstItem="p1G-Kg-MYg" firstAttribute="leading" secondItem="9CJ-AK-gJj" secondAttribute="trailing" constant="1" id="TRC-u7-TgE">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstItem="WTF-YD-aaT" firstAttribute="bottom" secondItem="dq3-D0-M1c" secondAttribute="bottom" id="WYk-2X-jWU"/>
+                    <constraint firstItem="dq3-D0-M1c" firstAttribute="leading" secondItem="9eq-ts-bPT" secondAttribute="leading" constant="1" id="Z7Q-7x-UAP">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstItem="p1G-Kg-MYg" firstAttribute="bottom" secondItem="dq3-D0-M1c" secondAttribute="bottom" id="cgh-6k-FWd"/>
+                    <constraint firstItem="9CJ-AK-gJj" firstAttribute="top" secondItem="dq3-D0-M1c" secondAttribute="top" id="cyc-z5-bXG"/>
+                    <constraint firstItem="sFd-mR-T7d" firstAttribute="top" secondItem="dq3-D0-M1c" secondAttribute="top" id="iAy-fu-XBL"/>
+                    <constraint firstItem="dq3-D0-M1c" firstAttribute="top" secondItem="9eq-ts-bPT" secondAttribute="top" id="nfA-wl-oxK"/>
+                    <constraint firstItem="sFd-mR-T7d" firstAttribute="bottom" secondItem="dq3-D0-M1c" secondAttribute="bottom" id="oxR-9y-9rM"/>
+                    <constraint firstAttribute="trailing" secondItem="WTF-YD-aaT" secondAttribute="trailing" constant="1" id="v4K-74-NPP">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </constraint>
+                    <constraint firstItem="p1G-Kg-MYg" firstAttribute="width" secondItem="sFd-mR-T7d" secondAttribute="width" id="wfK-b0-arm"/>
+                    <constraint firstItem="9CJ-AK-gJj" firstAttribute="bottom" secondItem="dq3-D0-M1c" secondAttribute="bottom" id="zgb-tN-1ul"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="awayLabel" destination="p1G-Kg-MYg" id="PlD-a8-pze"/>
+                <outlet property="betLabel" destination="WTF-YD-aaT" id="N5R-33-IHZ"/>
+                <outlet property="homeLabel" destination="sFd-mR-T7d" id="gjW-fd-sDx"/>
+                <outlet property="mustBetImageView" destination="uTB-hd-IQZ" id="Z52-rg-NwL"/>
+                <outlet property="scoreLabel" destination="9CJ-AK-gJj" id="MAy-Z0-sp4"/>
+                <outlet property="xidLabel" destination="dq3-D0-M1c" id="9ME-sL-ilI"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="-125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Order/must-bet" width="25" height="25"/>
+    </resources>
+</document>

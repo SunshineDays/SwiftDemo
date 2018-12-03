@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/item_copy_order_root"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp">
+
+            <com.caidian310.view.custom.RoundImageView
+                android:id="@+id/item_copy_order_header_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="13dp"
+                android:src="@mipmap/icon_no_user" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/item_copy_order_header_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_copy_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:text="-"
+                    android:textColor="@color/gray4D4D4D"
+                    android:textSize="12dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="16dp"
+                    app:cardBackgroundColor="@color/red"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+
+                        <TextView
+
+                            android:id="@+id/item_copy_order_ten_order"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="近7天"
+                            android:textColor="@color/white"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/item_copy_order_ten_order_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="-中-"
+                            android:textColor="@color/red"
+                            android:textSize="10dp" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.caidian310.view.custom.RoundImageView
+                android:id="@+id/item_copy_order_icon"
+                android:layout_width="18dp"
+
+                android:layout_height="18dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/icon_types_jczq"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_copy_order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="预计回报率 :"
+                android:textColor="@color/grayB3B3B3"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/item_copy_order_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/item_copy_order_text"
+                android:gravity="center"
+                android:text="- 倍"
+                android:textColor="@color/grayB3B3B3"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/item_copy_order_end_time"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical|right"
+                android:text="截止 :"
+                android:textColor="@color/grayB3B3B3"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/item_copy_order_buy_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="自购 - 元"
+                android:textColor="@color/gray4D4D4D"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/item_copy_order_person"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/item_copy_order_buy_money"
+                android:gravity="center"
+                android:text="自购 - 元"
+                android:textColor="@color/gray4D4D4D"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/item_copy_order_commit"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+
+                android:background="@drawable/round_logo_color"
+                android:gravity="center"
+                android:text="立即跟单"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/item_copy_order_today_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:src="@mipmap/icon_today_hot" />
+
+</RelativeLayout>

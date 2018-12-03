@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/follow_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/grayThree"
+            android:text="王大帅真帅啊" />
+
+        <TextView
+            android:id="@+id/follow_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/grayThree"
+            android:text="12323元" />
+
+        <TextView
+            android:id="@+id/follow_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/grayThree"
+            android:text="12323元" />
+    </RelativeLayout>
+
+</LinearLayout>

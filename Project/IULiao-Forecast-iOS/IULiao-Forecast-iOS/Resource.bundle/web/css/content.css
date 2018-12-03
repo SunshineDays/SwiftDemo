@@ -1,0 +1,265 @@
+@charset "utf-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+textarea{overflow:auto}
+optgroup{font-weight:700}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+
+body {
+    font-family:helvetica;
+    padding-top:20px;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;    
+}
+
+.clearfix:after,
+.clear:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 头部 */
+#header {
+    margin: 0 15px;
+}
+#header .title {
+    font-size: 21px;
+    font-weight: bolder;
+    color: #000;
+    margin: 0 0 5px
+}
+#header .subtitle {
+    position: relative;
+    font-size: 11px;
+    color: #747474;
+}
+#header .subtitle span.author {
+    margin-right: 10px;
+}
+#header .subtitle a.author {
+    text-decoration: none;
+    color: #0091FF;
+}
+#header .subtitle .right {
+    float: right;
+}
+#header .subtitle .comment-hits {
+    margin-right: 5px;
+}
+#header .subtitle i {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: -2px;
+    width: 12px;
+    height: 12px;
+}
+#header .subtitle .comment-hits-icon {
+    background: url('../img/icon-hit.png') no-repeat;
+    background-size: 12px;
+}
+#header .subtitle .comment-count-icon {
+    vertical-align: -3px;
+    background: url('../img/icon-comment.png') no-repeat;
+    background-size: 10px;
+}
+
+/* content */
+#content {
+    position: relative;
+    overflow: hidden;
+	font-size: 16px;
+	word-wrap: break-word;
+    text-align: justify;
+	margin: 15px;
+	color: #505050;
+	line-height: 1.647;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#content video {
+    width: 100%;
+}
+#content .table-wrap {
+    width: 100%;
+    overflow-x: scroll;
+}
+#content table {
+    margin: 0 auto;
+    max-width: 300%;
+    font-size: 14px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#content table td {
+    border: 1px solid #dadada;
+    padding: 2px;
+    width: 1px; /* 自动宽度 */
+    white-space: nowrap;
+    vertical-align: middle;
+}
+#content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    background: #efefef;
+    transition: max-width 0.3s ease-in 0s;
+}
+#content img.placeholder{
+    max-width: 100px;
+}
+#content .img-wrap ~ br {
+    display: none;
+}
+#content span[href] {
+    color: #555;
+}
+#content p {
+	word-wrap: break-word;
+    text-align: justify;
+    margin: 1em 0;
+    color: #505050;
+    line-height: 1.647 !important;
+    background-color: initial !important;
+}
+/* tags */
+#tags {
+    display: none;
+    margin: 15px 10px;
+}
+#tags a {
+    color: #666;
+    float: left;
+    font-size: 14px;
+    padding: 5px 8px;
+    margin: 5px;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ebebeb;
+}
+
+/* relatives */
+#relatives {
+    display: none;
+    padding: 10px 15px 5px;
+    margin: 15px;
+    background: #fff;
+    border: 1px solid #EBEBEB;
+}
+#relatives h3 {
+    font-size: 12px;
+    margin: 0px;
+    padding-right: 0px;
+    color: #aaa;
+}
+#relatives ul {
+    padding: 0px;
+    margin:0px;
+}
+#relatives ul li {
+    border-bottom: 1px solid #F2F2F2;
+    list-style: none;
+}
+#relatives ul li:last-child{
+    border: none;
+}
+#relatives ul li a{
+    position: relative;
+    padding-left: 16px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;    
+}
+#relatives ul li a:before{
+    position: absolute;
+    top: 18px;
+    left: 6px;
+    display: block;
+    content: "";
+    background: #444;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;    
+}
+
+/* iPhone 6 */
+@media screen and (min-device-width: 375px) and (max-device-width:667px){
+	#header .title {
+		font-size: 23px;
+	}
+	#header .subtitle {
+		font-size: 12px;
+	}
+	#content {
+		font-size: 17px;
+	}
+}
+
+/* iPhone 6 Plus */
+@media screen and (min-device-width: 414px) and (max-device-width:736px){
+	#header .title {
+		font-size: 26px;
+	}
+	#header .subtitle {
+		font-size: 14px;
+	}
+	#content {
+		font-size: 19px;
+	}
+}
+
+@media screen and (min-device-width: 736px){
+	#header .title {
+		text-align: center;
+	}
+}

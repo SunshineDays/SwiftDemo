@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_tab_frame_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D0D0D0"/>
+    <com.caidian310.view.custom.TabFragmentHost
+        android:id="@+id/main_tab_host"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:id="@+id/main_tab_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"/>
+    </com.caidian310.view.custom.TabFragmentHost>
+</LinearLayout>

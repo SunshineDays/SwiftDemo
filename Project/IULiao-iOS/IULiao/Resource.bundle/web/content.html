@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <link href="web/css/content.css" rel="stylesheet"/>
+    <script src="web/js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="web/js/content.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id="log" style="display:none;"></div>
+    <header id="header">
+        {{# title}}
+            <h1 class="title">{{title}}</h1>
+        {{/ title}}
+        <div class="subtitle">
+            {{# author}}
+                {{# user}}
+                    <a class="author" href="zone://{{user.userID}}">{{author}}</a>
+                {{/ user}}
+                {{^ user}}
+                    <span class="author">{{author}}</span>
+                {{/ user}}
+            {{/ author}}
+            {{# time}}
+                <time>{{time}}</time>
+            {{/ time}}
+            <div class="right">
+                <span class="comment-hits"><i class="comment-hits-icon"></i>{{hits}}</span>
+            </div>
+        </div>
+    </header>
+    <article id="content">
+        {{# content}}
+            {{{content}}}
+        {{/ content}}
+    </article>
+    
+    <section id="tags" class="clearfix">
+        <!-- <a href="url">标签</a> -->
+    </section>
+
+    <section id="relatives">
+        <h3>有料推荐</h3>
+        <ul>
+            <!-- <li><a href="url">title</a></li> -->
+        </ul>
+    </section>
+    
+</body>
+
+</html>

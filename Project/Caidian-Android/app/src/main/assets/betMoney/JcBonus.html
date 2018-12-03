@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--引入外部文件的方式-->
+    <script type="text/javascript" src="jcbonus.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+</head>
+<body>
+<script>
+        <!--竞彩足球-->
+        function getJczqBetCount(opts,type,mutil) {
+
+            var bouns = calc_jczq(opts, type,mutil);
+            AndroidWebView.getBetMoneyFromJs(bouns.min,bouns.max,bouns.codeCount);
+         }
+
+
+         function getJclqBetCount(opts,type,mutil) {
+
+            var bouns = calc_jclq(opts, type,mutil);
+            AndroidWebView.getBetMoneyFromJs(bouns.min,bouns.max,bouns.codeCount);
+         }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="RecommendCartItemView" id="iN0-l3-epB" customClass="RecommendCartItemView" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart-white" translatesAutoresizingMaskIntoConstraints="NO" id="re9-jD-VlZ">
+                    <rect key="frame" x="18" y="10" width="24" height="24"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKA-Ey-lKw">
+                    <rect key="frame" x="32" y="10" width="12" height="12"/>
+                    <color key="backgroundColor" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XKA-Ey-lKw" secondAttribute="height" multiplier="1:1" id="5V0-nw-JBa"/>
+                        <constraint firstAttribute="width" constant="12" id="83Q-4M-x8a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpn-d7-770">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                    <connections>
+                        <action selector="cartAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fTu-Uw-l1V"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="re9-jD-VlZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5eX-a4-eT9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Lpn-d7-770" secondAttribute="bottom" id="5lW-Nm-BIq"/>
+                <constraint firstItem="Lpn-d7-770" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MW6-bR-0sL"/>
+                <constraint firstItem="Lpn-d7-770" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PII-QJ-iG5"/>
+                <constraint firstItem="XKA-Ey-lKw" firstAttribute="trailing" secondItem="re9-jD-VlZ" secondAttribute="trailing" constant="2" id="Ph2-Cq-HS8"/>
+                <constraint firstItem="Lpn-d7-770" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QRb-sC-AsS"/>
+                <constraint firstItem="XKA-Ey-lKw" firstAttribute="top" secondItem="re9-jD-VlZ" secondAttribute="top" id="fcz-gX-f6z"/>
+                <constraint firstItem="re9-jD-VlZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mZG-yo-SVR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="numberLabel" destination="XKA-Ey-lKw" id="QD0-2p-FZm"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart-white" width="24" height="24"/>
+    </resources>
+</document>

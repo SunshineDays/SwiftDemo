@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCs-7E-LXx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="e2h-X7-O2V">
+            <objects>
+                <navigationController storyboardIdentifier="LeagueNav" id="MCs-7E-LXx" customClass="BaseNavigationController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xpk-Z2-1bB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x0O-85-1bw" kind="relationship" relationship="rootViewController" id="08x-Pr-9xq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mti-ih-p6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-702" y="-166"/>
+        </scene>
+        <!--资料库-->
+        <scene sceneID="ZRF-4J-1bV">
+            <objects>
+                <viewController storyboardIdentifier="FBLeagueHomeViewController" id="x0O-85-1bw" customClass="FBLeagueHomeViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Ns1-Gd-eDN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-xT-to7">
+                                <rect key="frame" x="-20" y="69" width="100" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门联赛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbz-Ys-0Hf">
+                                        <rect key="frame" x="30" y="5" width="54" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EYb-Yz-dzG"/>
+                                    <constraint firstAttribute="height" constant="26" id="FfY-T9-DdE"/>
+                                    <constraint firstItem="qbz-Ys-0Hf" firstAttribute="leading" secondItem="4iu-xT-to7" secondAttribute="leading" constant="30" id="jmb-ig-aVh"/>
+                                    <constraint firstItem="qbz-Ys-0Hf" firstAttribute="centerY" secondItem="4iu-xT-to7" secondAttribute="centerY" id="pkV-LE-4YF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yYM-ho-bn2">
+                                <rect key="frame" x="0.0" y="100" width="375" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="Kx9-QJ-Rw1"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="IpG-YT-a9t">
+                                    <size key="itemSize" width="92" height="46"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LeagueHotCollectionViewCell" reuseIdentifier="FBLeagueHomeHotCollectionViewCell" id="yOv-tt-gBD" customClass="FBLeagueHotCollectionViewCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Empty/image-40x40" translatesAutoresizingMaskIntoConstraints="NO" id="5CL-IQ-Vsr">
+                                                    <rect key="frame" x="3.5" y="4" width="38" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="1Sh-my-U0h"/>
+                                                        <constraint firstAttribute="width" constant="38" id="xDc-Pc-UEb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联赛名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-hU-Btt">
+                                                    <rect key="frame" x="47.5" y="16" width="37" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="5CL-IQ-Vsr" firstAttribute="leading" secondItem="yOv-tt-gBD" secondAttribute="leading" constant="4" id="4z9-HI-K4R"/>
+                                            <constraint firstItem="5CL-IQ-Vsr" firstAttribute="centerY" secondItem="yOv-tt-gBD" secondAttribute="centerY" id="TsN-9y-VYN"/>
+                                            <constraint firstItem="BYX-hU-Btt" firstAttribute="centerY" secondItem="yOv-tt-gBD" secondAttribute="centerY" id="fXn-hl-uE8"/>
+                                            <constraint firstItem="BYX-hU-Btt" firstAttribute="leading" secondItem="5CL-IQ-Vsr" secondAttribute="trailing" constant="6" id="vRq-0o-kVS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="leagueNameLabel" destination="BYX-hU-Btt" id="EUA-5W-n3z"/>
+                                            <outlet property="logoImageRightConstraint" destination="vRq-0o-kVS" id="TbD-bH-tji"/>
+                                            <outlet property="logoImageView" destination="5CL-IQ-Vsr" id="ri7-3e-1qh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b02-SM-hJB">
+                                <rect key="frame" x="0.0" y="192" width="375" height="475"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yYM-ho-bn2" firstAttribute="leading" secondItem="ySo-yv-Th9" secondAttribute="leading" id="AET-l1-0P6"/>
+                            <constraint firstItem="b02-SM-hJB" firstAttribute="leading" secondItem="ySo-yv-Th9" secondAttribute="leading" id="Ngj-YW-lDU"/>
+                            <constraint firstItem="ySo-yv-Th9" firstAttribute="trailing" secondItem="b02-SM-hJB" secondAttribute="trailing" id="Weg-om-WhY"/>
+                            <constraint firstItem="yYM-ho-bn2" firstAttribute="top" secondItem="4iu-xT-to7" secondAttribute="bottom" constant="5" id="ah4-Nt-iA6"/>
+                            <constraint firstItem="b02-SM-hJB" firstAttribute="top" secondItem="yYM-ho-bn2" secondAttribute="bottom" id="eEY-VV-pO0"/>
+                            <constraint firstItem="ySo-yv-Th9" firstAttribute="bottom" secondItem="b02-SM-hJB" secondAttribute="bottom" id="l9K-4d-1aK"/>
+                            <constraint firstItem="4iu-xT-to7" firstAttribute="top" secondItem="ySo-yv-Th9" secondAttribute="top" constant="5" id="lQl-lG-P8B"/>
+                            <constraint firstItem="4iu-xT-to7" firstAttribute="leading" secondItem="ySo-yv-Th9" secondAttribute="leading" constant="-20" id="x3d-wb-btU"/>
+                            <constraint firstItem="ySo-yv-Th9" firstAttribute="trailing" secondItem="yYM-ho-bn2" secondAttribute="trailing" id="xtW-0f-jIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ySo-yv-Th9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="资料库" id="DNZ-BM-cEf"/>
+                    <connections>
+                        <outlet property="bottomView" destination="b02-SM-hJB" id="0ac-Ho-PGS"/>
+                        <outlet property="collectionView" destination="yYM-ho-bn2" id="6sU-4P-AzU"/>
+                        <outlet property="hotLeagueView" destination="4iu-xT-to7" id="ct4-Qi-eDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuy-rp-eOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="-167.76611694152925"/>
+        </scene>
+        <!--League Home Continent View Controller-->
+        <scene sceneID="4Ri-9S-yw8">
+            <objects>
+                <viewController storyboardIdentifier="FBLeagueHomeContinentViewController" id="KDx-1X-s74" customClass="FBLeagueHomeContinentViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6kj-si-4bW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JCg-al-ZoX">
+                                <rect key="frame" x="67.5" y="28" width="240" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4mI-66-7z0"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="国家赛事"/>
+                                    <segment title="洲际赛事"/>
+                                </segments>
+                                <color key="tintColor" red="0.9882352941176471" green="0.60392156862745094" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="KDx-1X-s74" eventType="valueChanged" id="Vfc-Uv-IIr"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Jm-8gr">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fbJ-9L-IF5" firstAttribute="bottom" secondItem="lW0-Jm-8gr" secondAttribute="bottom" id="1lZ-DK-B2o"/>
+                            <constraint firstItem="lW0-Jm-8gr" firstAttribute="leading" secondItem="fbJ-9L-IF5" secondAttribute="leading" id="3us-yA-NYb"/>
+                            <constraint firstItem="lW0-Jm-8gr" firstAttribute="top" secondItem="JCg-al-ZoX" secondAttribute="bottom" constant="6" id="NcN-i6-h2B"/>
+                            <constraint firstItem="JCg-al-ZoX" firstAttribute="top" secondItem="fbJ-9L-IF5" secondAttribute="top" constant="8" id="Xtr-Gf-FXP"/>
+                            <constraint firstItem="JCg-al-ZoX" firstAttribute="centerX" secondItem="6kj-si-4bW" secondAttribute="centerX" id="e9C-AQ-jIT"/>
+                            <constraint firstItem="fbJ-9L-IF5" firstAttribute="trailing" secondItem="lW0-Jm-8gr" secondAttribute="trailing" id="hpN-FU-pRO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fbJ-9L-IF5"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="lW0-Jm-8gr" id="uRb-8O-kBi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfl-xT-DG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="517"/>
+        </scene>
+        <!--League Home Country View Controller-->
+        <scene sceneID="fRO-Jl-hHt">
+            <objects>
+                <viewController storyboardIdentifier="FBLeagueHomeCountryViewController" id="Pap-FL-nSJ" customClass="FBLeagueHomeCountryViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTQ-Kt-oyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WBe-5j-fM8">
+                                <rect key="frame" x="7" y="23" width="361" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="-3" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ehS-19-Sbf">
+                                    <size key="itemSize" width="90" height="38"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FBLeagueHomeCountryCollectionViewCell" id="sJ7-k8-5FP" customClass="FBLeagueHomeCountryCollectionViewCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="38"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHt-bm-Iuh">
+                                                    <rect key="frame" x="3" y="4" width="84" height="34"/>
+                                                    <color key="backgroundColor" red="0.98823529409999999" green="0.89019607840000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国家名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6A-FG-psZ">
+                                                    <rect key="frame" x="3" y="4" width="84" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="I6A-FG-psZ" firstAttribute="leading" secondItem="sJ7-k8-5FP" secondAttribute="leading" constant="3" id="HFf-dc-OuC"/>
+                                            <constraint firstAttribute="bottom" secondItem="PHt-bm-Iuh" secondAttribute="bottom" id="KTT-dF-KR7"/>
+                                            <constraint firstAttribute="trailing" secondItem="I6A-FG-psZ" secondAttribute="trailing" constant="3" id="W4b-kQ-8Lh"/>
+                                            <constraint firstAttribute="trailing" secondItem="PHt-bm-Iuh" secondAttribute="trailing" constant="3" id="Wfk-qA-SQc"/>
+                                            <constraint firstItem="PHt-bm-Iuh" firstAttribute="top" secondItem="sJ7-k8-5FP" secondAttribute="top" constant="4" id="giA-g1-djD"/>
+                                            <constraint firstItem="PHt-bm-Iuh" firstAttribute="leading" secondItem="sJ7-k8-5FP" secondAttribute="leading" constant="3" id="ibT-tq-xin"/>
+                                            <constraint firstAttribute="bottom" secondItem="I6A-FG-psZ" secondAttribute="bottom" constant="4" id="o4Y-ZB-m4Z"/>
+                                            <constraint firstItem="I6A-FG-psZ" firstAttribute="top" secondItem="sJ7-k8-5FP" secondAttribute="top" constant="4" id="sRe-3C-Lgg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="bgView" destination="PHt-bm-Iuh" id="Jlc-JZ-8vm"/>
+                                            <outlet property="countryNameLabel" destination="I6A-FG-psZ" id="WUl-O6-vez"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FBLeagueHomeCountryLeagueCollectionViewCell" id="tkM-j9-I69" customClass="FBLeagueHomeCountryLeagueCollectionViewCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="90.5" y="0.0" width="90" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="38"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmu-Jt-2Wp">
+                                                    <rect key="frame" x="2.5" y="0.0" width="84" height="38"/>
+                                                    <color key="backgroundColor" red="0.98823529409999999" green="0.89019607840000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联赛名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW1-cV-dEp">
+                                                    <rect key="frame" x="3" y="4" width="84" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Vmu-Jt-2Wp" firstAttribute="top" secondItem="tkM-j9-I69" secondAttribute="top" id="11I-VO-dRw"/>
+                                            <constraint firstItem="DW1-cV-dEp" firstAttribute="top" secondItem="tkM-j9-I69" secondAttribute="top" constant="4" id="7to-qJ-WLW"/>
+                                            <constraint firstItem="DW1-cV-dEp" firstAttribute="leading" secondItem="tkM-j9-I69" secondAttribute="leading" constant="3" id="Cek-k2-Xd2"/>
+                                            <constraint firstItem="Vmu-Jt-2Wp" firstAttribute="leading" secondItem="tkM-j9-I69" secondAttribute="leading" constant="3" id="DY2-3U-46q"/>
+                                            <constraint firstAttribute="bottom" secondItem="DW1-cV-dEp" secondAttribute="bottom" constant="4" id="EAG-qf-vSA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vmu-Jt-2Wp" secondAttribute="trailing" constant="3" id="FBb-Cg-f6I"/>
+                                            <constraint firstAttribute="trailing" secondItem="DW1-cV-dEp" secondAttribute="trailing" constant="3" id="TJ5-nr-COP"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vmu-Jt-2Wp" secondAttribute="bottom" id="bpV-X2-e4R"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="bgView" destination="Vmu-Jt-2Wp" id="kKg-ZP-G1p"/>
+                                            <outlet property="bgViewLeftConstraint" destination="DY2-3U-46q" id="QQj-xi-TOz"/>
+                                            <outlet property="bgViewRightConstraint" destination="FBb-Cg-f6I" id="RQf-LH-N5x"/>
+                                            <outlet property="leagueNameLabel" destination="DW1-cV-dEp" id="tIB-i7-djy"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dRE-Rh-pjz" firstAttribute="bottom" secondItem="WBe-5j-fM8" secondAttribute="bottom" constant="3" id="4aI-Fh-RhM"/>
+                            <constraint firstItem="WBe-5j-fM8" firstAttribute="leading" secondItem="dRE-Rh-pjz" secondAttribute="leading" constant="7" id="4kD-Wc-BkO"/>
+                            <constraint firstItem="dRE-Rh-pjz" firstAttribute="trailing" secondItem="WBe-5j-fM8" secondAttribute="trailing" constant="7" id="Vgo-pF-4qy"/>
+                            <constraint firstItem="WBe-5j-fM8" firstAttribute="top" secondItem="dRE-Rh-pjz" secondAttribute="top" constant="3" id="rkm-cO-jvO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dRE-Rh-pjz"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="WBe-5j-fM8" id="vEM-q6-VYv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQU-49-3dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="517"/>
+        </scene>
+        <!--League Home Region View Controller-->
+        <scene sceneID="aHV-v9-r2j">
+            <objects>
+                <viewController storyboardIdentifier="FBLeagueHomeRegionViewController" id="bp4-AQ-fSo" customClass="FBLeagueHomeRegionViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lMF-OC-Hzh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7kg-q1-0pA">
+                                <rect key="frame" x="7" y="23" width="361" height="637"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8AQ-Et-T3g">
+                                    <size key="itemSize" width="90" height="38"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FBLeagueHomeRegionCollectionViewCell" id="swc-Zk-yo3" customClass="FBLeagueHomeRegionCollectionViewCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="38"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联赛名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuQ-fy-bBS">
+                                                    <rect key="frame" x="3" y="4" width="84" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="vuQ-fy-bBS" firstAttribute="top" secondItem="swc-Zk-yo3" secondAttribute="top" constant="4" id="7Ok-Os-saJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="vuQ-fy-bBS" secondAttribute="trailing" constant="3" id="GdO-l8-uah"/>
+                                            <constraint firstItem="vuQ-fy-bBS" firstAttribute="leading" secondItem="swc-Zk-yo3" secondAttribute="leading" constant="3" id="aTc-Zh-0W7"/>
+                                            <constraint firstAttribute="bottom" secondItem="vuQ-fy-bBS" secondAttribute="bottom" constant="4" id="pke-eH-NWq"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="leagueNameLabel" destination="vuQ-fy-bBS" id="NMt-KC-KOL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7kg-q1-0pA" firstAttribute="top" secondItem="507-bU-Xd0" secondAttribute="top" constant="3" id="Hwe-Ej-f0u"/>
+                            <constraint firstItem="7kg-q1-0pA" firstAttribute="leading" secondItem="507-bU-Xd0" secondAttribute="leading" constant="7" id="KAC-2x-cNE"/>
+                            <constraint firstItem="507-bU-Xd0" firstAttribute="bottom" secondItem="7kg-q1-0pA" secondAttribute="bottom" constant="7" id="MUt-ES-DDW"/>
+                            <constraint firstItem="507-bU-Xd0" firstAttribute="trailing" secondItem="7kg-q1-0pA" secondAttribute="trailing" constant="7" id="fLC-CT-fMt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="507-bU-Xd0"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7kg-q1-0pA" id="48E-OW-zm5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qm4-eg-fDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="516.79160419790105"/>
+        </scene>
+        <!--League Home Bottom View Controller-->
+        <scene sceneID="XMy-04-VJ5">
+            <objects>
+                <viewController storyboardIdentifier="FBLeagueHomeBottomViewController" id="Cz4-qG-bJZ" customClass="FBLeagueHomeBottomViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bwc-is-de2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dST-Yl-gZg" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="94B-ZH-IYv"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CUk-1y-BFY" customClass="BaseCollectionView" customModule="IULiao" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="W77-AV-VnX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UICollectionViewCell" id="3MC-Wb-hFc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dST-Yl-gZg" firstAttribute="trailing" secondItem="0DX-qZ-eGR" secondAttribute="trailing" id="5aU-3U-6uT"/>
+                            <constraint firstItem="dST-Yl-gZg" firstAttribute="leading" secondItem="0DX-qZ-eGR" secondAttribute="leading" id="H8F-Jm-Ync"/>
+                            <constraint firstItem="CUk-1y-BFY" firstAttribute="top" secondItem="dST-Yl-gZg" secondAttribute="bottom" id="O80-Nd-XZB"/>
+                            <constraint firstItem="dST-Yl-gZg" firstAttribute="top" secondItem="0DX-qZ-eGR" secondAttribute="top" id="cGL-JS-fs4"/>
+                            <constraint firstItem="CUk-1y-BFY" firstAttribute="leading" secondItem="0DX-qZ-eGR" secondAttribute="leading" id="rHp-hf-QYz"/>
+                            <constraint firstItem="0DX-qZ-eGR" firstAttribute="bottom" secondItem="CUk-1y-BFY" secondAttribute="bottom" id="vbD-cX-h3d"/>
+                            <constraint firstItem="CUk-1y-BFY" firstAttribute="trailing" secondItem="0DX-qZ-eGR" secondAttribute="trailing" id="yOs-hy-OSX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0DX-qZ-eGR"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="CUk-1y-BFY" id="uOq-kT-phT"/>
+                        <outlet property="segmentedControl" destination="dST-Yl-gZg" id="Gv8-t1-6g1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HHr-7Z-tig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="-168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Empty/image-40x40" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="80dp"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/row_single"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_single"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/row_week"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+
+                android:layout_marginTop="30dp"
+                android:gravity="center|bottom"
+                android:text="周五026"
+                android:textColor="@color/grayThree"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/row_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:text="西甲"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/row_time"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:gravity="center|top"
+                android:text="23:50 截止"
+                android:textColor="@color/grayThree"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/row_body_open_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@mipmap/item_down" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+
+                android:id="@+id/item_bask_hun_away"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="[10]皇家社会"
+                android:textColor="@color/grayThree" />
+
+            <TextView
+                android:id="@+id/item_bask_hun_vs"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="VS" />
+
+            <TextView
+                android:id="@+id/item_bask_hun_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="皇家社会[7]"
+                android:textColor="@color/grayThree" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/row_let_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/row_no_let_txt"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/noLetSfBg"
+                        android:gravity="center"
+                        android:text="非 让 分"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2">
+                        <TextView
+                            android:id="@+id/item_bask_hun_sf_fixed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:textColor="@color/blueHigh"
+                            android:text="未开"/>
+
+                        <TextView
+                            android:id="@+id/item_bask_hun_away_win"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="主胜"
+                            android:textColor="@color/grayThree"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/item_bask_hun_home_win"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_top_right_bottom"
+                            android:gravity="center"
+                            android:text="主胜"
+                            android:textColor="@color/grayThree"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_no_let_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/row_let_txt"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/LetSfBg"
+                        android:gravity="center"
+                        android:text="让   分"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2">
+                        <TextView
+                            android:id="@+id/item_bask_hun_rfsf_fixed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:background="@drawable/edge_right_bottom"
+                            android:textColor="@color/blueHigh"
+                            android:text="未开"/>
+
+
+                        <TextView
+                            android:id="@+id/item_bask_hun_let_away_win"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="主胜"
+                            android:textColor="@color/grayThree"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/item_bask_hun_let_home_win"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/edge_right_bottom"
+                            android:gravity="center"
+                            android:text="主胜"
+                            android:textColor="@color/grayThree"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_bask_hun_chose"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edge_top_right_bottom"
+                android:ems="1"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="展        开"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

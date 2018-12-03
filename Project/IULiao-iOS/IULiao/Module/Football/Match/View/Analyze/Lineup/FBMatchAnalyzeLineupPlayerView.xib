@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="WSx-zH-cc0"/>
+                <outlet property="numberLabel" destination="oCT-sg-4Ad" id="p6Z-Be-Dwm"/>
+                <outlet property="playerBtn" destination="J4R-YQ-j0y" id="V8l-tq-6KG"/>
+                <outlet property="playerNameLabel" destination="qCt-eH-WKI" id="aJ2-eX-2Oh"/>
+                <outlet property="rateLabel" destination="usd-a9-DZ2" id="1X5-OW-18Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/lineup-shirt-white" translatesAutoresizingMaskIntoConstraints="NO" id="gO6-CN-ooW">
+                    <rect key="frame" x="20" y="30" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="nMI-UN-FcR"/>
+                        <constraint firstAttribute="width" secondItem="gO6-CN-ooW" secondAttribute="height" id="saL-cw-JOm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCT-sg-4Ad">
+                    <rect key="frame" x="33" y="39" width="6" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usd-a9-DZ2">
+                    <rect key="frame" x="40" y="52" width="26" height="14"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="GFV-BW-gm7"/>
+                        <constraint firstAttribute="width" constant="26" id="cVh-m2-GwT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球员名球员名球员名" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="qCt-eH-WKI">
+                    <rect key="frame" x="6" y="72" width="60" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="Z3K-mJ-xAE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4R-YQ-j0y">
+                    <rect key="frame" x="10" y="10" width="52" height="112"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="FvF-Wo-Zhg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="J4R-YQ-j0y" secondAttribute="trailing" constant="10" id="1GC-94-1rf"/>
+                <constraint firstItem="gO6-CN-ooW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2QA-kT-lPn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="J4R-YQ-j0y" secondAttribute="bottom" constant="10" id="5pC-JG-DVC"/>
+                <constraint firstItem="qCt-eH-WKI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Dd-e8-bFm"/>
+                <constraint firstItem="qCt-eH-WKI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="Egb-9C-H2s"/>
+                <constraint firstItem="gO6-CN-ooW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="LyE-fJ-CsY"/>
+                <constraint firstItem="J4R-YQ-j0y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Mp9-R8-BcM"/>
+                <constraint firstItem="qCt-eH-WKI" firstAttribute="top" secondItem="gO6-CN-ooW" secondAttribute="bottom" constant="10" id="Vsc-k3-InQ"/>
+                <constraint firstItem="usd-a9-DZ2" firstAttribute="top" secondItem="gO6-CN-ooW" secondAttribute="bottom" constant="-10" id="Zgc-Ze-l8d"/>
+                <constraint firstItem="usd-a9-DZ2" firstAttribute="leading" secondItem="gO6-CN-ooW" secondAttribute="trailing" constant="-12" id="gxu-cn-ahz"/>
+                <constraint firstItem="J4R-YQ-j0y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nOh-Nh-hJ0"/>
+                <constraint firstItem="oCT-sg-4Ad" firstAttribute="centerX" secondItem="gO6-CN-ooW" secondAttribute="centerX" id="rrW-UY-1D3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qCt-eH-WKI" secondAttribute="trailing" constant="6" id="vAD-t9-eL5"/>
+                <constraint firstItem="oCT-sg-4Ad" firstAttribute="centerY" secondItem="gO6-CN-ooW" secondAttribute="centerY" id="x3j-i4-6vd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-126" y="-215"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FBMatch/lineup-shirt-white" width="32" height="32"/>
+    </resources>
+</document>

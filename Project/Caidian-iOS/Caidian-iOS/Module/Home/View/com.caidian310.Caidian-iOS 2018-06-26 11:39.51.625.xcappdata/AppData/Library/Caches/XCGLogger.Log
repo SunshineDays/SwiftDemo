@@ -1,0 +1,9 @@
+2018-06-26 11:37:32.769 [Info] > Caidian-iOS Version: 1.2 Build: 1200 PID: 2989
+2018-06-26 11:37:32.769 [Info] > XCGLogger Version: 6.0.4 - Level: Debug
+2018-06-26 11:37:32.771 [Info] > XCGLogger writing log to: file:///var/mobile/Containers/Data/Application/F3457E98-3A16-4C44-BE70-EA1B22F9ED27/Library/Caches/XCGLogger.Log
+2018-06-26 11:37:32.772 [Info] [main] [BaseNavigationController.swift:37] deinit > deinit ---------- <Caidian_iOS.BaseNavigationController: 0x108068400>
+2018-06-26 11:37:32.773 [Info] [main] [BaseViewController.swift:31] deinit > deinit ---------- <Caidian_iOS.OrderMainViewController: 0x10723b210>
+2018-06-26 11:37:32.773 [Info] [main] [BaseHandler.swift:20] deinit > deinit ---------- <Caidian_iOS.UserOrderBuyHandler: 0x1c400dc90>
+2018-06-26 11:37:32.774 [Info] [main] [BaseNavigationController.swift:37] deinit > deinit ---------- <Caidian_iOS.BaseNavigationController: 0x10785ca00>
+2018-06-26 11:37:32.774 [Info] [main] [BaseViewController.swift:31] deinit > deinit ---------- <Caidian_iOS.JczqMainViewController: 0x108062000>
+2018-06-26 11:37:32.775 [Info] [main] [BaseHandler.swift:20] deinit > deinit ---------- <Caidian_iOS.JczqHandler: 0x1c400dc60>

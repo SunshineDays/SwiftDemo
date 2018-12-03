@@ -1,0 +1,48 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target "IULiao-Forecast-iOS" do
+
+    # swift 4.0
+    pod 'XCGLogger', '~> 6.0.1'
+    pod 'Alamofire', '~> 4.5.1'
+    pod 'SwiftyJSON', '~> 4.0.0-alpha.1'
+    pod 'SnapKit', '~> 4.0.0'
+    pod 'R.swift', '~> 4.0.0'
+    pod 'Charts', '~> 3.1.1'
+
+    # obj-c
+    pod 'DZNEmptyDataSet'
+    pod 'YYText', '~> 1.0.5'
+    pod 'MJRefresh', '~> 3.1.14'
+    pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'SDWebImage', '~> 4.1.2'
+    pod 'CRToast'
+    pod 'GRMustache'
+    pod 'FCFileManager'
+    # pod 'MWPhotoBrowser', '~> 2.1.2'
+    pod 'MWPhotoBrowser', :git => 'https://github.com/lvxiaohai/MWPhotoBrowser.git', :commit => '5ca965aae4563789213f5596ad7607185da31edf'
+    pod 'ActionSheetPicker-3.0'
+    pod 'IQKeyboardManager', '~> 6.0.1'
+
+    # pod 'SDCycleScrollView'
+    # pod 'SQLite.swift', '~> 0.9.1'
+
+    pod 'UMengAnalytics-NO-IDFA'
+    # U-Share SDK UI模块（分享面板，建议添加）
+    pod 'UMengUShare/UI'
+    # 集成微信(精简版0.2M)
+    pod 'UMengUShare/Social/ReducedWeChat'
+    # 集成QQ(精简版0.5M)
+    pod 'UMengUShare/Social/ReducedQQ'
+    # 集成新浪微博(精简版1M)
+    pod 'UMengUShare/Social/ReducedSina'
+    
+    # 极光推送
+    pod 'JPush'
+
+    # debug
+    pod 'Reveal-SDK', :configurations => ['Debug']
+end

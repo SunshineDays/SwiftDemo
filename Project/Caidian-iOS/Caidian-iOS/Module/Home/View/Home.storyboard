@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home3 View Controller-->
+        <scene sceneID="FPR-lQ-ZKd">
+            <objects>
+                <viewController storyboardIdentifier="Home3ViewController" id="IkA-g6-h8j" customClass="Home3ViewController" customModule="Caidian_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igV-Vr-l0T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8fW-Lm-jL8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8fW-Lm-jL8" firstAttribute="top" secondItem="igV-Vr-l0T" secondAttribute="top" id="fya-45-o2n"/>
+                            <constraint firstItem="rA0-8h-g8w" firstAttribute="trailing" secondItem="8fW-Lm-jL8" secondAttribute="trailing" id="ubZ-vr-JgW"/>
+                            <constraint firstItem="8fW-Lm-jL8" firstAttribute="leading" secondItem="rA0-8h-g8w" secondAttribute="leading" id="upg-yd-5XG"/>
+                            <constraint firstItem="rA0-8h-g8w" firstAttribute="bottom" secondItem="8fW-Lm-jL8" secondAttribute="bottom" id="xyx-Vo-MMZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rA0-8h-g8w"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="8fW-Lm-jL8" id="eLj-SA-OOs"/>
+                        <outlet property="tableViewTopConstraint" destination="fya-45-o2n" id="af6-m1-WtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfi-vR-Rmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-945" y="732"/>
+        </scene>
+        <!--Home News Detail View Controller-->
+        <scene sceneID="L3M-DB-mxp">
+            <objects>
+                <viewController storyboardIdentifier="HomeNewsDetailViewController" id="kUn-Qa-kTn" customClass="HomeNewsDetailViewController" customModule="Caidian_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="39u-HB-k9J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9cZ-rx-fCS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAf-Mo-2aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="291"/>
+        </scene>
+    </scenes>
+</document>

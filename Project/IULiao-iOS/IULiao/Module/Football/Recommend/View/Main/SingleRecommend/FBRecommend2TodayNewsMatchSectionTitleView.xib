@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FBRecommend2TodayNewsMatchSectionTitleView" id="iN0-l3-epB" customClass="FBRecommend2TodayNewsMatchSectionTitleView" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3D-LA-G9A">
+                    <rect key="frame" x="10" y="11" width="55" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="NrL-RY-3HK"/>
+                        <constraint firstAttribute="height" constant="18" id="mHq-ua-arW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.95686274509803915" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.95686274509803915" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajr-Uh-m7q">
+                    <rect key="frame" x="70" y="11" width="55" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="竞彩">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nz-Xx-tqN">
+                    <rect key="frame" x="130" y="10.5" width="55" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="北单">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owI-8X-SJO">
+                    <rect key="frame" x="313" y="10.5" width="52" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="  筛选" image="FBRecommend2/select-theme">
+                        <color key="titleColor" red="0.95686274509803915" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5nz-Xx-tqN" firstAttribute="width" secondItem="ajr-Uh-m7q" secondAttribute="width" id="18L-O4-6ax"/>
+                <constraint firstItem="ajr-Uh-m7q" firstAttribute="height" secondItem="A3D-LA-G9A" secondAttribute="height" id="8eB-7I-74D"/>
+                <constraint firstItem="owI-8X-SJO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="98y-Lr-mIS"/>
+                <constraint firstItem="ajr-Uh-m7q" firstAttribute="leading" secondItem="A3D-LA-G9A" secondAttribute="trailing" constant="5" id="Asb-wP-uj8"/>
+                <constraint firstItem="ajr-Uh-m7q" firstAttribute="width" secondItem="A3D-LA-G9A" secondAttribute="width" id="IKd-dq-Bkm"/>
+                <constraint firstItem="ajr-Uh-m7q" firstAttribute="centerY" secondItem="A3D-LA-G9A" secondAttribute="centerY" id="L8Z-ZJ-mwL"/>
+                <constraint firstItem="5nz-Xx-tqN" firstAttribute="leading" secondItem="ajr-Uh-m7q" secondAttribute="trailing" constant="5" id="QfV-ue-IME"/>
+                <constraint firstItem="5nz-Xx-tqN" firstAttribute="centerY" secondItem="ajr-Uh-m7q" secondAttribute="centerY" id="VW3-l5-ul0"/>
+                <constraint firstItem="A3D-LA-G9A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="c3X-xJ-ZQa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="owI-8X-SJO" secondAttribute="trailing" constant="10" id="iLG-t3-Ej7"/>
+                <constraint firstItem="A3D-LA-G9A" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kxB-dN-xPx"/>
+                <constraint firstItem="5nz-Xx-tqN" firstAttribute="height" secondItem="ajr-Uh-m7q" secondAttribute="height" id="qM5-5n-vJx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="allButton" destination="A3D-LA-G9A" id="AzI-4B-eBg"/>
+                <outlet property="beiDanButton" destination="5nz-Xx-tqN" id="qy9-pB-8bn"/>
+                <outlet property="jingCaiButton" destination="ajr-Uh-m7q" id="idK-Lg-atV"/>
+                <outlet property="selectButton" destination="owI-8X-SJO" id="e0a-Uf-Aff"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="FBRecommend2/select-theme" width="20" height="20"/>
+    </resources>
+</document>

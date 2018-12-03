@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3f3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+
+            android:paddingRight="15dp"
+            android:weightSum="3">
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="胜平负(让)"
+                android:id="@+id/pop_foot_let"
+
+                android:textColor="@color/grayThree"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/angle_color_text_view_select"
+                android:gravity="center"
+                android:text="混合投注"
+                android:id="@+id/pop_foot_blend"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="半全场"
+                android:id="@+id/pop_foot_half"
+                android:textColor="@color/grayThree" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pop_footer_two"
+            android:paddingLeft="15dp"
+
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="3">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="比分"
+                android:id="@+id/pop_foot_odd"
+                android:textColor="@color/grayThree" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:id="@+id/pop_foot_all"
+
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="总进球"
+                android:textColor="@color/grayThree" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="总进球"
+                android:visibility="gone"
+                android:textColor="@color/grayThree"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pop_foot_back_ground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#000000" />
+
+</LinearLayout>

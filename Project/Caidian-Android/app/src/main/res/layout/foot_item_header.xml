@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/foot_item_header_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+
+            android:background="@color/red" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/foot_item_header_count"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_toEndOf="@+id/foot_item_header_linear"
+        android:gravity="center"
+        android:textColor="@color/grayThree"
+        android:text="3场可投" />
+
+    <ImageView
+        android:id="@+id/foot_item_header_down"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:src="@mipmap/item_down" />
+
+</RelativeLayout>

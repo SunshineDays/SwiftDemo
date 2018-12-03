@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/item_recharge_foot_more"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/grayThree"
+            android:text="更多充值方式"/>
+        <ImageView
+            android:id="@+id/item_recharge_foot_img_down"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/item_down"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:textSize="12dp"
+        android:paddingLeft="5dp"
+        android:text="为防止套现和洗钱,单笔充值后需消费30%方可提现."
+        android:gravity="left|center_vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/angle_round_logo_yellow_tip" />
+
+</LinearLayout>

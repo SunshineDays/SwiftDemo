@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths >
+    <external-path
+        name="download"
+        path="."/>
+    <external-path
+        name="my_images"
+        path="Android/data/com/caidian310/cache"/>
+
+</paths>

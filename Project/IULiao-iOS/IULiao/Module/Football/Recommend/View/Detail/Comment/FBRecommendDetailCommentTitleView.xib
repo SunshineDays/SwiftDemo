@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FBRecommendDetailCommentTitleView" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8jX-DG-gA1">
+                    <rect key="frame" x="15" y="15" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6MT-uB-qZy"/>
+                        <constraint firstAttribute="width" secondItem="8jX-DG-gA1" secondAttribute="height" multiplier="1:1" id="SnJ-s1-fte"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-T9-Dte">
+                    <rect key="frame" x="75" y="15" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5L-bX-iMC">
+                    <rect key="frame" x="75" y="70" width="35.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuh-8U-DZb">
+                    <rect key="frame" x="75" y="45.5" width="31" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-Wx-zyt">
+                    <rect key="frame" x="261" y="11" width="33" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="0" image="Common/comment-normal">
+                        <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="inputButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="O2P-K3-txE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTy-xw-Dxy">
+                    <rect key="frame" x="304" y="11" width="33" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="0" image="Common/pollup-normal">
+                        <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pollUpButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="dpc-Rc-09f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGu-sf-8h4">
+                    <rect key="frame" x="75" y="70" width="262" height="30"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OGu-sf-8h4" firstAttribute="height" secondItem="X5L-bX-iMC" secondAttribute="height" id="A8e-FU-PZC"/>
+                <constraint firstItem="8jX-DG-gA1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="BEi-iL-pkS"/>
+                <constraint firstItem="vTy-xw-Dxy" firstAttribute="centerY" secondItem="dpy-T9-Dte" secondAttribute="centerY" id="F4c-ex-O92"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vTy-xw-Dxy" secondAttribute="trailing" constant="15" id="GPm-sL-zfY"/>
+                <constraint firstItem="OGu-sf-8h4" firstAttribute="leading" secondItem="xuh-8U-DZb" secondAttribute="leading" id="JFe-iK-gVx"/>
+                <constraint firstItem="X5L-bX-iMC" firstAttribute="leading" secondItem="xuh-8U-DZb" secondAttribute="leading" id="RMA-hP-WW8"/>
+                <constraint firstItem="8jX-DG-gA1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="VEb-wq-PrV"/>
+                <constraint firstItem="dpy-T9-Dte" firstAttribute="top" secondItem="8jX-DG-gA1" secondAttribute="top" id="WMp-fU-IWz"/>
+                <constraint firstItem="dpy-T9-Dte" firstAttribute="leading" secondItem="8jX-DG-gA1" secondAttribute="trailing" constant="10" id="bBg-RS-cpt"/>
+                <constraint firstItem="vTy-xw-Dxy" firstAttribute="leading" secondItem="1Gs-Wx-zyt" secondAttribute="trailing" constant="10" id="fbo-Y3-3cw"/>
+                <constraint firstItem="xuh-8U-DZb" firstAttribute="bottom" secondItem="8jX-DG-gA1" secondAttribute="bottom" constant="-5" id="ftV-8v-7ck"/>
+                <constraint firstItem="X5L-bX-iMC" firstAttribute="top" secondItem="8jX-DG-gA1" secondAttribute="bottom" constant="5" id="gdV-nY-Ij4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OGu-sf-8h4" secondAttribute="trailing" constant="15" id="idE-a8-CWL"/>
+                <constraint firstItem="xuh-8U-DZb" firstAttribute="leading" secondItem="dpy-T9-Dte" secondAttribute="leading" id="kEy-ZC-UCE"/>
+                <constraint firstItem="OGu-sf-8h4" firstAttribute="top" secondItem="X5L-bX-iMC" secondAttribute="top" id="uNZ-Rm-FEt"/>
+                <constraint firstItem="1Gs-Wx-zyt" firstAttribute="centerY" secondItem="vTy-xw-Dxy" secondAttribute="centerY" id="vhh-Mj-JDc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="avaterImageView" destination="8jX-DG-gA1" id="BsM-dW-A9I"/>
+                <outlet property="commentButton" destination="OGu-sf-8h4" id="9oJ-u8-g2m"/>
+                <outlet property="contentLabel" destination="X5L-bX-iMC" id="tUu-98-zkz"/>
+                <outlet property="inputButton" destination="1Gs-Wx-zyt" id="E5h-wg-luw"/>
+                <outlet property="nicknameLabel" destination="dpy-T9-Dte" id="78e-y7-7Sq"/>
+                <outlet property="pollUpButton" destination="vTy-xw-Dxy" id="ol1-hJ-fsV"/>
+                <outlet property="timeLabel" destination="xuh-8U-DZb" id="D3h-pu-9La"/>
+            </connections>
+            <point key="canvasLocation" x="22" y="-232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Common/comment-normal" width="25" height="25"/>
+        <image name="Common/pollup-normal" width="25" height="25"/>
+    </resources>
+</document>

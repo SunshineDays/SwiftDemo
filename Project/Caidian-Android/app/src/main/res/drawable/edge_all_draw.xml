@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 底部圆角 白色背景 灰色边框 长方体 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="#FF77FAB9" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item android:top="0.5dp" android:bottom="0.5dp" android:right="0.5dp" android:left="0.5dp"> <!--设置只有底部有边框-->
+        <shape>
+            <solid android:color="#FFB4F5D5" />
+        </shape>
+    </item>
+</layer-list>

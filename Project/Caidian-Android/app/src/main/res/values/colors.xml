@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--// actionBarColor-->
+    <color name="colorPrimary">#FF4422</color>
+    <!--statusColor-->
+    <color name="colorPrimaryDark">#FF4422</color>
+    <!--默认-->
+    <color name="colorAccent">#FF4422</color>
+
+
+    <!-- 灰色 -->
+    <color name="gray">#cccccc</color>
+    <color name="grayNine">#999999</color>
+    <color name="graySix">#666666</color>
+    <color name="grayThree">#333333</color>
+    <color name="grayLow">#dedede</color>
+    <color name="grayB3B3B3">#B3B3B3</color>
+    <color name="gray4D4D4D">#4D4D4D</color>
+
+
+    <color name="grayE6e6e6">#e6e6e6</color>
+    <color name="redFA77A4">#FA77A4</color>
+
+    <color name="blue62AFFE">#62AFFE</color>
+    <color name="yellowff8b19">#ff8b19</color>
+    <color name="yellowFAB4CC">#FAB4CC</color>
+    <color name="yellowFF764C">#FF764C</color>
+    <color name="noLetSfBg">#8F44FF</color>
+    <color name="LetSfBg">#62AFFD</color>
+    <color name="dxfBg">#1AA83C</color>
+    <color name="homeWin">#FE6962</color>
+
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="red">#FF4855</color>
+    <!--<color name="red">#FF0000</color>-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#63B8FF</color>
+
+    <color name="blueLow">#a2d2fa</color>
+    <color name="blueHigh">#7bb9ed</color>
+    <color name="redLow">#f4cfdb</color>
+    <color name="greenLow">#c2eaca</color>
+
+    <color name="dedbdb">#dedbdb</color>
+
+    <color name="FF5EA2BE">#FF5EA2BE</color>
+    <color name="f2f2f2">#FFf2f2f2</color>
+
+</resources>

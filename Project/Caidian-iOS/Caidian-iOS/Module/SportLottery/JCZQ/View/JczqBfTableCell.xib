@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JczqBfTableCell" rowHeight="253" id="KGk-i7-Jjw" customClass="JczqBfTableCell" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="252.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmN-vw-lun" customClass="SLLeagueInfoView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="8" width="80" height="54"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="bZ7-HK-8jy"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-sP-Mg9">
+                        <rect key="frame" x="80" y="42" width="291" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oru-tp-nI2">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="点击选择比分投注">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moreBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dDY-aa-hBM"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bet/single-open" translatesAutoresizingMaskIntoConstraints="NO" id="xXc-ng-iEh">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4Ha-8O-FzP"/>
+                                    <constraint firstAttribute="height" constant="20" id="ZaP-Gl-0rZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Oru-tp-nI2" firstAttribute="leading" secondItem="PI6-sP-Mg9" secondAttribute="leading" id="9lo-Sd-yUV"/>
+                            <constraint firstAttribute="trailing" secondItem="Oru-tp-nI2" secondAttribute="trailing" id="ADc-nY-aHl"/>
+                            <constraint firstItem="xXc-ng-iEh" firstAttribute="leading" secondItem="PI6-sP-Mg9" secondAttribute="leading" id="Hli-Mc-pcN"/>
+                            <constraint firstItem="Oru-tp-nI2" firstAttribute="top" secondItem="PI6-sP-Mg9" secondAttribute="top" id="Kqz-gu-jkb"/>
+                            <constraint firstItem="xXc-ng-iEh" firstAttribute="top" secondItem="PI6-sP-Mg9" secondAttribute="top" id="VcS-Zh-Bxx"/>
+                            <constraint firstAttribute="bottom" secondItem="Oru-tp-nI2" secondAttribute="bottom" id="gaT-tU-Oiq"/>
+                            <constraint firstAttribute="height" constant="35" id="vRC-Ez-LMf"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-fy-2Sk" customClass="SLTeamNameView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="80" y="8" width="291" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="tBQ-2r-hUw"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBv-gw-o43" customClass="JczpHistoryInfoView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="92" width="379" height="153"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="153" id="yiK-P9-vCv"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdY-xE-j4u">
+                        <rect key="frame" x="0.0" y="8" width="80" height="72"/>
+                        <state key="normal" image="Bet/serial-arrow-down"/>
+                        <connections>
+                            <action selector="showAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0b6-gQ-D0C"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PI6-sP-Mg9" firstAttribute="top" secondItem="UmQ-fy-2Sk" secondAttribute="bottom" id="0O1-wm-tiq"/>
+                    <constraint firstItem="qmN-vw-lun" firstAttribute="bottom" secondItem="PI6-sP-Mg9" secondAttribute="bottom" constant="-15" id="0eC-id-cKc"/>
+                    <constraint firstItem="UmQ-fy-2Sk" firstAttribute="leading" secondItem="PI6-sP-Mg9" secondAttribute="leading" id="1Ug-op-HzA"/>
+                    <constraint firstItem="qBv-gw-o43" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6EC-vK-cSx"/>
+                    <constraint firstAttribute="trailing" secondItem="PI6-sP-Mg9" secondAttribute="trailing" constant="8" id="843-Bv-wvN"/>
+                    <constraint firstItem="qmN-vw-lun" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="E7a-iI-6OZ"/>
+                    <constraint firstAttribute="trailing" secondItem="qBv-gw-o43" secondAttribute="trailing" id="Mjm-F5-gKK"/>
+                    <constraint firstItem="qBv-gw-o43" firstAttribute="top" secondItem="PI6-sP-Mg9" secondAttribute="bottom" constant="15" id="RYF-LT-8nX"/>
+                    <constraint firstItem="PdY-xE-j4u" firstAttribute="bottom" secondItem="PI6-sP-Mg9" secondAttribute="bottom" constant="3" id="fYn-xB-IF4"/>
+                    <constraint firstItem="PI6-sP-Mg9" firstAttribute="leading" secondItem="qmN-vw-lun" secondAttribute="trailing" id="fcg-cF-27M"/>
+                    <constraint firstItem="PdY-xE-j4u" firstAttribute="trailing" secondItem="qmN-vw-lun" secondAttribute="trailing" id="gZ1-gw-ykE"/>
+                    <constraint firstItem="qmN-vw-lun" firstAttribute="top" secondItem="UmQ-fy-2Sk" secondAttribute="top" id="mw0-HT-h5a"/>
+                    <constraint firstItem="UmQ-fy-2Sk" firstAttribute="trailing" secondItem="PI6-sP-Mg9" secondAttribute="trailing" id="p4k-9S-WTD"/>
+                    <constraint firstItem="UmQ-fy-2Sk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="p5N-Sg-dsY"/>
+                    <constraint firstItem="PdY-xE-j4u" firstAttribute="leading" secondItem="qmN-vw-lun" secondAttribute="leading" id="s0e-Fo-2HI"/>
+                    <constraint firstItem="PdY-xE-j4u" firstAttribute="top" secondItem="qmN-vw-lun" secondAttribute="top" id="xYE-RV-OGQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="bfOpenSingleImageView" destination="xXc-ng-iEh" id="n1i-kU-0Rt"/>
+                <outlet property="leagueView" destination="qmN-vw-lun" id="ucm-BV-f94"/>
+                <outlet property="moreBtn" destination="Oru-tp-nI2" id="Sm1-as-tjn"/>
+                <outlet property="showButton" destination="PdY-xE-j4u" id="y6C-vn-t5y"/>
+                <outlet property="statisticsView" destination="qBv-gw-o43" id="SVd-mj-S7o"/>
+                <outlet property="teamView" destination="UmQ-fy-2Sk" id="lC1-iB-CNh"/>
+            </connections>
+            <point key="canvasLocation" x="22.5" y="76.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bet/serial-arrow-down" width="12" height="12"/>
+        <image name="Bet/single-open" width="30" height="30"/>
+    </resources>
+</document>

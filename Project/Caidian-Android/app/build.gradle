@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.caidian310"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1100
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+
+
+        buildConfigField("boolean", "isDebug", "true")
+
+
+    }
+
+    //签名配置
+    signingConfigs {
+        debugConfig {
+            keyAlias "caidian310"
+            keyPassword "caidian310"
+            storeFile file("/Users/mac/caidian310-android-key.jks")
+            storePassword "caidian310"
+        }
+        releaseConfig {
+            keyAlias "caidian310"
+            keyPassword "caidian310"
+            storeFile file("/Users/mac/caidian310-android-key.jks")
+            storePassword "caidian310"
+        }
+    }
+
+    //打包配置
+    buildTypes {
+        debug {
+            buildConfigField("boolean", "isDebug", "true")
+            signingConfig signingConfigs.debugConfig
+        }
+        release {
+            buildConfigField("boolean", "isDebug", "false")
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+
+    flavorDimensions "apk"
+
+
+    productFlavors {
+        caidian310 {
+            dimension "apk"
+        }
+        wandoujia {
+            dimension "apk"
+        }
+        _360 {
+            dimension "apk"
+        }
+        baidu {
+            dimension "apk"
+        }
+        tengxun {
+            dimension "apk"
+        }
+        oppo {
+            dimension "apk"
+        }
+        vivo {
+            dimension "apk"
+        }
+        huawei {
+            dimension "apk"
+        }
+        xiaomi {
+            dimension "apk"
+        }
+
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.youth.banner:banner:1.4.9'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation files('libs/android-async-http-1.4.9.jar')
+    implementation files('libs/gson-2.2.4.jar')
+    implementation files('libs/httpclient-4.3.6.jar')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation "org.jetbrains.anko:anko:$anko_version"
+
+    implementation 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+
+}

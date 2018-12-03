@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FBRecommendSponsorMatchBetEuropeCell" id="KGk-i7-Jjw" customClass="FBRecommendSponsorMatchBetEuropeCell" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIK-Rv-iDQ">
+                        <rect key="frame" x="170" y="9.5" width="55" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="平局">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sch-xp-2Ur">
+                        <rect key="frame" x="95" y="9.5" width="55" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="主胜">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCn-gD-x8p">
+                        <rect key="frame" x="20" y="9.5" width="55" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="syx-sx-snm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="让球数">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPk-Mo-Img">
+                        <rect key="frame" x="245" y="9.5" width="55" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="主负">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YIK-Rv-iDQ" firstAttribute="leading" secondItem="Sch-xp-2Ur" secondAttribute="trailing" constant="20" id="03H-54-rmT"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="width" secondItem="VPk-Mo-Img" secondAttribute="width" id="2P5-qC-K4m"/>
+                    <constraint firstAttribute="trailing" secondItem="VPk-Mo-Img" secondAttribute="trailing" constant="20" id="4Op-Ef-h17"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9CV-dM-Z9t"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="width" secondItem="Sch-xp-2Ur" secondAttribute="width" id="EoT-az-eqK"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="height" secondItem="YIK-Rv-iDQ" secondAttribute="height" id="Jum-ab-jyv"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LAa-HI-irj"/>
+                    <constraint firstItem="VPk-Mo-Img" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="P7j-QV-77O"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="height" secondItem="VPk-Mo-Img" secondAttribute="height" id="PIO-xH-yL5"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="width" secondItem="YIK-Rv-iDQ" secondAttribute="width" id="STG-C5-Md4"/>
+                    <constraint firstItem="Sch-xp-2Ur" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="abf-pO-luI"/>
+                    <constraint firstItem="VPk-Mo-Img" firstAttribute="leading" secondItem="YIK-Rv-iDQ" secondAttribute="trailing" constant="20" id="abk-tg-B5F"/>
+                    <constraint firstItem="QCn-gD-x8p" firstAttribute="height" secondItem="Sch-xp-2Ur" secondAttribute="height" id="efr-yN-Tks"/>
+                    <constraint firstItem="YIK-Rv-iDQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nBT-ev-lpU"/>
+                    <constraint firstItem="Sch-xp-2Ur" firstAttribute="leading" secondItem="QCn-gD-x8p" secondAttribute="trailing" constant="20" id="zdP-Jf-skO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="drawButton" destination="YIK-Rv-iDQ" id="u7A-9s-GyL"/>
+                <outlet property="letNumberButton" destination="QCn-gD-x8p" id="a1K-yG-KF0"/>
+                <outlet property="lostButton" destination="VPk-Mo-Img" id="4W7-k5-s04"/>
+                <outlet property="winButton" destination="Sch-xp-2Ur" id="DJA-46-bQt"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="14dp"
+    android:background="@color/red"
+    android:id="@+id/pop_d11_root"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_weight="1"
+        android:background="@drawable/angle_color_text_view_normal"
+        android:gravity="center"
+        android:text="混合投注"
+        android:id="@+id/pop_d11_title"
+        android:textColor="@color/grayThree" />
+</LinearLayout>

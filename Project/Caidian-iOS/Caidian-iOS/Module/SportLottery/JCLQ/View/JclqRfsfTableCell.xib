@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JclqRfsfTableCell" rowHeight="92" id="KGk-i7-Jjw" customClass="JclqRfsfTableCell" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmN-vw-lun" customClass="SLLeagueInfoView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="11" width="80" height="70"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="YJp-qa-Za8"/>
+                            <constraint firstAttribute="width" constant="80" id="bZ7-HK-8jy"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-sP-Mg9">
+                        <rect key="frame" x="80" y="42" width="291" height="37"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLC-mB-WSI">
+                                <rect key="frame" x="1" y="1" width="289" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djX-vv-VjB">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="主负1.00">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                                <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                                <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rfsf_sp0BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Dey-Cp-eEx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mC8-Ac-2s2">
+                                        <rect key="frame" x="145" y="0.0" width="144" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="主胜1.00">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                                <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                                                <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rfsf_sp3BtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9hX-dg-LSC"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未开玩法" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0re-Mt-kiN">
+                                        <rect key="frame" x="0.0" y="0.0" width="289" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bet/single-open" translatesAutoresizingMaskIntoConstraints="NO" id="gzv-jj-f1b">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="B8M-jS-0vT"/>
+                                            <constraint firstAttribute="height" constant="20" id="vDG-YJ-g59"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mC8-Ac-2s2" firstAttribute="width" secondItem="djX-vv-VjB" secondAttribute="width" id="5S6-Wa-ARJ"/>
+                                    <constraint firstItem="mC8-Ac-2s2" firstAttribute="leading" secondItem="djX-vv-VjB" secondAttribute="trailing" constant="1" id="673-b5-ndE">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="0re-Mt-kiN" firstAttribute="leading" secondItem="yLC-mB-WSI" secondAttribute="leading" id="798-Kk-QVO"/>
+                                    <constraint firstItem="mC8-Ac-2s2" firstAttribute="top" secondItem="yLC-mB-WSI" secondAttribute="top" id="7aZ-uf-vSn"/>
+                                    <constraint firstItem="djX-vv-VjB" firstAttribute="leading" secondItem="yLC-mB-WSI" secondAttribute="leading" id="88h-1S-gkZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="mC8-Ac-2s2" secondAttribute="bottom" id="8R4-9u-bYQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="djX-vv-VjB" secondAttribute="bottom" id="9Y6-RW-azt"/>
+                                    <constraint firstAttribute="trailing" secondItem="0re-Mt-kiN" secondAttribute="trailing" id="FPe-Zc-wdD"/>
+                                    <constraint firstItem="gzv-jj-f1b" firstAttribute="top" secondItem="yLC-mB-WSI" secondAttribute="top" id="K3f-vo-Z0p"/>
+                                    <constraint firstItem="0re-Mt-kiN" firstAttribute="top" secondItem="yLC-mB-WSI" secondAttribute="top" id="QrO-0f-EsG"/>
+                                    <constraint firstAttribute="trailing" secondItem="mC8-Ac-2s2" secondAttribute="trailing" id="c0L-nI-IHJ"/>
+                                    <constraint firstItem="gzv-jj-f1b" firstAttribute="leading" secondItem="yLC-mB-WSI" secondAttribute="leading" id="iHc-XJ-vae"/>
+                                    <constraint firstAttribute="bottom" secondItem="0re-Mt-kiN" secondAttribute="bottom" id="pcK-pj-48V"/>
+                                    <constraint firstItem="djX-vv-VjB" firstAttribute="top" secondItem="yLC-mB-WSI" secondAttribute="top" id="rrV-Xd-zjL"/>
+                                    <constraint firstAttribute="height" constant="35" id="uKY-WY-GUD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yLC-mB-WSI" secondAttribute="trailing" constant="1" id="5PW-Jj-zHR">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="yLC-mB-WSI" firstAttribute="leading" secondItem="PI6-sP-Mg9" secondAttribute="leading" constant="1" id="5ts-5p-iNA">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="yLC-mB-WSI" secondAttribute="bottom" constant="1" id="aH0-qP-5fj">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="yLC-mB-WSI" firstAttribute="top" secondItem="PI6-sP-Mg9" secondAttribute="top" constant="1" id="nbQ-pP-a8Z">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-fy-2Sk" customClass="SLTeamNameView" customModule="Caidian_iOS" customModuleProvider="target">
+                        <rect key="frame" x="80" y="8" width="291" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="tBQ-2r-hUw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PI6-sP-Mg9" firstAttribute="top" secondItem="UmQ-fy-2Sk" secondAttribute="bottom" id="0O1-wm-tiq"/>
+                    <constraint firstAttribute="trailing" secondItem="PI6-sP-Mg9" secondAttribute="trailing" constant="8" id="843-Bv-wvN"/>
+                    <constraint firstItem="UmQ-fy-2Sk" firstAttribute="leading" secondItem="PI6-sP-Mg9" secondAttribute="leading" id="BZo-8F-m3S"/>
+                    <constraint firstItem="qmN-vw-lun" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="E7a-iI-6OZ"/>
+                    <constraint firstItem="qmN-vw-lun" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HNc-db-oVK"/>
+                    <constraint firstItem="UmQ-fy-2Sk" firstAttribute="trailing" secondItem="PI6-sP-Mg9" secondAttribute="trailing" id="Ose-sp-JoB"/>
+                    <constraint firstItem="PI6-sP-Mg9" firstAttribute="leading" secondItem="qmN-vw-lun" secondAttribute="trailing" id="fcg-cF-27M"/>
+                    <constraint firstItem="UmQ-fy-2Sk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="p5N-Sg-dsY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="leagueView" destination="qmN-vw-lun" id="ucm-BV-f94"/>
+                <outlet property="rfsfNotOpenLabel" destination="0re-Mt-kiN" id="7u8-14-Ooe"/>
+                <outlet property="rfsfOpenSingleImageView" destination="gzv-jj-f1b" id="KxQ-B6-6WL"/>
+                <outlet property="rfsf_sp0Btn" destination="djX-vv-VjB" id="nfP-Bh-yBg"/>
+                <outlet property="rfsf_sp3Btn" destination="mC8-Ac-2s2" id="2VO-hC-3o6"/>
+                <outlet property="teamView" destination="UmQ-fy-2Sk" id="lC1-iB-CNh"/>
+            </connections>
+            <point key="canvasLocation" x="22.5" y="77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Bet/single-open" width="30" height="30"/>
+    </resources>
+</document>

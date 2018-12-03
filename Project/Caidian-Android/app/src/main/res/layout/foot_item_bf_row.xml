@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:paddingRight="10dp"
+    android:paddingBottom="4dp">
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/row_single"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_single"/>
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/row_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textSize="12dp"
+                android:textColor="@color/grayThree"
+                android:gravity="center|bottom"
+                android:text="周五026" />
+
+            <TextView
+                android:id="@+id/row_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="西甲"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/row_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:textSize="12dp"
+                android:textColor="@color/grayThree"
+                android:text="23:50 截止" />
+
+            <ImageView
+                android:id="@+id/row_body_open_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@mipmap/item_down" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/foot_item_row_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:lines="1"
+                android:textColor="@color/grayThree"
+                android:text="[10]皇家社会" />
+
+            <TextView
+                android:id="@+id/foot_item_row_vs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="VS" />
+
+            <TextView
+                android:id="@+id/foot_item_row_away"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/grayThree"
+                android:text="皇家社会[7]" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/foot_item_row_chose"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/angle_all_gray"
+                android:gravity="center"
+                android:ellipsize="none"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="点击选择比分投注"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

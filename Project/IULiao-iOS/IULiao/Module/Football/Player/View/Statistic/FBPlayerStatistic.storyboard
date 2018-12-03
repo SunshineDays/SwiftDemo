@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e9D-OT-EP2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Statistic View Controller-->
+        <scene sceneID="MUU-2X-RU8">
+            <objects>
+                <viewController storyboardIdentifier="FBPlayerStatisticViewController" id="e9D-OT-EP2" customClass="FBPlayerStatisticViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6b-QF-gTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4S-5M-3zf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD2-gS-Pfe">
+                                        <rect key="frame" x="10" y="11" width="80" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="CYH-Nn-HBF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="联赛" image="FBPlayer/arrow-down">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leagueBtnClick:" destination="e9D-OT-EP2" eventType="touchUpInside" id="GuB-EF-ATX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1H-6h-r2y">
+                                        <rect key="frame" x="285" y="11" width="80" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="R4z-8V-ewi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="赛季" image="FBPlayer/arrow-down">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leagueBtnClick:" destination="e9D-OT-EP2" eventType="touchUpInside" id="JgW-j8-9sp"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsE-JR-ZAb">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="4"/>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="FZv-j6-FfD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tsE-JR-ZAb" firstAttribute="leading" secondItem="S4S-5M-3zf" secondAttribute="leading" id="9vQ-ga-2ob"/>
+                                    <constraint firstAttribute="trailing" secondItem="d1H-6h-r2y" secondAttribute="trailing" constant="10" id="AS5-83-C7f"/>
+                                    <constraint firstItem="dD2-gS-Pfe" firstAttribute="leading" secondItem="S4S-5M-3zf" secondAttribute="leading" constant="10" id="BfM-Xg-DZy"/>
+                                    <constraint firstAttribute="trailing" secondItem="tsE-JR-ZAb" secondAttribute="trailing" id="UOw-io-pT3"/>
+                                    <constraint firstItem="dD2-gS-Pfe" firstAttribute="centerY" secondItem="S4S-5M-3zf" secondAttribute="centerY" constant="-2" id="dFy-b2-U3I"/>
+                                    <constraint firstAttribute="bottom" secondItem="tsE-JR-ZAb" secondAttribute="bottom" id="j9M-PO-DQg"/>
+                                    <constraint firstItem="d1H-6h-r2y" firstAttribute="centerY" secondItem="S4S-5M-3zf" secondAttribute="centerY" constant="-2" id="m4I-1V-nTK"/>
+                                    <constraint firstAttribute="height" constant="44" id="tUr-jw-HKz"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FoE-hV-oYP">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBPlayerStatisticTableCell" rowHeight="40" id="Oa6-fh-PMA" customClass="FBPlayerStatisticTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oa6-fh-PMA" id="fv6-c8-I8q">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="统计项目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paj-bH-MUF">
+                                                    <rect key="frame" x="30" y="11.5" width="57.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olb-8T-wAt">
+                                                    <rect key="frame" x="332" y="11.5" width="23" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="olb-8T-wAt" firstAttribute="centerY" secondItem="fv6-c8-I8q" secondAttribute="centerY" id="JMe-gH-kYA"/>
+                                                <constraint firstAttribute="trailing" secondItem="olb-8T-wAt" secondAttribute="trailing" constant="20" id="fIS-Bp-aYA"/>
+                                                <constraint firstItem="Paj-bH-MUF" firstAttribute="centerY" secondItem="fv6-c8-I8q" secondAttribute="centerY" id="mop-k2-bkE"/>
+                                                <constraint firstItem="Paj-bH-MUF" firstAttribute="leading" secondItem="fv6-c8-I8q" secondAttribute="leading" constant="30" id="sl9-56-Ktv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="statisticNameLabel" destination="Paj-bH-MUF" id="M5S-Sb-Bny"/>
+                                            <outlet property="valueLabel" destination="olb-8T-wAt" id="U9d-JH-bvU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FoE-hV-oYP" firstAttribute="leading" secondItem="ouF-i8-AF1" secondAttribute="leading" id="86X-V4-Xt2"/>
+                            <constraint firstItem="FoE-hV-oYP" firstAttribute="top" secondItem="S4S-5M-3zf" secondAttribute="bottom" id="NOR-SJ-v9h"/>
+                            <constraint firstItem="S4S-5M-3zf" firstAttribute="top" secondItem="t6b-QF-gTZ" secondAttribute="top" id="Xja-Mj-6ua"/>
+                            <constraint firstItem="S4S-5M-3zf" firstAttribute="leading" secondItem="ouF-i8-AF1" secondAttribute="leading" id="YZ6-ok-H54"/>
+                            <constraint firstItem="S4S-5M-3zf" firstAttribute="trailing" secondItem="ouF-i8-AF1" secondAttribute="trailing" id="fp7-LC-Evi"/>
+                            <constraint firstItem="ouF-i8-AF1" firstAttribute="trailing" secondItem="FoE-hV-oYP" secondAttribute="trailing" id="h4r-0k-3R9"/>
+                            <constraint firstItem="ouF-i8-AF1" firstAttribute="bottom" secondItem="FoE-hV-oYP" secondAttribute="bottom" id="xJw-ef-aW8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ouF-i8-AF1"/>
+                    </view>
+                    <connections>
+                        <outlet property="leagueBtn" destination="dD2-gS-Pfe" id="BsP-b2-Jz4"/>
+                        <outlet property="seasonBtn" destination="d1H-6h-r2y" id="KpE-7o-vKq"/>
+                        <outlet property="tableView" destination="FoE-hV-oYP" id="WJ1-3P-43X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9h-iy-6iu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBPlayer/arrow-down" width="8" height="5"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.LiveFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/colorPrimaryDark" />
+    <ImageView
+        android:id="@+id/live_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@mipmap/icon_no_data"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/live_web_view_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.lzyzsd.jsbridge.BridgeWebView
+            android:id="@+id/live_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

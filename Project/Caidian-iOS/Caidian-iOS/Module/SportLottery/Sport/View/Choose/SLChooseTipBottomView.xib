@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLChooseTipBottomView" customModule="Caidian_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="betCountLabel" destination="07M-aj-e4F" id="e8v-l0-BpZ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="iC3-f0-lZX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2T-6M-48Q">
+                    <rect key="frame" x="295" y="0.0" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="UgQ-mi-NEI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="下一步"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColorForNormalState">
+                            <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColorForHighlightedState">
+                            <color key="value" red="1" green="0.2666666667" blue="0.1333333333" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextBtnAction:" destination="-1" eventType="touchUpInside" id="ZHB-7g-TvG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n82-vu-X67">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="94Q-lC-xI2"/>
+                    </constraints>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="Bet/choose-clear"/>
+                    <connections>
+                        <action selector="clearBtnAction:" destination="-1" eventType="touchUpInside" id="7A9-Rz-S53"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywA-an-I3f">
+                    <rect key="frame" x="50" y="0.0" width="245" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="页面赔率仅供参考" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-od-SPL">
+                            <rect key="frame" x="73" y="21" width="99" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选0项" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07M-aj-e4F">
+                            <rect key="frame" x="96.5" y="3" width="52" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="OOT-e8-62W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ucb-od-SPL" firstAttribute="centerX" secondItem="ywA-an-I3f" secondAttribute="centerX" id="0Jg-TT-b7B"/>
+                        <constraint firstItem="07M-aj-e4F" firstAttribute="centerY" secondItem="ywA-an-I3f" secondAttribute="centerY" constant="-8" id="BLe-CC-UEu"/>
+                        <constraint firstItem="Ucb-od-SPL" firstAttribute="height" secondItem="07M-aj-e4F" secondAttribute="height" id="QhS-dT-wVs"/>
+                        <constraint firstItem="Ucb-od-SPL" firstAttribute="top" secondItem="07M-aj-e4F" secondAttribute="bottom" id="gx2-42-kJ8"/>
+                        <constraint firstItem="07M-aj-e4F" firstAttribute="centerX" secondItem="ywA-an-I3f" secondAttribute="centerX" id="lJv-eI-vqm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUQ-Nu-lN8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="apR-HI-9gb">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eUQ-Nu-lN8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="37f-ye-BrK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eUQ-Nu-lN8" secondAttribute="trailing" id="4K1-gU-EXi"/>
+                <constraint firstItem="R2T-6M-48Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8hl-HN-DXM"/>
+                <constraint firstItem="R2T-6M-48Q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bmc-fE-fcv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R2T-6M-48Q" secondAttribute="trailing" id="D1V-e5-L9c"/>
+                <constraint firstItem="n82-vu-X67" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D6m-yo-zvj"/>
+                <constraint firstItem="R2T-6M-48Q" firstAttribute="leading" secondItem="ywA-an-I3f" secondAttribute="trailing" id="JYd-g0-chY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="R2T-6M-48Q" secondAttribute="bottom" id="SqH-kf-6hD"/>
+                <constraint firstItem="n82-vu-X67" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Tm0-Cf-23d"/>
+                <constraint firstItem="ywA-an-I3f" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aQB-ET-9gM"/>
+                <constraint firstItem="n82-vu-X67" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="erE-nF-Typ"/>
+                <constraint firstItem="eUQ-Nu-lN8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="i6G-CY-E8u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n82-vu-X67" secondAttribute="bottom" id="icQ-kY-Wfd"/>
+                <constraint firstItem="ywA-an-I3f" firstAttribute="leading" secondItem="n82-vu-X67" secondAttribute="trailing" id="q7O-j0-l8Z"/>
+                <constraint firstAttribute="bottom" secondItem="ywA-an-I3f" secondAttribute="bottom" id="xfi-NT-0W5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-0.5" y="-469"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bet/choose-clear" width="18" height="18"/>
+    </resources>
+</document>

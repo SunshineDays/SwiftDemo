@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/f2f2f2"
+            android:paddingLeft="10dp">
+
+
+            <View
+                android:id="@+id/dlt_header_view"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/red" />
+
+
+            <TextView
+                android:id="@+id/sfc_header_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/dlt_header_view"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/grayThree"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/sfc_header_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/sfc_header_issue"
+                android:gravity="center"
+                android:text="-"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/grayThree"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sfc_random_phone_img"
+                    android:layout_width="24dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_phone" />
+
+                <TextView
+                    android:id="@+id/sfc_random_chose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="摇一摇可自动选择"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sfc_header_match_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical|right"
+                android:text="请选择比赛"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/red_wave"
+            android:background="@color/f2f2f2" />
+        <ListView
+            android:id="@+id/sfc_list_view"
+            android:layout_marginBottom="44dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sfc_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/sfc_delete"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:padding="3dp"
+            android:src="@mipmap/icon_delete" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/foot_ball_delete"
+            android:layout_toStartOf="@+id/foot_ball_step"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sfc_bet_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="0 注  共 0 元"
+                android:textColor="@color/grayThree"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/d11_step"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

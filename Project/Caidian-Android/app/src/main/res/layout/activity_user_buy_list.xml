@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/buy_list_root_view"
+    tools:context="com.caidian310.activity.user.BuyListActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray" />
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/buy_list_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/hot_relative"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="@color/graySix" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/buy_list_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="50dp"
+        android:src="@mipmap/icon_no_data"
+        android:visibility="gone" />
+
+    <com.caidian310.view.custom.RefreshLayout
+        android:id="@+id/buy_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/buy_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.caidian310.view.custom.RefreshLayout>
+</LinearLayout>

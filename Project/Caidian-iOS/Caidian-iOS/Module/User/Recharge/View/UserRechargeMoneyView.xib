@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserRechargeMoneyView" customModule="Caidian_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="boxView" destination="iN0-l3-epB" id="lhL-la-zSR"/>
+                <outlet property="checkedImageView" destination="Ifq-bU-2Ae" id="xhB-I3-cUh"/>
+                <outlet property="serialBtn" destination="UJM-f9-EQ8" id="8nc-IV-L8w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bet/serial-checked" translatesAutoresizingMaskIntoConstraints="NO" id="Ifq-bU-2Ae">
+                    <rect key="frame" x="61" y="15" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="BXg-9w-2l8"/>
+                        <constraint firstAttribute="width" secondItem="Ifq-bU-2Ae" secondAttribute="height" id="Sae-Uf-qyk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJM-f9-EQ8">
+                    <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="2串1">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="serialBtnAction:" destination="-1" eventType="touchUpInside" id="4zQ-MW-0EF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ifq-bU-2Ae" secondAttribute="trailing" id="0Ik-KC-QHK"/>
+                <constraint firstItem="UJM-f9-EQ8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7JU-tX-3pL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UJM-f9-EQ8" secondAttribute="trailing" id="MqS-BS-wpd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UJM-f9-EQ8" secondAttribute="bottom" id="W4K-NY-fcT"/>
+                <constraint firstItem="UJM-f9-EQ8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="esx-2q-qPc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ifq-bU-2Ae" secondAttribute="bottom" id="m6E-Qc-64x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-272" y="-265"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bet/serial-checked" width="15" height="15"/>
+    </resources>
+</document>

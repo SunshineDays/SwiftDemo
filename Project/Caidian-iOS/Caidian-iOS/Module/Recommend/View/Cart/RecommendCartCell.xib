@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecommendCartCell" rowHeight="133" id="KGk-i7-Jjw" customClass="RecommendCartCell" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiM-n7-TCu">
+                        <rect key="frame" x="0.0" y="0.0" width="331" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.2666666667" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="mBP-sn-hqL"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-73-lV8">
+                        <rect key="frame" x="10" y="0.0" width="311" height="132.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联赛名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-Qd-QjW">
+                                <rect key="frame" x="10" y="15" width="43" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00-00 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7W-4e-Kaw">
+                                <rect key="frame" x="63" y="15.5" width="84" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp3-0e-ltW">
+                                <rect key="frame" x="162" y="15.5" width="43" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客队名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-tR-txy">
+                                <rect key="frame" x="235" y="15" width="43" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr1-7l-UNs">
+                                <rect key="frame" x="210" y="15.5" width="20" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ncd-dr-rhZ">
+                                <rect key="frame" x="0.0" y="32.5" width="311" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lp3-0e-ltW" firstAttribute="centerY" secondItem="g7W-4e-Kaw" secondAttribute="centerY" id="1Fp-JC-qOf"/>
+                            <constraint firstItem="tbc-Qd-QjW" firstAttribute="top" secondItem="GYm-73-lV8" secondAttribute="top" constant="15" id="9E7-2k-fNg"/>
+                            <constraint firstItem="Mr1-7l-UNs" firstAttribute="centerY" secondItem="lp3-0e-ltW" secondAttribute="centerY" id="AAi-4K-M09"/>
+                            <constraint firstAttribute="trailing" secondItem="Ncd-dr-rhZ" secondAttribute="trailing" id="Ah1-b3-gJs"/>
+                            <constraint firstItem="RfJ-tR-txy" firstAttribute="centerY" secondItem="Mr1-7l-UNs" secondAttribute="centerY" id="ENK-cj-vA6"/>
+                            <constraint firstItem="Mr1-7l-UNs" firstAttribute="leading" secondItem="lp3-0e-ltW" secondAttribute="trailing" constant="5" id="KvL-ft-mfi"/>
+                            <constraint firstItem="RfJ-tR-txy" firstAttribute="leading" secondItem="Mr1-7l-UNs" secondAttribute="trailing" constant="5" id="Mch-du-Zyu"/>
+                            <constraint firstItem="tbc-Qd-QjW" firstAttribute="leading" secondItem="GYm-73-lV8" secondAttribute="leading" constant="10" id="RX8-ip-Klk"/>
+                            <constraint firstItem="lp3-0e-ltW" firstAttribute="leading" secondItem="g7W-4e-Kaw" secondAttribute="trailing" constant="15" id="Y7k-hI-hT5"/>
+                            <constraint firstItem="Ncd-dr-rhZ" firstAttribute="leading" secondItem="GYm-73-lV8" secondAttribute="leading" id="ddM-ru-cqs"/>
+                            <constraint firstItem="Ncd-dr-rhZ" firstAttribute="top" secondItem="lp3-0e-ltW" secondAttribute="bottom" id="fwD-bh-y2n"/>
+                            <constraint firstAttribute="bottom" secondItem="Ncd-dr-rhZ" secondAttribute="bottom" id="m3H-zV-gLb"/>
+                            <constraint firstItem="g7W-4e-Kaw" firstAttribute="leading" secondItem="tbc-Qd-QjW" secondAttribute="trailing" constant="10" id="vzo-y8-quj"/>
+                            <constraint firstItem="g7W-4e-Kaw" firstAttribute="centerY" secondItem="tbc-Qd-QjW" secondAttribute="centerY" id="wti-k2-3SP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EiM-n7-TCu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2u2-6n-CXQ"/>
+                    <constraint firstItem="EiM-n7-TCu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5R6-kG-dYN"/>
+                    <constraint firstAttribute="trailing" secondItem="EiM-n7-TCu" secondAttribute="trailing" id="6tF-fZ-jA7"/>
+                    <constraint firstItem="GYm-73-lV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CFE-Vz-Ehr"/>
+                    <constraint firstAttribute="trailing" secondItem="GYm-73-lV8" secondAttribute="trailing" constant="10" id="VmS-qG-ad4"/>
+                    <constraint firstAttribute="bottom" secondItem="GYm-73-lV8" secondAttribute="bottom" id="fHb-1v-L8m"/>
+                    <constraint firstItem="GYm-73-lV8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tI2-bt-nUr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="awayTeamLabel" destination="RfJ-tR-txy" id="3tu-6G-Iiy"/>
+                <outlet property="backgroundContentView" destination="GYm-73-lV8" id="2bn-UK-C9k"/>
+                <outlet property="homeTeamLabel" destination="lp3-0e-ltW" id="QVm-cu-WYj"/>
+                <outlet property="leagueNameLabel" destination="tbc-Qd-QjW" id="qdn-s5-lya"/>
+                <outlet property="logoView" destination="EiM-n7-TCu" id="qSe-RY-zd7"/>
+                <outlet property="matchTimeLabel" destination="g7W-4e-Kaw" id="4Fh-Vf-384"/>
+                <outlet property="tableView" destination="Ncd-dr-rhZ" id="49b-JT-9FA"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="-76.5"/>
+        </tableViewCell>
+    </objects>
+</document>

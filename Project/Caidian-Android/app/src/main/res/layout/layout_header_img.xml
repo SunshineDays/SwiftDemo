@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#00f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header_img_camera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F2f2f2" />
+
+        <TextView
+            android:id="@+id/header_img_album"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/header_img_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_bg"
+        android:gravity="center"
+
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="14dp" />
+
+
+</LinearLayout>

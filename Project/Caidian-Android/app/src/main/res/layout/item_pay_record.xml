@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="36dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0.6dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/grayLow"
+        android:text=""
+        tools:ignore="Suspicious0dp" />
+
+    <TextView
+        android:id="@+id/item_pay_detail_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/graySix"
+        android:text="场次" />
+    <TextView
+        android:layout_width="0.6dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/grayLow"
+        android:text=""
+        tools:ignore="Suspicious0dp" />
+
+
+    <TextView
+        android:id="@+id/item_pay_detail_home_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="10dp"
+
+        android:textColor="@color/graySix"
+        android:text="主队" />
+    <TextView
+        android:layout_width="0.6dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/grayLow"
+        android:text=""
+        tools:ignore="Suspicious0dp" />
+
+    <TextView
+        android:id="@+id/item_pay_detail_score"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/graySix"
+        android:textSize="10dp"
+        android:text="比分" />
+    <TextView
+        android:layout_width="0.6dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/grayLow"
+        android:text=""
+        tools:ignore="Suspicious0dp" />
+
+    <TextView
+        android:id="@+id/item_pay_detail_home_away"
+        android:textSize="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:maxEms="5"
+        android:textColor="@color/graySix"
+        android:text="客队" />
+    <TextView
+        android:layout_width="0.6dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/grayLow"
+        android:text=""
+        tools:ignore="Suspicious0dp" />
+
+    <TextView
+        android:id="@+id/item_pay_detail_content"
+        android:textSize="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/graySix"
+        android:text="投注内容" />
+    <TextView
+        android:layout_width="0.6dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/grayLow"
+        android:text=""
+        tools:ignore="Suspicious0dp" />
+</LinearLayout>

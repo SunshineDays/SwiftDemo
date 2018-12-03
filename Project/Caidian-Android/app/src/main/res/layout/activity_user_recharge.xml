@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.caidian310.activity.user.RechargeActivity">
+    <RelativeLayout
+        android:id="@+id/recharge_root"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/recharge_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/recharge_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="王大帅"
+            android:textColor="@color/grayThree"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/recharge_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/textView11"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="8"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="元"
+            android:textColor="@color/graySix"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/recharge_relative_line"
+        android:layout_below="@+id/recharge_relative"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grayLow" />
+    <ListView
+        android:layout_below="@+id/recharge_relative_line"
+        android:id="@+id/recharge_list_view"
+        android:layout_width="wrap_content"
+        android:divider="@color/grayLow"
+        android:scrollbars="none"
+        android:dividerHeight="0.6dp"
+        android:layout_above="@+id/recharge_foot"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/recharge_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_below="@+id/recharge_relative"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/grayLow" />
+        <TextView
+            android:id="@+id/recharge_sure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@drawable/login_round"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:text="充  值"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/recharge_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="paI-2i-ut8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Match Analyze Lineup View Controller-->
+        <scene sceneID="kXX-qD-1Hw">
+            <objects>
+                <viewController storyboardIdentifier="FBMatchAnalyzeLineupViewController" id="paI-2i-ut8" customClass="FBMatchAnalyzeLineupViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="veB-FE-cFI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-eU-S7n">
+                                <rect key="frame" x="37.5" y="80" width="300" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LDs-aj-gjm"/>
+                                    <constraint firstAttribute="height" constant="230" id="ed3-Sc-0j9"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zFi-6d-IHD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeLineupEvenTableCell" rowHeight="93" id="43B-W6-akt" customClass="FBMatchAnalyzeLineupEvenTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="43B-W6-akt" id="SSZ-Al-EUF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-aC-qw8">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="92.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5R-rg-lmM" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJe-hy-c84" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="68.5" y="0.0" width="68.5" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Y4-Bp-iBK" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="137" y="0.0" width="69" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMq-KE-kmW" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="206" y="0.0" width="68.5" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGh-Ms-w58" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="274.5" y="0.0" width="68.5" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="vJe-hy-c84" secondAttribute="bottom" id="11i-XJ-hf4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eMq-KE-kmW" secondAttribute="bottom" id="2ud-w3-uyp"/>
+                                                        <constraint firstItem="n5R-rg-lmM" firstAttribute="width" secondItem="vJe-hy-c84" secondAttribute="width" id="5e0-fm-dnH"/>
+                                                        <constraint firstItem="eMq-KE-kmW" firstAttribute="width" secondItem="YGh-Ms-w58" secondAttribute="width" id="9VX-QG-Y65"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0Y4-Bp-iBK" secondAttribute="bottom" id="CIR-t9-e4o"/>
+                                                        <constraint firstAttribute="bottom" secondItem="n5R-rg-lmM" secondAttribute="bottom" id="FRS-zA-Fyz"/>
+                                                        <constraint firstItem="YGh-Ms-w58" firstAttribute="top" secondItem="Iu1-aC-qw8" secondAttribute="top" id="Ni8-XE-yNi"/>
+                                                        <constraint firstItem="n5R-rg-lmM" firstAttribute="top" secondItem="Iu1-aC-qw8" secondAttribute="top" id="ann-3L-XWw"/>
+                                                        <constraint firstItem="n5R-rg-lmM" firstAttribute="leading" secondItem="Iu1-aC-qw8" secondAttribute="leading" id="b6j-3a-lfM"/>
+                                                        <constraint firstItem="0Y4-Bp-iBK" firstAttribute="top" secondItem="Iu1-aC-qw8" secondAttribute="top" id="cO1-cJ-AQp"/>
+                                                        <constraint firstItem="0Y4-Bp-iBK" firstAttribute="width" secondItem="eMq-KE-kmW" secondAttribute="width" id="cZ0-JM-cHZ"/>
+                                                        <constraint firstItem="vJe-hy-c84" firstAttribute="top" secondItem="Iu1-aC-qw8" secondAttribute="top" id="faw-Yf-QRb"/>
+                                                        <constraint firstItem="eMq-KE-kmW" firstAttribute="leading" secondItem="0Y4-Bp-iBK" secondAttribute="trailing" id="he9-ck-6vF"/>
+                                                        <constraint firstItem="0Y4-Bp-iBK" firstAttribute="leading" secondItem="vJe-hy-c84" secondAttribute="trailing" id="nOK-Q0-5vY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YGh-Ms-w58" secondAttribute="trailing" id="olD-m2-eLz"/>
+                                                        <constraint firstItem="vJe-hy-c84" firstAttribute="width" secondItem="0Y4-Bp-iBK" secondAttribute="width" id="rDF-nK-gzl"/>
+                                                        <constraint firstItem="YGh-Ms-w58" firstAttribute="leading" secondItem="eMq-KE-kmW" secondAttribute="trailing" id="uHu-vQ-LPm"/>
+                                                        <constraint firstItem="eMq-KE-kmW" firstAttribute="top" secondItem="Iu1-aC-qw8" secondAttribute="top" id="ysz-sh-5Gl"/>
+                                                        <constraint firstItem="vJe-hy-c84" firstAttribute="leading" secondItem="n5R-rg-lmM" secondAttribute="trailing" id="zhL-F1-k9o"/>
+                                                        <constraint firstAttribute="bottom" secondItem="YGh-Ms-w58" secondAttribute="bottom" id="zuI-k8-xAZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Iu1-aC-qw8" firstAttribute="leading" secondItem="SSZ-Al-EUF" secondAttribute="leading" constant="16" id="38Q-JC-xJZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Iu1-aC-qw8" secondAttribute="bottom" id="5G8-3i-5lI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Iu1-aC-qw8" secondAttribute="trailing" constant="16" id="Uxy-7T-HMV"/>
+                                                <constraint firstItem="Iu1-aC-qw8" firstAttribute="top" secondItem="SSZ-Al-EUF" secondAttribute="top" id="b71-d3-ain"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outletCollection property="playerViews" destination="n5R-rg-lmM" collectionClass="NSMutableArray" id="fjd-ar-TQa"/>
+                                            <outletCollection property="playerViews" destination="vJe-hy-c84" collectionClass="NSMutableArray" id="YfM-qp-a95"/>
+                                            <outletCollection property="playerViews" destination="0Y4-Bp-iBK" collectionClass="NSMutableArray" id="ftg-yK-pgk"/>
+                                            <outletCollection property="playerViews" destination="eMq-KE-kmW" collectionClass="NSMutableArray" id="Ykl-N7-3wf"/>
+                                            <outletCollection property="playerViews" destination="YGh-Ms-w58" collectionClass="NSMutableArray" id="vxW-dC-fb0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeLineupOddTableCell" rowHeight="93" id="x0h-yK-v5c" customClass="FBMatchAnalyzeLineupOddTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="121" width="375" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0h-yK-v5c" id="fOa-7d-vy1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-YW-AW5">
+                                                    <rect key="frame" x="40" y="0.0" width="295" height="92.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgv-fS-nYx" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="73.5" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-aY-dgF" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="73.5" y="0.0" width="74" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvr-eQ-hTN" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="147.5" y="0.0" width="74" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cY-Zc-nqX" customClass="FBMatchAnalyzeLineupPlayerView" customModule="IULiao" customModuleProvider="target">
+                                                            <rect key="frame" x="221.5" y="0.0" width="73.5" height="92.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="vvr-eQ-hTN" secondAttribute="bottom" id="1dz-o9-aOW"/>
+                                                        <constraint firstItem="4cY-Zc-nqX" firstAttribute="leading" secondItem="vvr-eQ-hTN" secondAttribute="trailing" id="8di-dE-k6A"/>
+                                                        <constraint firstItem="vvr-eQ-hTN" firstAttribute="leading" secondItem="0Oz-aY-dgF" secondAttribute="trailing" id="BKX-hp-alb"/>
+                                                        <constraint firstItem="Jgv-fS-nYx" firstAttribute="leading" secondItem="Th4-YW-AW5" secondAttribute="leading" id="BRJ-fs-n6x"/>
+                                                        <constraint firstItem="vvr-eQ-hTN" firstAttribute="top" secondItem="Th4-YW-AW5" secondAttribute="top" id="J04-jU-43A"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4cY-Zc-nqX" secondAttribute="trailing" id="KJ6-27-vrF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0Oz-aY-dgF" secondAttribute="bottom" id="MKa-4Y-jvj"/>
+                                                        <constraint firstItem="Jgv-fS-nYx" firstAttribute="top" secondItem="Th4-YW-AW5" secondAttribute="top" id="O04-vD-OnK"/>
+                                                        <constraint firstItem="4cY-Zc-nqX" firstAttribute="top" secondItem="Th4-YW-AW5" secondAttribute="top" id="Qmt-mJ-i5r"/>
+                                                        <constraint firstItem="0Oz-aY-dgF" firstAttribute="leading" secondItem="Jgv-fS-nYx" secondAttribute="trailing" id="VwY-Of-2FZ"/>
+                                                        <constraint firstItem="0Oz-aY-dgF" firstAttribute="top" secondItem="Th4-YW-AW5" secondAttribute="top" id="aR4-I4-DYf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4cY-Zc-nqX" secondAttribute="bottom" id="ejX-wK-DF7"/>
+                                                        <constraint firstItem="Jgv-fS-nYx" firstAttribute="width" secondItem="0Oz-aY-dgF" secondAttribute="width" id="o7a-4B-eJD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Jgv-fS-nYx" secondAttribute="bottom" id="t7K-f5-AEo"/>
+                                                        <constraint firstItem="vvr-eQ-hTN" firstAttribute="width" secondItem="4cY-Zc-nqX" secondAttribute="width" id="wxk-5P-d4i"/>
+                                                        <constraint firstItem="0Oz-aY-dgF" firstAttribute="width" secondItem="vvr-eQ-hTN" secondAttribute="width" id="zbW-5j-cvi"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Th4-YW-AW5" firstAttribute="top" secondItem="fOa-7d-vy1" secondAttribute="top" id="B0L-U3-MJc"/>
+                                                <constraint firstAttribute="trailing" secondItem="Th4-YW-AW5" secondAttribute="trailing" constant="40" id="c0j-KK-NIV"/>
+                                                <constraint firstItem="Th4-YW-AW5" firstAttribute="leading" secondItem="fOa-7d-vy1" secondAttribute="leading" constant="40" id="fpH-5h-972"/>
+                                                <constraint firstAttribute="bottom" secondItem="Th4-YW-AW5" secondAttribute="bottom" id="gsn-fE-5Hn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outletCollection property="playerViews" destination="Jgv-fS-nYx" collectionClass="NSMutableArray" id="3rs-33-Qfi"/>
+                                            <outletCollection property="playerViews" destination="0Oz-aY-dgF" collectionClass="NSMutableArray" id="qBL-gX-l52"/>
+                                            <outletCollection property="playerViews" destination="vvr-eQ-hTN" collectionClass="NSMutableArray" id="oaf-Ch-6mG"/>
+                                            <outletCollection property="playerViews" destination="4cY-Zc-nqX" collectionClass="NSMutableArray" id="oU2-u1-I6M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeLineupBackupTableCell" id="kju-ol-otb" customClass="FBMatchAnalyzeLineupBackupTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kju-ol-otb" id="fAV-re-bKz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/lineup-shirt-green" translatesAutoresizingMaskIntoConstraints="NO" id="9fh-Ff-rAH">
+                                                    <rect key="frame" x="12" y="6" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="bKF-Xq-fdA"/>
+                                                        <constraint firstAttribute="width" secondItem="9fh-Ff-rAH" secondAttribute="height" id="h6D-Ex-mVJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球员名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgF-rp-cP7">
+                                                    <rect key="frame" x="56" y="14.5" width="37" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dn7-cQ-MuH">
+                                                    <rect key="frame" x="337" y="14.5" width="26" height="14"/>
+                                                    <color key="backgroundColor" red="0.9882352941176471" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="B8O-X9-9hU"/>
+                                                        <constraint firstAttribute="width" constant="26" id="kfj-xk-T6k"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="7"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk3-Sf-nlR">
+                                                    <rect key="frame" x="25" y="15" width="6" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dk3-Sf-nlR" firstAttribute="centerY" secondItem="9fh-Ff-rAH" secondAttribute="centerY" id="4sx-CO-pKD"/>
+                                                <constraint firstItem="dgF-rp-cP7" firstAttribute="centerY" secondItem="fAV-re-bKz" secondAttribute="centerY" id="4yJ-r6-Z4h"/>
+                                                <constraint firstItem="dgF-rp-cP7" firstAttribute="leading" secondItem="9fh-Ff-rAH" secondAttribute="trailing" constant="12" id="5SX-FD-mA3"/>
+                                                <constraint firstItem="9fh-Ff-rAH" firstAttribute="leading" secondItem="fAV-re-bKz" secondAttribute="leading" constant="12" id="ENJ-pc-pfb"/>
+                                                <constraint firstItem="9fh-Ff-rAH" firstAttribute="centerY" secondItem="fAV-re-bKz" secondAttribute="centerY" id="Its-Dp-X5U"/>
+                                                <constraint firstItem="dk3-Sf-nlR" firstAttribute="centerX" secondItem="9fh-Ff-rAH" secondAttribute="centerX" id="cd1-3Z-7be"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dn7-cQ-MuH" secondAttribute="trailing" constant="12" id="eC7-Lk-iMS"/>
+                                                <constraint firstItem="Dn7-cQ-MuH" firstAttribute="centerY" secondItem="fAV-re-bKz" secondAttribute="centerY" id="iet-lj-Dt5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="numberLabel" destination="dk3-Sf-nlR" id="gHa-8l-Nbk"/>
+                                            <outlet property="playerNameLabel" destination="dgF-rp-cP7" id="YE9-Hj-HBJ"/>
+                                            <outlet property="rateLabel" destination="Dn7-cQ-MuH" id="tcR-Jh-ibE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zFi-6d-IHD" firstAttribute="top" secondItem="eef-lf-qfR" secondAttribute="top" id="2VU-ty-5od"/>
+                            <constraint firstItem="ATo-eU-S7n" firstAttribute="top" secondItem="eef-lf-qfR" secondAttribute="top" constant="60" id="Bu0-14-oPw"/>
+                            <constraint firstItem="zFi-6d-IHD" firstAttribute="trailing" secondItem="eef-lf-qfR" secondAttribute="trailing" id="j7w-Uz-hGb"/>
+                            <constraint firstItem="eef-lf-qfR" firstAttribute="bottom" secondItem="zFi-6d-IHD" secondAttribute="bottom" id="k3D-8N-xuj"/>
+                            <constraint firstItem="ATo-eU-S7n" firstAttribute="centerX" secondItem="veB-FE-cFI" secondAttribute="centerX" id="oxN-hz-HTO"/>
+                            <constraint firstItem="zFi-6d-IHD" firstAttribute="leading" secondItem="eef-lf-qfR" secondAttribute="leading" id="wkg-QO-rIj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eef-lf-qfR"/>
+                    </view>
+                    <connections>
+                        <outlet property="noDataImageView" destination="ATo-eU-S7n" id="Zxh-Pg-0dz"/>
+                        <outlet property="tableView" destination="zFi-6d-IHD" id="oig-du-KHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWK-VC-wYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="-81.409295352323838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBMatch/lineup-shirt-green" width="32" height="32"/>
+    </resources>
+</document>

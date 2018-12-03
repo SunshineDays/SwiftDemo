@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FBLeagueDetailMatchResultItemView" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="91" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="胜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTJ-Ys-Yl6">
+                    <rect key="frame" x="39.5" y="80" width="12.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-yq-HiR" customClass="PieChartView" customModule="Charts">
+                    <rect key="frame" x="7.5" y="0.0" width="76" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="UaH-sA-DN4"/>
+                        <constraint firstAttribute="width" secondItem="6bR-yq-HiR" secondAttribute="height" id="xgg-nn-Diz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shK-lw-1fa">
+                    <rect key="frame" x="7.5" y="0.0" width="76" height="76"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T51-Hn-s4F">
+                            <rect key="frame" x="26.5" y="20" width="23.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="DaG-P9-YkI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.90980392156862744" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0场" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McD-xT-Gfs">
+                            <rect key="frame" x="28" y="43" width="20" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="McD-xT-Gfs" firstAttribute="centerX" secondItem="shK-lw-1fa" secondAttribute="centerX" id="ZK6-AT-JUS"/>
+                        <constraint firstItem="McD-xT-Gfs" firstAttribute="top" secondItem="T51-Hn-s4F" secondAttribute="bottom" constant="3" id="hkn-pd-VO3"/>
+                        <constraint firstItem="T51-Hn-s4F" firstAttribute="centerX" secondItem="shK-lw-1fa" secondAttribute="centerX" id="iCF-M1-nMJ"/>
+                        <constraint firstItem="T51-Hn-s4F" firstAttribute="centerY" secondItem="shK-lw-1fa" secondAttribute="centerY" constant="-8" id="iwj-hh-kVV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="shK-lw-1fa" firstAttribute="top" secondItem="6bR-yq-HiR" secondAttribute="top" id="0v0-kG-AVh"/>
+                <constraint firstItem="shK-lw-1fa" firstAttribute="bottom" secondItem="6bR-yq-HiR" secondAttribute="bottom" id="61a-Yw-uyD"/>
+                <constraint firstItem="6bR-yq-HiR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JRz-bN-16l"/>
+                <constraint firstItem="QTJ-Ys-Yl6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="drh-kR-78Z"/>
+                <constraint firstItem="QTJ-Ys-Yl6" firstAttribute="top" secondItem="6bR-yq-HiR" secondAttribute="bottom" constant="4" id="hDB-0C-qJO"/>
+                <constraint firstItem="shK-lw-1fa" firstAttribute="leading" secondItem="6bR-yq-HiR" secondAttribute="leading" id="ibD-fw-AvN"/>
+                <constraint firstItem="shK-lw-1fa" firstAttribute="trailing" secondItem="6bR-yq-HiR" secondAttribute="trailing" id="rgs-df-FZN"/>
+                <constraint firstItem="6bR-yq-HiR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="umC-MT-orT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="matchCountLabel" destination="McD-xT-Gfs" id="Wv5-V0-B7h"/>
+                <outlet property="percentLabel" destination="T51-Hn-s4F" id="6FT-7N-0mR"/>
+                <outlet property="pieChartView" destination="6bR-yq-HiR" id="bIY-Zc-93v"/>
+                <outlet property="resultTextLabel" destination="QTJ-Ys-Yl6" id="gFK-UI-RXY"/>
+            </connections>
+            <point key="canvasLocation" x="-116.5" y="-227.5"/>
+        </view>
+    </objects>
+</document>

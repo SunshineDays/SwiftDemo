@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsOrdinaryCell" id="HAl-49-qlc" customClass="NewsOrdinaryCell" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HAl-49-qlc" id="Zub-0y-evk">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="66" image="Empty/image-120x90" translatesAutoresizingMaskIntoConstraints="NO" id="xKO-in-Doh">
+                        <rect key="frame" x="265" y="14.5" width="100" height="67"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="4UQ-N3-lge"/>
+                            <constraint firstAttribute="width" secondItem="xKO-in-Doh" secondAttribute="height" multiplier="3:2" id="Xpo-nL-tNU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnx-2V-Mpq">
+                        <rect key="frame" x="10" y="18.5" width="243" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdR-jc-7zg">
+                        <rect key="frame" x="10" y="66.5" width="25" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="标签" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTN-ZO-1hs">
+                        <rect key="frame" x="45" y="67" width="210" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rdR-jc-7zg" firstAttribute="bottom" secondItem="xKO-in-Doh" secondAttribute="bottom" id="0D6-Mh-Iiu"/>
+                    <constraint firstItem="TTN-ZO-1hs" firstAttribute="centerY" secondItem="rdR-jc-7zg" secondAttribute="centerY" id="555-kJ-m9X"/>
+                    <constraint firstItem="Bnx-2V-Mpq" firstAttribute="leading" secondItem="Zub-0y-evk" secondAttribute="leading" constant="10" id="7Fq-fk-85l"/>
+                    <constraint firstItem="TTN-ZO-1hs" firstAttribute="leading" secondItem="rdR-jc-7zg" secondAttribute="trailing" constant="10" id="8Zu-x0-azS"/>
+                    <constraint firstItem="xKO-in-Doh" firstAttribute="centerY" secondItem="Zub-0y-evk" secondAttribute="centerY" id="8mB-90-AhE"/>
+                    <constraint firstAttribute="trailing" secondItem="xKO-in-Doh" secondAttribute="trailing" constant="10" id="LzP-m2-QEK"/>
+                    <constraint firstItem="rdR-jc-7zg" firstAttribute="leading" secondItem="Bnx-2V-Mpq" secondAttribute="leading" id="UqN-I6-NP4"/>
+                    <constraint firstItem="xKO-in-Doh" firstAttribute="leading" secondItem="Bnx-2V-Mpq" secondAttribute="trailing" constant="12" id="Zeb-3b-kxf"/>
+                    <constraint firstItem="Bnx-2V-Mpq" firstAttribute="top" secondItem="xKO-in-Doh" secondAttribute="top" constant="4" id="fkX-Hv-rIS"/>
+                    <constraint firstAttribute="bottom" secondItem="xKO-in-Doh" secondAttribute="bottom" constant="14" id="hZn-us-eYZ"/>
+                    <constraint firstItem="xKO-in-Doh" firstAttribute="top" secondItem="Zub-0y-evk" secondAttribute="top" constant="14" id="hqJ-eD-IXo"/>
+                    <constraint firstItem="xKO-in-Doh" firstAttribute="leading" secondItem="TTN-ZO-1hs" secondAttribute="trailing" constant="10" id="qO5-hR-D3u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="xKO-in-Doh" id="KLG-0M-ES2"/>
+                <outlet property="tagLabel" destination="TTN-ZO-1hs" id="bob-7o-cZj"/>
+                <outlet property="timeLabel" destination="rdR-jc-7zg" id="9eo-rZ-0L8"/>
+                <outlet property="titleLabel" destination="Bnx-2V-Mpq" id="PKV-gN-i5k"/>
+            </connections>
+            <point key="canvasLocation" x="93" y="17"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Empty/image-120x90" width="120" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target "Caidian-iOS" do
+
+    # swift 4.0
+    pod 'XCGLogger'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'SnapKit'
+    pod 'R.swift'
+    # pod 'Kingfisher'
+    pod 'IQKeyboardManagerSwift', '>= 6.0.0'
+
+    # obj-c
+    pod 'DZNEmptyDataSet'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+    # pod 'CRToast'
+    pod 'SDCycleScrollView'
+    pod 'SDWebImage'
+    pod 'ActionSheetPicker-3.0'
+
+    pod 'YBImageBrowser'
+    
+    # pod 'SQLite.swift'
+    # pod 'JPush'
+
+    pod 'UMengAnalytics-NO-IDFA'
+    # U-Share SDK UI模块（分享面板，建议添加）
+    # pod 'UMengUShare/UI'
+    # 集成微信(精简版0.2M)
+    # pod 'UMengUShare/Social/ReducedWeChat'
+    # 集成QQ(精简版0.5M)
+    # pod 'UMengUShare/Social/ReducedQQ'
+    # 集成新浪微博(精简版1M)
+    # pod 'UMengUShare/Social/ReducedSina'
+
+    # 极光推送
+    # pod 'JPush'
+
+    # debug
+    pod 'Reveal-SDK', :configurations => ['Debug']
+end

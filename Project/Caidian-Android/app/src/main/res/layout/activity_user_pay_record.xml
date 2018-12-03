@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white">
+
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/pay_record_loading"
+        layout="@layout/layout_loading" />
+
+    <ListView
+        android:background="@drawable/edge_top_f2f2f2"
+        android:id="@+id/pay_record_list_view"
+        android:layout_width="match_parent"
+        android:divider="@color/grayLow"
+        android:scrollbars="none"
+        android:dividerHeight="0.6dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

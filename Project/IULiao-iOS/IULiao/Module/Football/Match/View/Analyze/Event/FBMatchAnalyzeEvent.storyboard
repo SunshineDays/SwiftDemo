@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="inf-Rq-Wbh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Match Analyze Event View Controller-->
+        <scene sceneID="C0w-m7-asH">
+            <objects>
+                <viewController storyboardIdentifier="FBMatchAnalyzeEventViewController" id="inf-Rq-Wbh" customClass="FBMatchAnalyzeEventViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a3N-9G-nNq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="giP-FQ-1eQ">
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeEventStageTableCell" rowHeight="46" id="RQt-lD-TAG" customClass="FBMatchAnalyzeEventStageTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RQt-lD-TAG" id="3TR-lW-Znq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-line" translatesAutoresizingMaskIntoConstraints="NO" id="wMq-fa-7Df">
+                                                    <rect key="frame" x="178" y="36" width="18" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="X3M-J1-Qpt"/>
+                                                        <constraint firstAttribute="width" constant="18" id="ePy-Px-h5c">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSS-bp-rcF">
+                                                    <rect key="frame" x="10" y="17" width="355" height="1"/>
+                                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="ITd-pA-ll6">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-stage-bg" translatesAutoresizingMaskIntoConstraints="NO" id="UtY-rD-4ss">
+                                                    <rect key="frame" x="166" y="-3" width="42" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="UtY-rD-4ss" secondAttribute="height" id="fMi-EB-eux"/>
+                                                        <constraint firstAttribute="width" constant="42" id="vyW-oJ-yLX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdO-f4-Xap">
+                                                    <rect key="frame" x="169.5" y="0.0" width="36" height="36"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="半场" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-VA-AEv">
+                                                            <rect key="frame" x="5.5" y="10" width="25" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="xRc-VA-AEv" firstAttribute="centerX" secondItem="VdO-f4-Xap" secondAttribute="centerX" id="6Kj-sr-bXa"/>
+                                                        <constraint firstItem="xRc-VA-AEv" firstAttribute="centerY" secondItem="VdO-f4-Xap" secondAttribute="centerY" id="Ccd-rg-akH"/>
+                                                        <constraint firstAttribute="width" constant="36" id="Fb0-Ze-U9V"/>
+                                                        <constraint firstAttribute="width" secondItem="VdO-f4-Xap" secondAttribute="height" id="oYp-Dm-XQr"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VdO-f4-Xap" firstAttribute="centerX" secondItem="3TR-lW-Znq" secondAttribute="centerX" id="HhO-on-vd3"/>
+                                                <constraint firstItem="VdO-f4-Xap" firstAttribute="top" secondItem="3TR-lW-Znq" secondAttribute="top" id="IAf-94-4O6"/>
+                                                <constraint firstItem="sSS-bp-rcF" firstAttribute="leading" secondItem="3TR-lW-Znq" secondAttribute="leading" constant="10" id="MQD-Gp-Q8P"/>
+                                                <constraint firstAttribute="trailing" secondItem="sSS-bp-rcF" secondAttribute="trailing" constant="10" id="OWa-T6-fTG"/>
+                                                <constraint firstItem="wMq-fa-7Df" firstAttribute="top" secondItem="VdO-f4-Xap" secondAttribute="bottom" id="Q79-ec-L5X"/>
+                                                <constraint firstAttribute="bottom" secondItem="wMq-fa-7Df" secondAttribute="bottom" id="SAF-kf-MXV"/>
+                                                <constraint firstItem="UtY-rD-4ss" firstAttribute="centerY" secondItem="VdO-f4-Xap" secondAttribute="centerY" id="Spc-Cl-kVh"/>
+                                                <constraint firstItem="UtY-rD-4ss" firstAttribute="centerX" secondItem="VdO-f4-Xap" secondAttribute="centerX" id="ZMv-X2-dq4"/>
+                                                <constraint firstItem="sSS-bp-rcF" firstAttribute="centerY" secondItem="VdO-f4-Xap" secondAttribute="centerY" id="fW5-8i-lgQ"/>
+                                                <constraint firstItem="wMq-fa-7Df" firstAttribute="centerX" secondItem="3TR-lW-Znq" secondAttribute="centerX" id="laG-Mj-IaD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lineImageView" destination="wMq-fa-7Df" id="kbo-7S-uXA"/>
+                                            <outlet property="nameBoxView" destination="VdO-f4-Xap" id="WCv-zB-O7D"/>
+                                            <outlet property="nameLabel" destination="xRc-VA-AEv" id="24F-36-4j8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeEventHomeNormalTableCell" rowHeight="55" id="O9e-M4-23s" customClass="FBMatchAnalyzeEventHomeNormalTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O9e-M4-23s" id="Y3N-kK-fjb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-box-bg" translatesAutoresizingMaskIntoConstraints="NO" id="RFH-ds-VvG">
+                                                    <rect key="frame" x="27" y="12" width="163.5" height="36"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sif-Ko-6Jm">
+                                                    <rect key="frame" x="30" y="15" width="157.5" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队球员名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKn-Gl-JeF">
+                                                            <rect key="frame" x="0.0" y="8.5" width="101.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乌龙" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-qH-BKq">
+                                                            <rect key="frame" x="107.5" y="7.5" width="30" height="16"/>
+                                                            <color key="backgroundColor" red="0.054901960784313725" green="0.57647058823529407" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="GZg-ko-QGm"/>
+                                                                <constraint firstAttribute="height" constant="16" id="YIQ-J8-dVy"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="kKn-Gl-JeF" secondAttribute="trailing" constant="56" id="7aq-IP-Rx4"/>
+                                                        <constraint firstItem="tuM-qH-BKq" firstAttribute="centerY" secondItem="sif-Ko-6Jm" secondAttribute="centerY" id="FfF-tw-2Hw"/>
+                                                        <constraint firstItem="kKn-Gl-JeF" firstAttribute="centerY" secondItem="sif-Ko-6Jm" secondAttribute="centerY" id="Nq0-JY-suc"/>
+                                                        <constraint firstAttribute="height" constant="30" id="ap5-r1-ekw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="tuM-qH-BKq" secondAttribute="trailing" constant="20" id="eZ6-Tw-Y3N"/>
+                                                        <constraint firstItem="kKn-Gl-JeF" firstAttribute="leading" secondItem="sif-Ko-6Jm" secondAttribute="leading" id="k8y-Ou-bfZ"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal-bg" translatesAutoresizingMaskIntoConstraints="NO" id="BW3-u1-EtY">
+                                                    <rect key="frame" x="169" y="-3" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="BW3-u1-EtY" secondAttribute="height" id="KSC-C2-lE2"/>
+                                                        <constraint firstAttribute="width" constant="36" id="lYG-m6-hA0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTW-Xv-SLS">
+                                                    <rect key="frame" x="172.5" y="0.0" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal" translatesAutoresizingMaskIntoConstraints="NO" id="AY0-up-2rc">
+                                                            <rect key="frame" x="7" y="7" width="16" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="16" id="R9V-fJ-adl"/>
+                                                                <constraint firstAttribute="width" secondItem="AY0-up-2rc" secondAttribute="height" id="u1M-Zh-irR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="LTW-Xv-SLS" secondAttribute="height" id="Mbe-LZ-9v0"/>
+                                                        <constraint firstItem="AY0-up-2rc" firstAttribute="centerX" secondItem="LTW-Xv-SLS" secondAttribute="centerX" id="exD-xq-cUn"/>
+                                                        <constraint firstAttribute="width" constant="30" id="h7V-rL-iYk"/>
+                                                        <constraint firstItem="AY0-up-2rc" firstAttribute="centerY" secondItem="LTW-Xv-SLS" secondAttribute="centerY" id="yNj-cy-ZZQ"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Md-lS-2Zf">
+                                                    <rect key="frame" x="208.5" y="0.0" width="8.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-line" translatesAutoresizingMaskIntoConstraints="NO" id="CIR-DX-EIw">
+                                                    <rect key="frame" x="178.5" y="45" width="18" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="Rei-F2-X0u">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="10" id="rWM-Px-y8j"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LTW-Xv-SLS" firstAttribute="centerX" secondItem="Y3N-kK-fjb" secondAttribute="centerX" id="6Mu-H8-McJ"/>
+                                                <constraint firstItem="RFH-ds-VvG" firstAttribute="top" secondItem="sif-Ko-6Jm" secondAttribute="top" constant="-3" id="ERx-Ff-mej"/>
+                                                <constraint firstItem="BW3-u1-EtY" firstAttribute="centerX" secondItem="LTW-Xv-SLS" secondAttribute="centerX" id="GoT-Gw-Md0"/>
+                                                <constraint firstItem="LTW-Xv-SLS" firstAttribute="leading" secondItem="sif-Ko-6Jm" secondAttribute="trailing" constant="-15" id="JC9-tN-MuY"/>
+                                                <constraint firstItem="9Md-lS-2Zf" firstAttribute="top" secondItem="LTW-Xv-SLS" secondAttribute="top" id="Lu8-Oi-Xb2"/>
+                                                <constraint firstItem="BW3-u1-EtY" firstAttribute="centerY" secondItem="LTW-Xv-SLS" secondAttribute="centerY" id="M4X-Bp-2na"/>
+                                                <constraint firstItem="RFH-ds-VvG" firstAttribute="trailing" secondItem="sif-Ko-6Jm" secondAttribute="trailing" constant="3" id="MTX-A7-Tw3"/>
+                                                <constraint firstItem="LTW-Xv-SLS" firstAttribute="top" secondItem="Y3N-kK-fjb" secondAttribute="top" id="WpW-aa-6gn"/>
+                                                <constraint firstItem="CIR-DX-EIw" firstAttribute="centerX" secondItem="LTW-Xv-SLS" secondAttribute="centerX" id="cZM-fk-UIz"/>
+                                                <constraint firstItem="sif-Ko-6Jm" firstAttribute="leading" secondItem="Y3N-kK-fjb" secondAttribute="leading" constant="30" id="ckT-Yw-L4h"/>
+                                                <constraint firstItem="RFH-ds-VvG" firstAttribute="bottom" secondItem="sif-Ko-6Jm" secondAttribute="bottom" constant="3" id="g2b-eH-5nI"/>
+                                                <constraint firstItem="9Md-lS-2Zf" firstAttribute="leading" secondItem="LTW-Xv-SLS" secondAttribute="trailing" constant="6" id="ls0-i7-oPS"/>
+                                                <constraint firstItem="CIR-DX-EIw" firstAttribute="top" secondItem="sif-Ko-6Jm" secondAttribute="bottom" id="mub-dd-Twq"/>
+                                                <constraint firstItem="sif-Ko-6Jm" firstAttribute="top" secondItem="LTW-Xv-SLS" secondAttribute="bottom" constant="-15" id="x0R-Tk-huS"/>
+                                                <constraint firstItem="RFH-ds-VvG" firstAttribute="leading" secondItem="sif-Ko-6Jm" secondAttribute="leading" constant="-3" id="xTQ-Ec-8Da"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalTypeLabel" destination="tuM-qH-BKq" id="OWx-r9-TDd"/>
+                                            <outlet property="playerNameLabel" destination="kKn-Gl-JeF" id="n3b-jh-0Ry"/>
+                                            <outlet property="playerNameLabelOffsetConstraint" destination="7aq-IP-Rx4" id="kdg-4B-DJY"/>
+                                            <outlet property="timeLabel" destination="9Md-lS-2Zf" id="qks-aA-e7M"/>
+                                            <outlet property="typeImageView" destination="AY0-up-2rc" id="0hb-Er-7fP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeEventHomeSubstituteTableCell" rowHeight="85" id="Lva-G0-4BT" customClass="FBMatchAnalyzeEventHomeSubstituteTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="129" width="375" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lva-G0-4BT" id="MHV-s0-TI7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-box-bg" translatesAutoresizingMaskIntoConstraints="NO" id="w20-em-Aky">
+                                                    <rect key="frame" x="27" y="12" width="163.5" height="66"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edu-eg-VFc">
+                                                    <rect key="frame" x="30" y="15" width="157.5" height="60"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="693-nE-SfP">
+                                                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="30"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-enter" translatesAutoresizingMaskIntoConstraints="NO" id="koH-AB-xdm">
+                                                                    <rect key="frame" x="121.5" y="7" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="16" id="fgx-BP-SFU"/>
+                                                                        <constraint firstAttribute="width" secondItem="koH-AB-xdm" secondAttribute="height" id="nil-9Q-sHw"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="换上球员名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOs-J3-ral">
+                                                                    <rect key="frame" x="0.0" y="8.5" width="113" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="koH-AB-xdm" secondAttribute="trailing" id="BIA-5V-eU7"/>
+                                                                <constraint firstAttribute="height" constant="30" id="HRn-Cd-ep6"/>
+                                                                <constraint firstItem="gOs-J3-ral" firstAttribute="leading" secondItem="693-nE-SfP" secondAttribute="leading" id="TFw-vo-JRd"/>
+                                                                <constraint firstItem="gOs-J3-ral" firstAttribute="centerY" secondItem="693-nE-SfP" secondAttribute="centerY" id="ayY-MS-dR3"/>
+                                                                <constraint firstItem="koH-AB-xdm" firstAttribute="centerY" secondItem="693-nE-SfP" secondAttribute="centerY" id="g6x-QI-h2i"/>
+                                                                <constraint firstItem="koH-AB-xdm" firstAttribute="leading" secondItem="gOs-J3-ral" secondAttribute="trailing" constant="8" id="i9d-ik-ArY"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPt-tU-M1Z">
+                                                            <rect key="frame" x="0.0" y="30" width="137.5" height="30"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-leave" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-uF-2oM">
+                                                                    <rect key="frame" x="121.5" y="7" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="16" id="2TG-1Q-LgL"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="换下球员名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c16-y3-KeD">
+                                                                    <rect key="frame" x="0.0" y="8" width="113.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="VdT-uF-2oM" firstAttribute="centerY" secondItem="XPt-tU-M1Z" secondAttribute="centerY" id="19y-6x-Wik"/>
+                                                                <constraint firstAttribute="trailing" secondItem="VdT-uF-2oM" secondAttribute="trailing" id="7F4-RS-o2N"/>
+                                                                <constraint firstAttribute="height" constant="30" id="8fx-mp-uOk"/>
+                                                                <constraint firstItem="VdT-uF-2oM" firstAttribute="width" secondItem="VdT-uF-2oM" secondAttribute="height" id="CNl-u5-hF9"/>
+                                                                <constraint firstItem="c16-y3-KeD" firstAttribute="centerY" secondItem="XPt-tU-M1Z" secondAttribute="centerY" id="OJx-4f-x0g"/>
+                                                                <constraint firstItem="c16-y3-KeD" firstAttribute="leading" secondItem="XPt-tU-M1Z" secondAttribute="leading" id="hhY-Y7-71l"/>
+                                                                <constraint firstItem="VdT-uF-2oM" firstAttribute="leading" secondItem="c16-y3-KeD" secondAttribute="trailing" constant="8" id="vao-xv-H80"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="693-nE-SfP" firstAttribute="leading" secondItem="Edu-eg-VFc" secondAttribute="leading" id="C8g-af-fRU"/>
+                                                        <constraint firstItem="XPt-tU-M1Z" firstAttribute="leading" secondItem="693-nE-SfP" secondAttribute="leading" id="HEt-In-YSz"/>
+                                                        <constraint firstItem="XPt-tU-M1Z" firstAttribute="trailing" secondItem="693-nE-SfP" secondAttribute="trailing" id="bPZ-7f-qd7"/>
+                                                        <constraint firstItem="693-nE-SfP" firstAttribute="top" secondItem="Edu-eg-VFc" secondAttribute="top" id="dPD-PH-n2w"/>
+                                                        <constraint firstAttribute="height" constant="60" id="gbH-Kh-XkZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="693-nE-SfP" secondAttribute="trailing" constant="20" id="hmu-n7-ktb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="XPt-tU-M1Z" secondAttribute="bottom" id="ulb-54-KYq"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal-bg" translatesAutoresizingMaskIntoConstraints="NO" id="8ax-Mo-nN1">
+                                                    <rect key="frame" x="169" y="-3" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="mVe-Dl-Frp"/>
+                                                        <constraint firstAttribute="width" secondItem="8ax-Mo-nN1" secondAttribute="height" id="tBH-Tk-saU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLF-m7-S74">
+                                                    <rect key="frame" x="172.5" y="0.0" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal" translatesAutoresizingMaskIntoConstraints="NO" id="Bf0-MW-et1">
+                                                            <rect key="frame" x="7" y="7" width="16" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="16" id="GMN-Sq-yzQ"/>
+                                                                <constraint firstAttribute="width" secondItem="Bf0-MW-et1" secondAttribute="height" id="WhZ-Bt-pdV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Bf0-MW-et1" firstAttribute="centerY" secondItem="yLF-m7-S74" secondAttribute="centerY" id="18f-eM-UPG"/>
+                                                        <constraint firstAttribute="width" constant="30" id="CuI-lw-sso"/>
+                                                        <constraint firstItem="Bf0-MW-et1" firstAttribute="centerX" secondItem="yLF-m7-S74" secondAttribute="centerX" id="Z8g-Oi-ry2"/>
+                                                        <constraint firstAttribute="width" secondItem="yLF-m7-S74" secondAttribute="height" id="wtt-fA-b37"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yA-mE-X82">
+                                                    <rect key="frame" x="208.5" y="0.0" width="8.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-line" translatesAutoresizingMaskIntoConstraints="NO" id="Boi-Zo-5dt">
+                                                    <rect key="frame" x="178.5" y="75" width="18" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="FUx-xY-HgU">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="10" id="QMK-tg-ETB"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8ax-Mo-nN1" firstAttribute="centerY" secondItem="yLF-m7-S74" secondAttribute="centerY" id="1cM-fv-cdw"/>
+                                                <constraint firstItem="w20-em-Aky" firstAttribute="bottom" secondItem="Edu-eg-VFc" secondAttribute="bottom" constant="3" id="2UW-bI-ofa"/>
+                                                <constraint firstItem="4yA-mE-X82" firstAttribute="leading" secondItem="yLF-m7-S74" secondAttribute="trailing" constant="6" id="7dM-L8-UQM"/>
+                                                <constraint firstItem="w20-em-Aky" firstAttribute="top" secondItem="Edu-eg-VFc" secondAttribute="top" constant="-3" id="D1y-fO-dUb"/>
+                                                <constraint firstItem="Boi-Zo-5dt" firstAttribute="centerX" secondItem="Bf0-MW-et1" secondAttribute="centerX" id="MDu-Ac-Hv6"/>
+                                                <constraint firstItem="yLF-m7-S74" firstAttribute="leading" secondItem="Edu-eg-VFc" secondAttribute="trailing" constant="-15" id="MYm-fT-YH8"/>
+                                                <constraint firstItem="Edu-eg-VFc" firstAttribute="top" secondItem="yLF-m7-S74" secondAttribute="bottom" constant="-15" id="OUP-Tu-SkG"/>
+                                                <constraint firstItem="yLF-m7-S74" firstAttribute="centerX" secondItem="MHV-s0-TI7" secondAttribute="centerX" id="QCx-sv-FDY"/>
+                                                <constraint firstItem="w20-em-Aky" firstAttribute="trailing" secondItem="Edu-eg-VFc" secondAttribute="trailing" constant="3" id="Qxi-Rt-yKt"/>
+                                                <constraint firstItem="Boi-Zo-5dt" firstAttribute="top" secondItem="Edu-eg-VFc" secondAttribute="bottom" id="aYV-9G-7Fs"/>
+                                                <constraint firstItem="Edu-eg-VFc" firstAttribute="leading" secondItem="MHV-s0-TI7" secondAttribute="leading" constant="30" id="cP3-zR-jR1"/>
+                                                <constraint firstItem="4yA-mE-X82" firstAttribute="top" secondItem="yLF-m7-S74" secondAttribute="top" id="dQ3-dx-0KE"/>
+                                                <constraint firstItem="yLF-m7-S74" firstAttribute="top" secondItem="MHV-s0-TI7" secondAttribute="top" id="iR9-BG-QJP"/>
+                                                <constraint firstItem="w20-em-Aky" firstAttribute="leading" secondItem="Edu-eg-VFc" secondAttribute="leading" constant="-3" id="ibh-uh-2ZS"/>
+                                                <constraint firstItem="8ax-Mo-nN1" firstAttribute="centerX" secondItem="yLF-m7-S74" secondAttribute="centerX" id="zW8-bJ-CYB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="enterPlayerLabel" destination="gOs-J3-ral" id="bfa-Dh-tK6"/>
+                                            <outlet property="leavePlayerLabel" destination="c16-y3-KeD" id="NGR-RZ-kxb"/>
+                                            <outlet property="timeLabel" destination="4yA-mE-X82" id="gr7-Be-XH1"/>
+                                            <outlet property="typeImageView" destination="Bf0-MW-et1" id="jDZ-W5-MXB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeEventAwayNormalTableCell" rowHeight="55" id="MeF-XO-yiB" customClass="FBMatchAnalyzeEventAwayNormalTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="214" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MeF-XO-yiB" id="w1f-Bs-GAF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-line" translatesAutoresizingMaskIntoConstraints="NO" id="GHD-bb-gEs">
+                                                    <rect key="frame" x="178" y="45" width="18" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="CBM-fb-XMK">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="10" id="TPM-G3-O4p"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-box-bg" translatesAutoresizingMaskIntoConstraints="NO" id="5e4-E5-i4l">
+                                                    <rect key="frame" x="184" y="12" width="163.5" height="36"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal-bg" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-TF-xYt">
+                                                    <rect key="frame" x="169" y="-3" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="S5e-TF-xYt" secondAttribute="height" id="Lbb-uV-v4d"/>
+                                                        <constraint firstAttribute="width" constant="36" id="Q50-bB-7Jo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PE5-bb-Qle">
+                                                    <rect key="frame" x="172.5" y="0.0" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal" translatesAutoresizingMaskIntoConstraints="NO" id="KnX-fm-rN0">
+                                                            <rect key="frame" x="7" y="7" width="16" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="KnX-fm-rN0" secondAttribute="height" id="fDI-cC-pX0"/>
+                                                                <constraint firstAttribute="width" constant="16" id="j3X-vN-8c8"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="KnX-fm-rN0" firstAttribute="centerX" secondItem="PE5-bb-Qle" secondAttribute="centerX" id="RZ0-aO-q9j"/>
+                                                        <constraint firstAttribute="width" secondItem="PE5-bb-Qle" secondAttribute="height" id="onw-cR-x4q"/>
+                                                        <constraint firstAttribute="width" constant="30" id="vC2-qd-IWs"/>
+                                                        <constraint firstItem="KnX-fm-rN0" firstAttribute="centerY" secondItem="PE5-bb-Qle" secondAttribute="centerY" id="yUq-N4-SpV"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTG-Gr-prI">
+                                                    <rect key="frame" x="158" y="0.0" width="8.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hp3-rC-P9O">
+                                                    <rect key="frame" x="187.5" y="15" width="157.5" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乌龙" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUT-DB-0Jc">
+                                                            <rect key="frame" x="20" y="7.5" width="30" height="16"/>
+                                                            <color key="backgroundColor" red="0.054901960780000002" green="0.57647058819999997" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="g4n-Um-p9t"/>
+                                                                <constraint firstAttribute="height" constant="16" id="uQC-cg-jG8"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队球员名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nT6-dY-LA2">
+                                                            <rect key="frame" x="56" y="7" width="101.5" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ZUT-DB-0Jc" firstAttribute="leading" secondItem="hp3-rC-P9O" secondAttribute="leading" constant="20" id="7k0-w2-JrE"/>
+                                                        <constraint firstItem="nT6-dY-LA2" firstAttribute="centerY" secondItem="hp3-rC-P9O" secondAttribute="centerY" id="IVS-bZ-Ckn"/>
+                                                        <constraint firstAttribute="height" constant="30" id="bh6-4G-Fhc"/>
+                                                        <constraint firstItem="ZUT-DB-0Jc" firstAttribute="centerY" secondItem="hp3-rC-P9O" secondAttribute="centerY" id="je7-rN-tZI"/>
+                                                        <constraint firstItem="nT6-dY-LA2" firstAttribute="leading" secondItem="hp3-rC-P9O" secondAttribute="leading" constant="56" id="mOW-Sg-DnW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nT6-dY-LA2" secondAttribute="trailing" id="rKv-Yb-bWz"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GHD-bb-gEs" firstAttribute="top" secondItem="hp3-rC-P9O" secondAttribute="bottom" id="1pv-X2-bIi"/>
+                                                <constraint firstAttribute="trailing" secondItem="hp3-rC-P9O" secondAttribute="trailing" constant="30" id="9Uo-uK-mKl"/>
+                                                <constraint firstItem="S5e-TF-xYt" firstAttribute="centerX" secondItem="PE5-bb-Qle" secondAttribute="centerX" id="Bn7-oa-w05"/>
+                                                <constraint firstItem="5e4-E5-i4l" firstAttribute="bottom" secondItem="hp3-rC-P9O" secondAttribute="bottom" constant="3" id="D01-EE-jyT"/>
+                                                <constraint firstItem="hp3-rC-P9O" firstAttribute="top" secondItem="PE5-bb-Qle" secondAttribute="bottom" constant="-15" id="L3x-95-tkx"/>
+                                                <constraint firstItem="5e4-E5-i4l" firstAttribute="leading" secondItem="hp3-rC-P9O" secondAttribute="leading" constant="-3" id="PWb-PS-tCG"/>
+                                                <constraint firstItem="hp3-rC-P9O" firstAttribute="leading" secondItem="PE5-bb-Qle" secondAttribute="trailing" constant="-15" id="Rlr-eX-6Zw"/>
+                                                <constraint firstItem="GHD-bb-gEs" firstAttribute="centerX" secondItem="PE5-bb-Qle" secondAttribute="centerX" id="S9S-U3-yes"/>
+                                                <constraint firstItem="PE5-bb-Qle" firstAttribute="top" secondItem="w1f-Bs-GAF" secondAttribute="top" id="SB7-q9-uGf"/>
+                                                <constraint firstItem="hp3-rC-P9O" firstAttribute="top" secondItem="5e4-E5-i4l" secondAttribute="top" constant="3" id="USo-Qv-yg9"/>
+                                                <constraint firstItem="LTG-Gr-prI" firstAttribute="top" secondItem="PE5-bb-Qle" secondAttribute="top" id="WAb-28-hZi"/>
+                                                <constraint firstItem="PE5-bb-Qle" firstAttribute="centerX" secondItem="w1f-Bs-GAF" secondAttribute="centerX" id="f5p-9i-KRJ"/>
+                                                <constraint firstItem="PE5-bb-Qle" firstAttribute="leading" secondItem="LTG-Gr-prI" secondAttribute="trailing" constant="6" id="hYp-JO-2rE"/>
+                                                <constraint firstItem="5e4-E5-i4l" firstAttribute="trailing" secondItem="hp3-rC-P9O" secondAttribute="trailing" constant="3" id="saj-s5-K1z"/>
+                                                <constraint firstItem="S5e-TF-xYt" firstAttribute="centerY" secondItem="PE5-bb-Qle" secondAttribute="centerY" id="snX-60-Njf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalTypeLabel" destination="ZUT-DB-0Jc" id="g3t-rL-GQI"/>
+                                            <outlet property="playerNameLabel" destination="nT6-dY-LA2" id="CFP-SX-eN1"/>
+                                            <outlet property="playerNameLabelOffsetConstraint" destination="mOW-Sg-DnW" id="5OF-Rz-ebR"/>
+                                            <outlet property="timeLabel" destination="LTG-Gr-prI" id="b0b-8e-6NI"/>
+                                            <outlet property="typeImageView" destination="KnX-fm-rN0" id="VMf-i3-T2w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FBMatchAnalyzeEventAwaySubstituteTableCell" rowHeight="85" id="jeT-gM-4fW" customClass="FBMatchAnalyzeEventAwaySubstituteTableCell" customModule="IULiao" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="269" width="375" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jeT-gM-4fW" id="YP3-2p-a5y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-box-bg" translatesAutoresizingMaskIntoConstraints="NO" id="MuJ-CZ-QXX">
+                                                    <rect key="frame" x="184.5" y="12" width="163.5" height="66"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-fh-Ctt">
+                                                    <rect key="frame" x="187.5" y="15" width="157.5" height="60"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fI-De-9q2">
+                                                            <rect key="frame" x="20" y="0.0" width="137.5" height="30"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-enter" translatesAutoresizingMaskIntoConstraints="NO" id="JhG-Em-VBW">
+                                                                    <rect key="frame" x="0.0" y="7" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="JhG-Em-VBW" secondAttribute="height" id="9Xt-rA-OyG"/>
+                                                                        <constraint firstAttribute="width" constant="16" id="xb0-rQ-GeN"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="换上球员名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mr6-iv-IoL">
+                                                                    <rect key="frame" x="24" y="8.5" width="61.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="mr6-iv-IoL" firstAttribute="centerY" secondItem="5fI-De-9q2" secondAttribute="centerY" id="3V1-WC-8mI"/>
+                                                                <constraint firstItem="mr6-iv-IoL" firstAttribute="leading" secondItem="JhG-Em-VBW" secondAttribute="trailing" constant="8" id="RZ9-rq-xaL"/>
+                                                                <constraint firstAttribute="height" constant="30" id="e3S-dt-8Ic"/>
+                                                                <constraint firstItem="JhG-Em-VBW" firstAttribute="centerY" secondItem="5fI-De-9q2" secondAttribute="centerY" id="noy-QD-OZU"/>
+                                                                <constraint firstItem="JhG-Em-VBW" firstAttribute="leading" secondItem="5fI-De-9q2" secondAttribute="leading" id="sRy-Dq-dHM"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g5-VQ-auL">
+                                                            <rect key="frame" x="20" y="30" width="137.5" height="30"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-leave" translatesAutoresizingMaskIntoConstraints="NO" id="SCb-U4-cFh">
+                                                                    <rect key="frame" x="0.0" y="7" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="16" id="Gpq-lg-pVG"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="换下球员名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvt-o2-k8A">
+                                                                    <rect key="frame" x="24" y="8" width="61.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="SCb-U4-cFh" firstAttribute="leading" secondItem="8g5-VQ-auL" secondAttribute="leading" id="4CP-mu-W3T"/>
+                                                                <constraint firstItem="Xvt-o2-k8A" firstAttribute="leading" secondItem="SCb-U4-cFh" secondAttribute="trailing" constant="8" id="Anr-b1-2CV"/>
+                                                                <constraint firstItem="Xvt-o2-k8A" firstAttribute="centerY" secondItem="8g5-VQ-auL" secondAttribute="centerY" id="GtB-jJ-1ZD"/>
+                                                                <constraint firstItem="SCb-U4-cFh" firstAttribute="centerY" secondItem="8g5-VQ-auL" secondAttribute="centerY" id="XxX-qe-Co9"/>
+                                                                <constraint firstItem="SCb-U4-cFh" firstAttribute="width" secondItem="SCb-U4-cFh" secondAttribute="height" id="aF5-2Q-YWP"/>
+                                                                <constraint firstAttribute="height" constant="30" id="yA9-Xb-XMy"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="5fI-De-9q2" secondAttribute="trailing" id="HUz-N8-RlX"/>
+                                                        <constraint firstItem="5fI-De-9q2" firstAttribute="leading" secondItem="PhI-fh-Ctt" secondAttribute="leading" constant="20" id="Knj-au-ywm"/>
+                                                        <constraint firstItem="8g5-VQ-auL" firstAttribute="leading" secondItem="5fI-De-9q2" secondAttribute="leading" id="OXZ-AQ-CCz"/>
+                                                        <constraint firstItem="8g5-VQ-auL" firstAttribute="trailing" secondItem="5fI-De-9q2" secondAttribute="trailing" id="Q8f-xp-JxO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8g5-VQ-auL" secondAttribute="bottom" id="khK-94-mIy"/>
+                                                        <constraint firstAttribute="height" constant="60" id="pqD-dp-eom"/>
+                                                        <constraint firstItem="5fI-De-9q2" firstAttribute="top" secondItem="PhI-fh-Ctt" secondAttribute="top" id="tWw-s9-Qjt"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal-bg" translatesAutoresizingMaskIntoConstraints="NO" id="RK0-1q-P3k">
+                                                    <rect key="frame" x="169" y="-3" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="1O5-z1-Beh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjM-5a-0YC">
+                                                    <rect key="frame" x="172.5" y="0.0" width="30" height="30"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-goal" translatesAutoresizingMaskIntoConstraints="NO" id="zvX-mI-qb5">
+                                                            <rect key="frame" x="7" y="7" width="16" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="zvX-mI-qb5" secondAttribute="height" id="TSr-rO-X0w"/>
+                                                                <constraint firstAttribute="width" constant="16" id="pNO-6b-Jrr"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="JC1-ro-ugK"/>
+                                                        <constraint firstItem="zvX-mI-qb5" firstAttribute="centerY" secondItem="IjM-5a-0YC" secondAttribute="centerY" id="eEA-Ml-ROZ"/>
+                                                        <constraint firstAttribute="width" secondItem="IjM-5a-0YC" secondAttribute="height" id="jWN-as-mjb"/>
+                                                        <constraint firstItem="zvX-mI-qb5" firstAttribute="centerX" secondItem="IjM-5a-0YC" secondAttribute="centerX" id="zQF-WS-qgf"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FBMatch/event-line" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-xS-CbD">
+                                                    <rect key="frame" x="178.5" y="75" width="18" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="N9X-tr-TjZ">
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                                                    <integer key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="10" id="gbZ-CR-wRa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-sw-tyx">
+                                                    <rect key="frame" x="158" y="0.0" width="8.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="PhI-fh-Ctt" secondAttribute="trailing" constant="30" id="3vH-bW-Qib"/>
+                                                <constraint firstItem="IjM-5a-0YC" firstAttribute="centerX" secondItem="YP3-2p-a5y" secondAttribute="centerX" id="4vB-sF-FhP"/>
+                                                <constraint firstItem="F3l-sw-tyx" firstAttribute="top" secondItem="IjM-5a-0YC" secondAttribute="top" id="EIQ-dh-HdO"/>
+                                                <constraint firstItem="M5G-xS-CbD" firstAttribute="centerX" secondItem="zvX-mI-qb5" secondAttribute="centerX" id="JEJ-KS-FH0"/>
+                                                <constraint firstItem="IjM-5a-0YC" firstAttribute="top" secondItem="YP3-2p-a5y" secondAttribute="top" id="P3x-oE-Pl4"/>
+                                                <constraint firstItem="IjM-5a-0YC" firstAttribute="leading" secondItem="F3l-sw-tyx" secondAttribute="trailing" constant="6" id="T4S-3G-e1h"/>
+                                                <constraint firstItem="RK0-1q-P3k" firstAttribute="width" secondItem="RK0-1q-P3k" secondAttribute="height" id="TAk-iq-uB4"/>
+                                                <constraint firstItem="RK0-1q-P3k" firstAttribute="centerY" secondItem="IjM-5a-0YC" secondAttribute="centerY" id="cPj-qn-uM4"/>
+                                                <constraint firstItem="PhI-fh-Ctt" firstAttribute="leading" secondItem="IjM-5a-0YC" secondAttribute="trailing" constant="-15" id="ddx-ec-XIA"/>
+                                                <constraint firstItem="MuJ-CZ-QXX" firstAttribute="trailing" secondItem="PhI-fh-Ctt" secondAttribute="trailing" constant="3" id="ezg-Mq-mOV"/>
+                                                <constraint firstItem="PhI-fh-Ctt" firstAttribute="top" secondItem="IjM-5a-0YC" secondAttribute="bottom" constant="-15" id="mCM-w3-Q7K"/>
+                                                <constraint firstItem="MuJ-CZ-QXX" firstAttribute="top" secondItem="PhI-fh-Ctt" secondAttribute="top" constant="-3" id="n6q-fH-sY8"/>
+                                                <constraint firstItem="MuJ-CZ-QXX" firstAttribute="bottom" secondItem="PhI-fh-Ctt" secondAttribute="bottom" constant="3" id="nnG-Ie-2rl"/>
+                                                <constraint firstItem="MuJ-CZ-QXX" firstAttribute="leading" secondItem="PhI-fh-Ctt" secondAttribute="leading" constant="-3" id="q7o-rv-cEQ"/>
+                                                <constraint firstItem="RK0-1q-P3k" firstAttribute="centerX" secondItem="IjM-5a-0YC" secondAttribute="centerX" id="y3U-yE-pGe"/>
+                                                <constraint firstItem="M5G-xS-CbD" firstAttribute="top" secondItem="PhI-fh-Ctt" secondAttribute="bottom" id="yGe-81-yzd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="enterPlayerLabel" destination="mr6-iv-IoL" id="dMh-RE-vU0"/>
+                                            <outlet property="leavePlayerLabel" destination="Xvt-o2-k8A" id="wZx-SK-sfd"/>
+                                            <outlet property="timeLabel" destination="F3l-sw-tyx" id="PKg-5B-oeW"/>
+                                            <outlet property="typeImageView" destination="zvX-mI-qb5" id="8WP-Cz-1im"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8BC-X9-aGz" firstAttribute="bottom" secondItem="giP-FQ-1eQ" secondAttribute="bottom" id="9NO-3i-nAd"/>
+                            <constraint firstAttribute="trailing" secondItem="giP-FQ-1eQ" secondAttribute="trailing" id="VyQ-2w-cDj"/>
+                            <constraint firstItem="giP-FQ-1eQ" firstAttribute="top" secondItem="8BC-X9-aGz" secondAttribute="top" constant="10" id="ayU-Tx-5rU"/>
+                            <constraint firstItem="giP-FQ-1eQ" firstAttribute="leading" secondItem="8BC-X9-aGz" secondAttribute="leading" id="tek-Bj-mTg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8BC-X9-aGz"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="giP-FQ-1eQ" id="iAv-oB-Kth"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utW-a4-heB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="-166.8665667166417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBMatch/event-box-bg" width="156" height="36"/>
+        <image name="FBMatch/event-enter" width="16" height="16"/>
+        <image name="FBMatch/event-goal" width="18" height="18"/>
+        <image name="FBMatch/event-goal-bg" width="36" height="36"/>
+        <image name="FBMatch/event-leave" width="16" height="16"/>
+        <image name="FBMatch/event-line" width="1" height="1"/>
+        <image name="FBMatch/event-stage-bg" width="42" height="42"/>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">彩店310</string>
+
+    <style name="MyCheckBox" parent="android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

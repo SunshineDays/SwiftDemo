@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "lottery_id": 42,
+    "lottery_name": "竞彩足球",
+    "lottery_type": 1,
+    "is_sale": 1,
+    "description": "返奖高达72%",
+    "sort": 1,
+    "update_time": 1520156896,
+    "create_time": 1517552054
+  },
+  {
+    "id": 3,
+    "lottery_id": 43,
+    "lottery_name": "竞彩篮球",
+    "lottery_type": 1,
+    "is_sale": 1,
+    "description": "玩转NBA赛事",
+    "sort": 2,
+    "update_time": 1520156896,
+    "create_time": 1517553636
+  },
+  {
+    "id": 32,
+    "lottery_id": 42,
+    "lottery_name": "竞彩胜平负",
+    "lottery_type": 1,
+    "is_sale": 1,
+    "description": "猜胜平负拿大奖",
+    "sort": 3,
+    "update_time": 1520156896,
+    "create_time": 1520156828
+  },
+  {
+    "id": 20,
+    "lottery_id": 42,
+    "lottery_name": "竞彩半全场",
+    "lottery_type": 1,
+    "is_sale": 1,
+    "description": "猜中一场就中奖",
+    "sort": 4,
+    "update_time": 1520156896,
+    "create_time": 1517553830
+  },
+  {
+    "id": 19,
+    "lottery_id": 42,
+    "lottery_name": "竞彩比分",
+    "lottery_type": 1,
+    "is_sale": 1,
+    "description": "看比赛猜比分",
+    "sort": 5,
+    "update_time": 1520157100,
+    "create_time": 1517553826
+  },
+  {
+    "id": 33,
+    "lottery_id": 42,
+    "lottery_name": "竞彩总进球",
+    "lottery_type": 1,
+    "is_sale": 1,
+    "description": "猜中就中奖",
+    "sort": 6,
+    "update_time": 1520157105,
+    "create_time": 1520156838
+  }
+]

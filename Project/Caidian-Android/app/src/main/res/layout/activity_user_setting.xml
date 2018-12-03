@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wdb.iuliao.activity.user.SettingActivity">
+
+    <ListView
+        android:id="@+id/setting_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <Button
+
+        android:id="@+id/setting_outLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_forget_password"
+        android:layout_margin="15dp"
+        android:background="@drawable/login_round"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</LinearLayout>

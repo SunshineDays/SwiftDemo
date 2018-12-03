@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/item_plan_order_copy_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="01-02  竞彩足球"
+            android:textColor="@color/grayThree"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_plan_order_copy_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="圣手发起  每份2元"
+            android:textColor="@color/graySix"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_plan_order_copy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="竞彩稳定盈利计划"
+        android:textColor="@color/grayThree"
+        android:textSize="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/item_plan_order_copy_follow_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="跟单 1000 元"
+            android:textColor="@color/graySix"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_plan_order_copy_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="10: 30 截止"
+            android:textColor="@color/graySix"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/item_plan_order_copy_follow_person"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="跟单 10 人"
+            android:textColor="@color/graySix"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_plan_order_copy_commit"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/login_round"
+            android:gravity="center"
+            android:text="立即跟单"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:background="@drawable/edge_left_top"
+       android:layout_width="match_parent"
+       android:paddingRight="10dp"
+       android:layout_height="30dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentTop="true"
+           android:gravity="center"
+           android:text="您已经购买 20 元"
+           android:textColor="@color/grayThree"
+           android:textSize="12dp" />
+   </RelativeLayout>
+
+
+</LinearLayout>

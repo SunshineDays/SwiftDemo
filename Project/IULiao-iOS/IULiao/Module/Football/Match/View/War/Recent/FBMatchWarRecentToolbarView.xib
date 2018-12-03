@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FBMatchWarRecentToolbarView" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGn-n1-mFr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="队名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Go-HM-pWT">
+                            <rect key="frame" x="10" y="8" width="25" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-fV-TJ7">
+                            <rect key="frame" x="35" y="7.5" width="60" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="s61-Ah-Y3e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="近6场" image="FBPlayer/arrow-down">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="numberButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="RAh-Md-vaJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRY-Bh-PPv">
+                            <rect key="frame" x="235" y="5" width="60" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="去友谊">
+                                <color key="titleColor" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                    <color key="value" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="leagueFilterButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qmw-vi-doZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmp-gl-bPu">
+                            <rect key="frame" x="305" y="5" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="LM9-wt-jDW"/>
+                                <constraint firstAttribute="width" constant="60" id="deS-Ag-fVg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="同主客">
+                                <color key="titleColor" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidthPixel">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bgColorForSelectedState">
+                                    <color key="value" red="0.98823529409999999" green="0.60392156860000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sameHomeAwayButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qAz-Fv-XEX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Lmp-gl-bPu" firstAttribute="leading" secondItem="RRY-Bh-PPv" secondAttribute="trailing" constant="10" id="2Zf-kI-0nO"/>
+                        <constraint firstItem="RRY-Bh-PPv" firstAttribute="width" secondItem="Lmp-gl-bPu" secondAttribute="width" id="KM6-pz-A2d"/>
+                        <constraint firstItem="RRY-Bh-PPv" firstAttribute="centerY" secondItem="xGn-n1-mFr" secondAttribute="centerY" id="YIS-vs-kCf"/>
+                        <constraint firstItem="RRY-Bh-PPv" firstAttribute="height" secondItem="Lmp-gl-bPu" secondAttribute="height" id="cZR-p9-5t1"/>
+                        <constraint firstItem="fVF-fV-TJ7" firstAttribute="leading" secondItem="1Go-HM-pWT" secondAttribute="trailing" id="chM-CV-obM"/>
+                        <constraint firstItem="1Go-HM-pWT" firstAttribute="centerY" secondItem="xGn-n1-mFr" secondAttribute="centerY" id="fyL-4c-wCi"/>
+                        <constraint firstItem="Lmp-gl-bPu" firstAttribute="centerY" secondItem="xGn-n1-mFr" secondAttribute="centerY" id="h3E-3l-MCE"/>
+                        <constraint firstItem="fVF-fV-TJ7" firstAttribute="centerY" secondItem="xGn-n1-mFr" secondAttribute="centerY" id="nGp-c9-GAp"/>
+                        <constraint firstItem="1Go-HM-pWT" firstAttribute="leading" secondItem="xGn-n1-mFr" secondAttribute="leading" constant="10" id="on7-cM-t13"/>
+                        <constraint firstAttribute="trailing" secondItem="Lmp-gl-bPu" secondAttribute="trailing" constant="10" id="xd5-bF-GQY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foV-78-ZbT">
+                    <rect key="frame" x="0.0" y="30" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期赛事" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9K-1C-kWo">
+                            <rect key="frame" x="10" y="8" width="60" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="kFa-L3-Byi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盘路" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoO-OD-HDO">
+                            <rect key="frame" x="331" y="8" width="34" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="Ddt-K4-Q6b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="半场" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbx-6F-dzK">
+                            <rect key="frame" x="287" y="8" width="44" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="OrO-cL-odc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkA-Jf-JGF">
+                            <rect key="frame" x="156.5" y="8" width="44" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="sXj-PJ-NNJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客队" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-Gh-slh">
+                            <rect key="frame" x="200.5" y="8" width="86.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主队" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ND-Sv-W1L">
+                            <rect key="frame" x="70" y="8" width="86.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-X9-Lh5">
+                            <rect key="frame" x="0.0" y="29" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7Sc-SO-kGJ">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pixelConstant">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vgC-Gh-slh" firstAttribute="centerY" secondItem="foV-78-ZbT" secondAttribute="centerY" id="0eL-Eg-XAR"/>
+                        <constraint firstItem="1ND-Sv-W1L" firstAttribute="leading" secondItem="N9K-1C-kWo" secondAttribute="trailing" id="4LO-lw-euL"/>
+                        <constraint firstAttribute="trailing" secondItem="AoO-OD-HDO" secondAttribute="trailing" constant="10" id="6wa-cW-pc9"/>
+                        <constraint firstItem="zD8-X9-Lh5" firstAttribute="leading" secondItem="foV-78-ZbT" secondAttribute="leading" id="Ath-qs-cF6"/>
+                        <constraint firstItem="vgC-Gh-slh" firstAttribute="width" secondItem="1ND-Sv-W1L" secondAttribute="width" id="C1E-od-SQ1"/>
+                        <constraint firstItem="AoO-OD-HDO" firstAttribute="centerY" secondItem="foV-78-ZbT" secondAttribute="centerY" id="H8I-8C-kHK"/>
+                        <constraint firstAttribute="trailing" secondItem="zD8-X9-Lh5" secondAttribute="trailing" id="KBP-sb-uyz"/>
+                        <constraint firstItem="vgC-Gh-slh" firstAttribute="leading" secondItem="KkA-Jf-JGF" secondAttribute="trailing" id="Pls-bu-mkG"/>
+                        <constraint firstItem="Xbx-6F-dzK" firstAttribute="centerY" secondItem="foV-78-ZbT" secondAttribute="centerY" id="RKh-3f-vDt"/>
+                        <constraint firstItem="Xbx-6F-dzK" firstAttribute="leading" secondItem="vgC-Gh-slh" secondAttribute="trailing" id="ct5-Dp-3Gp"/>
+                        <constraint firstItem="1ND-Sv-W1L" firstAttribute="centerY" secondItem="foV-78-ZbT" secondAttribute="centerY" id="f4i-m8-9iX"/>
+                        <constraint firstItem="KkA-Jf-JGF" firstAttribute="centerY" secondItem="foV-78-ZbT" secondAttribute="centerY" id="g15-bi-zwj"/>
+                        <constraint firstAttribute="bottom" secondItem="zD8-X9-Lh5" secondAttribute="bottom" id="gqb-0a-nD1"/>
+                        <constraint firstItem="AoO-OD-HDO" firstAttribute="leading" secondItem="Xbx-6F-dzK" secondAttribute="trailing" id="kZl-3U-ChY"/>
+                        <constraint firstItem="KkA-Jf-JGF" firstAttribute="leading" secondItem="1ND-Sv-W1L" secondAttribute="trailing" id="ogz-Ls-wWe"/>
+                        <constraint firstItem="N9K-1C-kWo" firstAttribute="leading" secondItem="foV-78-ZbT" secondAttribute="leading" constant="10" id="syt-OQ-Gn7"/>
+                        <constraint firstItem="N9K-1C-kWo" firstAttribute="centerY" secondItem="foV-78-ZbT" secondAttribute="centerY" id="xPH-HX-s6b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="foV-78-ZbT" secondAttribute="bottom" id="6pc-2b-YRz"/>
+                <constraint firstItem="foV-78-ZbT" firstAttribute="top" secondItem="xGn-n1-mFr" secondAttribute="bottom" id="PiK-pl-rva"/>
+                <constraint firstItem="xGn-n1-mFr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ri3-96-e1F"/>
+                <constraint firstItem="xGn-n1-mFr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WbW-BU-a8p"/>
+                <constraint firstAttribute="trailing" secondItem="foV-78-ZbT" secondAttribute="trailing" id="nPf-SQ-b4J"/>
+                <constraint firstAttribute="trailing" secondItem="xGn-n1-mFr" secondAttribute="trailing" id="o0a-DI-gNu"/>
+                <constraint firstItem="xGn-n1-mFr" firstAttribute="height" secondItem="foV-78-ZbT" secondAttribute="height" id="oOc-J5-dzb"/>
+                <constraint firstItem="foV-78-ZbT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yco-D8-II5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leagueFilterButton" destination="RRY-Bh-PPv" id="QXl-Wr-y6P"/>
+                <outlet property="matchNumberButton" destination="fVF-fV-TJ7" id="w8v-au-NoY"/>
+                <outlet property="sameHomeAwayButton" destination="Lmp-gl-bPu" id="1tN-Ua-wxx"/>
+                <outlet property="titleLabel" destination="1Go-HM-pWT" id="mB4-rB-HBy"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-181"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FBPlayer/arrow-down" width="8" height="5"/>
+    </resources>
+</document>

@@ -1,0 +1,643 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/f2f2f2"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/copy_order_detail_body"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_above="@+id/linearLayout2">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/copy_order_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/f2f2f2">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_copy_order_detail_header_bg"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="0" />
+
+                    <RelativeLayout
+                        android:id="@+id/copy_order_header_relative"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/copy_order_header_linear"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_collapseMode="parallax"
+                            app:layout_collapseParallaxMultiplier="0.5">
+
+                            <com.caidian310.view.custom.RoundImageView
+                                android:id="@+id/copy_order_detail_user_header_img"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/icon_logo"
+                                app:layout_collapseMode="parallax"
+                                app:layout_collapseParallaxMultiplier="0.5" />
+
+                            <TextView
+                                android:id="@+id/copy_order_detail_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/copy_order_detail_user_describe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="2dp"
+                                android:text="-中- | 10单盈利率：-%"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="80dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:visibility="gone"
+                                app:cardBackgroundColor="@color/colorPrimaryDark"
+                                app:cardCornerRadius="10dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text=" +关注 "
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/copy_order_header_view_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_below="@+id/copy_order_header_linear"
+                            android:background="@color/f2f2f2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/copy_order_header_view_line"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/copy_order_detail_lottery_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="竞彩足球 "
+                                        android:textColor="@color/grayThree"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/copy_order_detail_lottery_serial"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="center"
+                                        android:text="-"
+                                        android:textColor="@color/graySix"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentTop="true"
+                                    android:text="预计回报率: -倍" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="6dp"
+                                android:text="从源码中发现，当我们调用了tabLayout.setupWithViewPager(viewPager)这个方法，在TabLayout中经过一些调用，然后调用到populateFromPagerAdapter（）这个方法，然后在这里添加Tab设置标题"
+                                android:textColor="@color/graySix"
+                                android:textSize="12dp"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical|left"
+                                    android:text="自购: -元"
+                                    android:textColor="@color/graySix"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_copy_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="跟单 : - 元"
+                                    android:textColor="@color/graySix"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_min_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_vertical|right"
+                                    android:text="2元起投"
+                                    android:textColor="@color/graySix"
+                                    android:textSize="12dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp">
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|left"
+                                    android:text="CP70136933044"
+                                    android:textColor="@color/graySix"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_send_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentTop="true"
+                                    android:gravity="center_vertical|right"
+                                    android:text="发单时间：0000-00-00  00：00 "
+                                    android:textColor="@color/graySix"
+                                    android:textSize="12dp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/copy_order_info_tool_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/black"
+
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:paddingLeft="40dp">
+
+
+                            <LinearLayout
+                                android:id="@+id/copy_order_detail_action_linear"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.caidian310.view.custom.RoundImageView
+                                    android:id="@+id/copy_order_detail_action_img"
+                                    android:layout_width="22dp"
+                                    android:layout_height="22dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@mipmap/icon_logo" />
+
+                                <TextView
+                                    android:id="@+id/copy_order_detail_action_content"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|left"
+                                    android:text="288中28 | 10单盈利率：125.5%"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/copy_order_detail_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    app:tabBackground="@color/white"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    app:tabSelectedTextColor="@color/graySix"
+                    app:tabTextColor="@color/graySix" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/copy_order_detail_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/copy_order_detail_private"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="50dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:src="@mipmap/icon_no_see" />
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/copy_order_detail_private_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="截止后公布"
+                            android:textColor="@color/graySix"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/copy_order_detail_match_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:orientation="horizontal"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@color/red" />
+
+                            <TextView
+                                android:id="@+id/copy_order_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="方案内容"
+                                android:textColor="@color/grayThree"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/copy_order_detail_match_list_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/copy_order_detail_follow_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white"
+
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/copy_order_bet_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11串4"
+
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-0.5dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="投" />
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/angle_round_black">
+
+                            <TextView
+                                android:id="@+id/copy_order_bet_number_reduce"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                            <EditText
+                                android:id="@+id/copy_order_bet_number_all"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/angle_all_black"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:text="1"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/copy_order_bet_number_add"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="+"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="倍" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+            <GridView
+                android:id="@+id/copy_order_bet_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/copy_order_bet_step"
+                android:minHeight="40dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignEnd="@+id/bet_step"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/copy_order_bet_count_and_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="10倍  共20元" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/bet_estimate_money"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="预计奖金:0.00~0.00元"-->
+                        <!--android:visibility="gone" />-->
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/copy_order_bet_step"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="立即跟单"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/copy_order_detail_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:src="@mipmap/icon_back" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/copy_order_detail_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

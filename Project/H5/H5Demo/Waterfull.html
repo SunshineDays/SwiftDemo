@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: calc(100vh + 500px);
+        }
+
+        #container {
+            position: relative;
+            margin: 0 auto;
+        }
+        .box {
+            padding: 15px 0 0 15px;
+            float: left;
+            opacity: 0;
+        }
+
+        .boxDisplay {
+            opacity: 1;
+            transition: opacity 2s;
+        }
+
+        .pic {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #cccccc;
+        }
+
+        img {
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+</body>
+
+<script>
+    var imgsNumber = 0;
+    function preload() {
+        var container = document.getElementById("container");
+        var newBox,newPic, newImg;
+        for (let i = 0; i < 20; i++) {
+            newBox = document.createElement("div");
+            newBox.className = "box";
+            container.appendChild(newBox);
+            newPic = document.createElement("div");
+            newPic.className = "pic";
+            newBox.appendChild(newPic);
+            newImg = document.createElement("img");
+            if (imgsNumber > 9) {
+                newImg.src = "http://cued.xunlei.com/demos/publ/img/P_0" + imgsNumber + ".jpg";
+            } else {
+                newImg.src = "http://cued.xunlei.com/demos/publ/img/P_00" + imgsNumber + ".jpg";
+            }
+            newPic.appendChild(newImg);
+            imgsNumber++;
+            setTimeout(waterFull, 200);
+        }
+    }
+
+    function waterFull() {
+        var boxes = document.getElementsByClassName('box');
+        var box_width = document.getElementsByClassName('box')[0].offsetWidth;
+        var w_width = document.body.clientWidth;
+        var colum = Math.floor(w_width/box_width);
+        document.getElementById('container').style.width = colum * box_width + "px";
+        var heightArr = [];
+        for (var i = 0; i < boxes.length; i++) {
+            if (i < colum) {
+                boxes[i].style.position = null;
+                heightArr.push(boxes[i].offsetHeight);
+            }  else {
+                var min_height = Math.min.apply(Math, heightArr);
+                var min_height_index = heightArr.indexOf(min_height);
+                boxes[i].style.position = "absolute";
+                boxes[i].style.top = min_height + "px";
+                boxes[i].style.left = boxes[min_height_index].offsetLeft + "px";
+                heightArr[min_height_index] += boxes[i].offsetHeight;
+            }
+            boxes[i].className = "box boxDisplay";
+        }
+    }
+
+    window.onscroll = function() {
+        if (checkOnLoad() && imgsNumber < 100) {
+            for (let i = 0; i < 5; i++) {
+                newBox = document.createElement("div");
+                newBox.className = "box";
+                container.appendChild(newBox);
+                newPic = document.createElement("div");
+                newPic.className = "pic";
+                newBox.appendChild(newPic);
+                newImg = document.createElement("img");
+                if (imgsNumber < 100) {
+                    newImg.src = "http://cued.xunlei.com/demos/publ/img/P_0" + imgsNumber + ".jpg";
+                } else {
+                    delete newBox;
+                    break;
+                }
+                newPic.appendChild(newImg);
+                imgsNumber++;
+                setTimeout(waterFull, 200);
+            }
+        }
+    }
+
+    function checkOnLoad() {
+        var boxes = document.getElementsByClassName("box");
+        var scrollTop = document.documentElement.clientHeight || document.body.scrollTop;
+        var clientHiehgt = document.documentElement.clientHeight || document.body.clientHeight;
+        var lastBoxOffsetTop = boxes[boxes.length - 1].offsetTop + boxes[boxes.length - 1].offsetHeight / 2;
+        return lastBoxOffsetTop < scrollTop + clientHiehgt;
+    }
+
+    window.onload = preload();
+
+</script>
+
+</html>

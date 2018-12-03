@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FBRecommendDetailReason2Cell" rowHeight="182" id="KGk-i7-Jjw" customClass="FBRecommendDetailReason2Cell" customModule="IULiao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="181.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-FG-gKA">
+                        <rect key="frame" x="0.0" y="0.0" width="349" height="5"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="OB9-av-gcg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-88-t0h">
+                        <rect key="frame" x="10" y="15" width="2" height="12"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="c5N-MD-shq"/>
+                            <constraint firstAttribute="width" constant="2" id="xro-LF-3Sa"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐理由" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiK-zk-MVo">
+                        <rect key="frame" x="20" y="12.5" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.95686274510000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85F-OU-kep">
+                        <rect key="frame" x="331" y="14.5" width="8" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngS-tA-rkc">
+                        <rect key="frame" x="306" y="12" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="fZE-m2-Ary"/>
+                            <constraint firstAttribute="width" secondItem="ngS-tA-rkc" secondAttribute="height" multiplier="1:1" id="myK-dn-6Me"/>
+                        </constraints>
+                        <state key="normal" image="FBRecommend/singlematch-normalpolldown"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-DS-tPb">
+                        <rect key="frame" x="290" y="14.5" width="8" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iiv-eB-xie">
+                        <rect key="frame" x="265" y="12" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Iiv-eB-xie" secondAttribute="height" multiplier="1:1" id="Fvr-WN-obN"/>
+                            <constraint firstAttribute="width" constant="20" id="ZgC-PI-9ri"/>
+                        </constraints>
+                        <state key="normal" image="FBRecommend/singlematch-normalpollup"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHx-c4-zQy">
+                        <rect key="frame" x="10" y="42" width="329" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这一关来到一片破败的居住区，场景中只见到一个老爷爷NPC，过去和他互动得知他的毛衣丢了，本关我们要 穿越 时空，在过去和现在的世界中来回穿梭，帮外星人老爷爷拿回他心爱的毛衣，这样他就会用碎片跟你交换，具体的操作步骤让我们一起往下看看看吧。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-S6-ZZb">
+                                <rect key="frame" x="10" y="5" width="309" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="572-p2-Ulf"/>
+                            <constraint firstItem="V8g-S6-ZZb" firstAttribute="leading" secondItem="nHx-c4-zQy" secondAttribute="leading" constant="10" id="l9o-oF-35n"/>
+                            <constraint firstItem="V8g-S6-ZZb" firstAttribute="top" secondItem="nHx-c4-zQy" secondAttribute="top" constant="5" id="lPD-xl-HT4"/>
+                            <constraint firstAttribute="trailing" secondItem="V8g-S6-ZZb" secondAttribute="trailing" constant="10" id="y1A-oS-5YD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iiv-eB-xie" firstAttribute="centerY" secondItem="85F-OU-kep" secondAttribute="centerY" id="002-Oy-stb"/>
+                    <constraint firstAttribute="trailing" secondItem="85F-OU-kep" secondAttribute="trailing" constant="10" id="7lo-Vh-tmQ"/>
+                    <constraint firstItem="uiK-zk-MVo" firstAttribute="leading" secondItem="9Yg-88-t0h" secondAttribute="trailing" constant="8" id="IHy-IT-4cI"/>
+                    <constraint firstAttribute="trailing" secondItem="nHx-c4-zQy" secondAttribute="trailing" constant="10" id="Wmt-vr-kqm"/>
+                    <constraint firstItem="uiK-zk-MVo" firstAttribute="centerY" secondItem="9Yg-88-t0h" secondAttribute="centerY" id="XOW-yA-6BR"/>
+                    <constraint firstItem="nHx-c4-zQy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bYl-LR-wPH"/>
+                    <constraint firstItem="Ddt-FG-gKA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e5V-TA-7Ge"/>
+                    <constraint firstItem="aGg-DS-tPb" firstAttribute="centerY" secondItem="85F-OU-kep" secondAttribute="centerY" id="e6a-HV-KMK"/>
+                    <constraint firstItem="85F-OU-kep" firstAttribute="leading" secondItem="ngS-tA-rkc" secondAttribute="trailing" constant="5" id="f5s-J7-OzC"/>
+                    <constraint firstItem="9Yg-88-t0h" firstAttribute="top" secondItem="Ddt-FG-gKA" secondAttribute="bottom" constant="10" id="hIb-zE-q1k"/>
+                    <constraint firstItem="ngS-tA-rkc" firstAttribute="leading" secondItem="aGg-DS-tPb" secondAttribute="trailing" constant="8" id="iO0-u7-399"/>
+                    <constraint firstItem="nHx-c4-zQy" firstAttribute="top" secondItem="Iiv-eB-xie" secondAttribute="bottom" constant="10" id="lje-8o-Hw6"/>
+                    <constraint firstItem="9Yg-88-t0h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mEn-ZH-wHh"/>
+                    <constraint firstItem="aGg-DS-tPb" firstAttribute="leading" secondItem="Iiv-eB-xie" secondAttribute="trailing" constant="5" id="mdG-qG-lZY"/>
+                    <constraint firstItem="Ddt-FG-gKA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="phA-9B-hx8"/>
+                    <constraint firstItem="85F-OU-kep" firstAttribute="centerY" secondItem="uiK-zk-MVo" secondAttribute="centerY" id="qSU-iG-lPO"/>
+                    <constraint firstAttribute="trailing" secondItem="Ddt-FG-gKA" secondAttribute="trailing" id="qpm-9B-QCr"/>
+                    <constraint firstItem="ngS-tA-rkc" firstAttribute="centerY" secondItem="85F-OU-kep" secondAttribute="centerY" id="yaS-xz-Oo0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pollDownButton" destination="ngS-tA-rkc" id="fcF-hl-yCe"/>
+                <outlet property="pollDownLabel" destination="85F-OU-kep" id="9ch-VG-7ci"/>
+                <outlet property="pollUpButton" destination="Iiv-eB-xie" id="D2X-qZ-Ee2"/>
+                <outlet property="pollUpLabel" destination="aGg-DS-tPb" id="6ul-uN-Zc8"/>
+                <outlet property="reasonLabel" destination="V8g-S6-ZZb" id="x8M-8U-T1e"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="140.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FBRecommend/singlematch-normalpolldown" width="40" height="40"/>
+        <image name="FBRecommend/singlematch-normalpollup" width="40" height="40"/>
+    </resources>
+</document>

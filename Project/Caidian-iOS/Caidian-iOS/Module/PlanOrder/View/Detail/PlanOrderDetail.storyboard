@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DGd-Ff-Ndg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="FIX-Nb-jND">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DGd-Ff-Ndg" customClass="BaseNavigationController" customModule="Caidian_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uWi-TV-c4w">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QyZ-8j-2Jp" kind="relationship" relationship="rootViewController" id="QhI-aF-rpX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVp-PM-oR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1255" y="-16"/>
+        </scene>
+        <!--Plan Order Detail View Controller-->
+        <scene sceneID="v3f-x1-sbG">
+            <objects>
+                <viewController storyboardIdentifier="PlanOrderDetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="QyZ-8j-2Jp" customClass="PlanOrderDetailViewController" customModule="Caidian_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VP1-ho-uQt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IdI-g7-Wz8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eJa-by-LzM" firstAttribute="bottom" secondItem="IdI-g7-Wz8" secondAttribute="bottom" id="0T7-2a-UVX"/>
+                            <constraint firstItem="IdI-g7-Wz8" firstAttribute="top" secondItem="eJa-by-LzM" secondAttribute="top" id="906-fJ-uIG"/>
+                            <constraint firstItem="eJa-by-LzM" firstAttribute="trailing" secondItem="IdI-g7-Wz8" secondAttribute="trailing" id="b8h-A1-wa4"/>
+                            <constraint firstItem="IdI-g7-Wz8" firstAttribute="leading" secondItem="eJa-by-LzM" secondAttribute="leading" id="dFj-QQ-gpe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eJa-by-LzM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H2R-mK-UG5"/>
+                    <connections>
+                        <outlet property="tabView" destination="IdI-g7-Wz8" id="6nG-We-GWf"/>
+                        <outlet property="tabViewBottomConstraint" destination="0T7-2a-UVX" id="L0K-Bl-0Rh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGE-jk-BVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="-17"/>
+        </scene>
+    </scenes>
+</document>

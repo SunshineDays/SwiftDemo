@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Pl3RecentTableCell" id="KGk-i7-Jjw" customClass="Pl3RecentTableCell" customModule="Caidian_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018001期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbd-Wa-SAe">
+                        <rect key="frame" x="8" y="15" width="56.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="组三" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knc-cy-5fn">
+                        <rect key="frame" x="277.5" y="15" width="22.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOL-hB-sXU">
+                        <rect key="frame" x="160" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="NDA-Cm-hTL"/>
+                            <constraint firstAttribute="width" secondItem="SOL-hB-sXU" secondAttribute="height" multiplier="1:1" id="Ttk-mO-r7f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-f6-yeQ">
+                        <rect key="frame" x="130" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dWJ-f6-yeQ" secondAttribute="height" multiplier="1:1" id="XuS-0p-DMh"/>
+                            <constraint firstAttribute="width" constant="20" id="bKC-yL-OC3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih4-DW-1lj">
+                        <rect key="frame" x="190" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="iHX-cU-fpY"/>
+                            <constraint firstAttribute="width" secondItem="Ih4-DW-1lj" secondAttribute="height" multiplier="1:1" id="wHj-zY-Mrv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dWJ-f6-yeQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CLa-xB-En3"/>
+                    <constraint firstItem="Vbd-Wa-SAe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DOJ-ai-yOM"/>
+                    <constraint firstItem="Vbd-Wa-SAe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Lbx-UE-S7i"/>
+                    <constraint firstItem="SOL-hB-sXU" firstAttribute="leading" secondItem="dWJ-f6-yeQ" secondAttribute="trailing" constant="10" id="Yxv-bu-9gK"/>
+                    <constraint firstItem="Knc-cy-5fn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="f3a-Ey-hRJ"/>
+                    <constraint firstItem="Ih4-DW-1lj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kXs-hc-N3Y"/>
+                    <constraint firstItem="Ih4-DW-1lj" firstAttribute="leading" secondItem="SOL-hB-sXU" secondAttribute="trailing" constant="10" id="om9-ok-vrx"/>
+                    <constraint firstAttribute="trailing" secondItem="Knc-cy-5fn" secondAttribute="trailing" constant="20" id="toU-gu-dI4"/>
+                    <constraint firstItem="SOL-hB-sXU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xDV-cO-ou4"/>
+                    <constraint firstItem="SOL-hB-sXU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="10" id="xle-yy-FET"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="ballLabels" destination="dWJ-f6-yeQ" collectionClass="NSMutableArray" id="maX-hw-yTV"/>
+                <outletCollection property="ballLabels" destination="SOL-hB-sXU" collectionClass="NSMutableArray" id="QCd-Yd-PpO"/>
+                <outletCollection property="ballLabels" destination="Ih4-DW-1lj" collectionClass="NSMutableArray" id="mfX-ar-V36"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

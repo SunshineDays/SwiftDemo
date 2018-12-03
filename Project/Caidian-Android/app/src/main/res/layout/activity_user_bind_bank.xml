@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.caidian310.activity.user.BindBankActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edge_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:background="@drawable/edge_bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textColor="#333333"
+                android:text="开户名 : " />
+
+            <EditText
+                android:id="@+id/bind_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textColor="@color/grayThree"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:hint="请输入真实姓名"/>
+
+
+            　　
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge_bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/grayThree"
+                android:text="银    行 :" />
+
+            <TextView
+                android:id="@+id/bind_bank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请选择银行"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:textColor="@color/grayThree"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/real_card_two_linear"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge_bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="省     份 : " />
+
+            <TextView
+                android:id="@+id/bind_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请选择省份"
+                android:textSize="14dp"
+                android:singleLine="true"
+
+                android:textColor="@color/grayThree"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge_bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="支      行 : " />
+
+            <EditText
+                android:id="@+id/bind_bank_branch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请输入支行名称"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:textColor="@color/grayThree"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge_bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="卡     号 : " />
+
+            <EditText
+                android:id="@+id/bind_bank_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请输入借记卡号"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:textColor="@color/grayThree"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bind_bank_card_two_linear"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge_bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="重复输入 : " />
+
+            <EditText
+                android:id="@+id/bind_bank_card_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:background="@null"
+                android:hint="请输入借记卡号"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:textColor="@color/grayThree"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bind_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_round"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="绑   定"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+
+        android:textSize="14dp" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/item_buy_list_root"
+    android:layout_height="50dp">
+
+  <LinearLayout
+      android:paddingLeft="10dp"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_toStartOf="@+id/linearLayout3"
+      android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/item_buy_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:textColor="@color/graySix"
+        android:gravity="center_vertical|left"
+        android:text="竞彩足球" />
+
+    <TextView
+        android:id="@+id/item_buy_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12dp"
+        android:textColor="@color/graySix"
+        android:gravity="center_vertical|left"
+        android:layout_weight="1" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout3"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:layout_alignParentTop="true"
+      android:layout_toStartOf="@+id/item_buy_list_go"
+      android:orientation="vertical"
+      android:paddingBottom="4dp"
+      android:paddingTop="4dp">
+
+    <TextView
+        android:id="@+id/item_buy_list_statue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:text="未中奖"
+        android:textColor="@color/graySix"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/item_buy_list_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:text="6.4元"
+        android:textColor="@color/graySix"
+        android:textSize="12dp" />
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/item_buy_list_go"
+      android:layout_width="24dp"
+      android:layout_height="50dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:paddingRight="6dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="6dp"
+      android:src="@mipmap/ic_btn_search_go" />
+
+
+</RelativeLayout>

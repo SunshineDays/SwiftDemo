@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#f2f2f2"
+    android:paddingBottom="10dp"
+
+    android:orientation="vertical"
+    android:paddingTop="6dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="选择期号"
+
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="完成"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    <com.caidian310.view.selectView.LoopView
+        android:id="@+id/pop_loop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true" />
+</LinearLayout>

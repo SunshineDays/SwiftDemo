@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--联赛-->
+        <scene sceneID="EAz-9H-LuO">
+            <objects>
+                <viewController storyboardIdentifier="FBLeagueMainViewController" hidesBottomBarWhenPushed="YES" id="15b-Zm-30y" customClass="FBLeagueMainViewController" customModule="IULiao" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdj-hE-deh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fik-ua-QXc" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Sfc-K9-qZv"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-YY-J6p" customClass="BaseScrollView" customModule="IULiao" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="96" width="375" height="571"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fik-ua-QXc" firstAttribute="trailing" secondItem="yUG-o1-Y4f" secondAttribute="trailing" id="2in-As-Z9f"/>
+                            <constraint firstItem="fik-ua-QXc" firstAttribute="leading" secondItem="yUG-o1-Y4f" secondAttribute="leading" id="5Me-9C-hrX"/>
+                            <constraint firstItem="yUG-o1-Y4f" firstAttribute="bottom" secondItem="3Nq-YY-J6p" secondAttribute="bottom" id="9Zd-om-hLg"/>
+                            <constraint firstItem="fik-ua-QXc" firstAttribute="top" secondItem="yUG-o1-Y4f" secondAttribute="top" id="Q8b-NT-5sG"/>
+                            <constraint firstItem="3Nq-YY-J6p" firstAttribute="top" secondItem="fik-ua-QXc" secondAttribute="bottom" id="dnt-LI-0aN"/>
+                            <constraint firstItem="3Nq-YY-J6p" firstAttribute="leading" secondItem="yUG-o1-Y4f" secondAttribute="leading" id="ldx-9Z-cGu"/>
+                            <constraint firstItem="yUG-o1-Y4f" firstAttribute="trailing" secondItem="3Nq-YY-J6p" secondAttribute="trailing" id="tOE-i2-yAA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yUG-o1-Y4f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="联赛" id="otC-Ld-EH7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="3Nq-YY-J6p" id="yYa-e3-9Hf"/>
+                        <outlet property="segmentedControl" destination="fik-ua-QXc" id="C9r-fp-WPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9D-Ax-nC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607.20000000000005" y="9.4452773613193415"/>
+        </scene>
+    </scenes>
+</document>

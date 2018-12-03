@@ -1,0 +1,554 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/f2f2f2"
+    tools:context="com.caidian310.fragment.HomeFragment"
+    tools:ignore="RtlCompat">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/fragment_home_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/no_image_200"
+                    app:image_scale_type="fit_xy"
+                    app:indicator_drawable_selected="@mipmap/image_indicator_focus"
+                    app:indicator_drawable_unselected="@mipmap/image_indicator"
+                    app:indicator_height="10dp"
+                    app:indicator_width="8dp"
+                    app:title_background="#8C000000"
+                    app:title_height="30dp"
+                    app:title_textcolor="#CCFFFFFF"
+                    app:title_textsize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fragment_home_notification_img"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/icon_news_happy" />
+
+                    <com.caidian310.view.custom.LooperTextView
+                        android:id="@+id/fragment_home_looper_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                    </com.caidian310.view.custom.LooperTextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/grayE6e6e6" />
+
+                <!--彩种-->
+                <LinearLayout
+                    android:id="@+id/home_lottery_jczq_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.caidian310.view.custom.RoundImageView
+
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="18dp"
+                            android:src="@mipmap/icon_types_jczq" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/home_lottery_jczq_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="28dp"
+                                android:text="竞彩足球"
+                                android:textColor="@color/grayThree"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/home_lottery_jczq_describe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/home_lottery_jczq_name"
+                                android:text="反奖高达73%"
+                                android:textColor="@color/grayB3B3B3"
+                                android:textSize="10dp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.6dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grayE6e6e6" />
+
+                    <LinearLayout
+                        android:id="@+id/home_lottery_jclq_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.caidian310.view.custom.RoundImageView
+
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="18dp"
+                            android:src="@mipmap/icon_types_jclq" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/home_lottery_jclq_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="28dp"
+                                android:text="竞彩篮球"
+                                android:textColor="@color/grayThree"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/home_lottery_jclq_describe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/home_lottery_jclq_name"
+                                android:text="玩转NBA赛事"
+                                android:textColor="@color/grayB3B3B3"
+                                android:textSize="10dp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--彩种v2.0-->
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/home_lottery_jczq_linear"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="86dp"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.caidian310.view.custom.RoundImageView-->
+
+                            <!--android:layout_width="55dp"-->
+                            <!--android:layout_height="55dp"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_centerVertical="true"-->
+
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:layout_marginTop="18dp"-->
+                            <!--android:src="@mipmap/icon_types_jczq" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/home_lottery_jczq_name"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+
+                                <!--android:text="竞彩足球"-->
+                                <!--android:textColor="@color/grayThree"-->
+                                <!--android:textSize="14dp" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/home_lottery_jczq_describe"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--android:layout_below="@+id/home_lottery_jczq_name"-->
+                                <!--android:text="反奖高达73%"-->
+                                <!--android:textColor="@color/grayB3B3B3"-->
+                                <!--android:textSize="10dp" />-->
+                        <!--</LinearLayout>-->
+
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="0.6dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="@color/grayE6e6e6" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/home_lottery_jclq_linear"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<com.caidian310.view.custom.RoundImageView-->
+
+                            <!--android:layout_width="55dp"-->
+                            <!--android:layout_height="55dp"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_centerVertical="true"-->
+
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:layout_marginTop="18dp"-->
+                            <!--android:src="@mipmap/icon_types_jclq" />-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:paddingLeft="10dp">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/home_lottery_jclq_name"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--android:layout_alignParentTop="true"-->
+                                <!--android:layout_marginBottom="4dp"-->
+                                <!--android:layout_marginTop="28dp"-->
+                                <!--android:text="竞彩篮球"-->
+                                <!--android:textColor="@color/grayThree"-->
+                                <!--android:textSize="14dp" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/home_lottery_jclq_describe"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--android:layout_below="@+id/home_lottery_jclq_name"-->
+                                <!--android:text="玩转NBA赛事"-->
+                                <!--android:textColor="@color/grayB3B3B3"-->
+                                <!--android:textSize="10dp" />-->
+                        <!--</RelativeLayout>-->
+
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!-- 今日单关焦点赛事-->
+                <LinearLayout
+                    android:id="@+id/home_single_match_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="今日单关焦点赛事"
+                        android:textColor="@color/grayThree"
+                        android:textSize="12dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <com.caidian310.view.custom.RoundImageView
+                            android:id="@+id/home_hot_home_img"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toStartOf="@+id/home_match_linear"
+                            android:src="@mipmap/ic_header_img_default" />
+
+                        <LinearLayout
+                            android:id="@+id/home_match_linear"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+
+                            <TextView
+                                android:id="@+id/home_hot_league_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/gray4D4D4D"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/home_hot_league_end_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="- --:-- 截止"
+                                android:textColor="@color/grayB3B3B3"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <com.caidian310.view.custom.RoundImageView
+                            android:id="@+id/home_hot_away_img"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toEndOf="@+id/home_match_linear"
+                            android:src="@mipmap/ic_header_img_default" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <LinearLayout
+                            android:id="@+id/home_home_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/angle_round_gray_radius_3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/home_hot_home_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|bottom"
+                                android:maxLength="4"
+                                android:text="-"
+                                android:textColor="@color/gray4D4D4D"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/home_hot_bf_win"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|top"
+                                android:text="-"
+                                android:textColor="@color/gray4D4D4D"
+
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/home_hot_bf_draw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/angle_round_gray_radius_3"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/gray4D4D4D"
+                            android:textSize="12dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/home_away_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/angle_round_gray_radius_3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/home_hot_away_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|bottom"
+                                android:maxLength="4"
+                                android:text="-"
+                                android:textColor="@color/gray4D4D4D"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/home_hot_bf_lost"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|top"
+                                android:text="-"
+                                android:textColor="@color/gray4D4D4D"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/home_bet_20"
+                            android:layout_width="44dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/angle_round_gray_radius_3"
+                            android:gravity="center"
+                            android:text="20元"
+                            android:textColor="@color/gray4D4D4D"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/home_bet_50"
+                            android:layout_width="44dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@+id/home_bet_20"
+                            android:background="@drawable/angle_round_gray_radius_3"
+                            android:gravity="center"
+                            android:text="50元"
+                            android:textColor="@color/gray4D4D4D"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/home_bet_100"
+                            android:layout_width="44dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@+id/home_bet_50"
+                            android:background="@drawable/angle_round_gray_radius_3"
+                            android:gravity="center"
+                            android:text="100元"
+                            android:textColor="@color/gray4D4D4D"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/home_bet_commit"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/round_logo_color"
+                            android:gravity="center"
+                            android:text="立即投注"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_no_single_match_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_no_single_match" />
+                </LinearLayout>
+
+
+                <!--投注方式-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <include
+                    android:layout_marginTop="-3dp"
+                    android:id="@+id/home_today_hot_order"
+                    layout="@layout/item_copy_order"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+</RelativeLayout>
